@@ -12,11 +12,11 @@
 
 # 1. Tổng quan phân công
 
-Nhóm gồm **4 thành viên**, trong đó có **2 thành viên chủ lực**.
+Nhóm gồm **4 thành viên**
 
 Phân công theo hướng **module/đầu ra**, không chia đều theo số lượng công việc.
 
-| Thành viên | Vai trò | Phần phụ trách | Mức độ |
+| Member | Role | Task | Status |
 |---|---|---|---|
 | **TV1 – Khuat Trong Thuan** | System / UX Lead | User Flow, Workflow, Information Architecture, luồng ngoại lệ |  |
 | **TV2 – Hoang Pham Minh tien** | UI / Prototype Lead | Wireframe, UI Design, Design System, Figma Prototype | |

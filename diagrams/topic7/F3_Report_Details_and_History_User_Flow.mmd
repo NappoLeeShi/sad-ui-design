@@ -1,0 +1,48 @@
+---
+title: "F3 — Xem chi tiết và lịch sử xử lý (View Report Details and History) — User Flow"
+---
+%%{init: {"htmlLabels": false, "flowchart": {"curve": "basis", "nodeSpacing": 35, "rankSpacing": 40, "padding": 8}, "theme": "base", "themeVariables": {"fontSize": "16px", "background": "#FFFFFF"}}}%%
+%% Mục đích: Mô tả hành trình người dân mở một phản ánh từ kết quả tra cứu, xem thông tin,
+%% trạng thái hiện tại và lịch sử xử lý nếu có. Không tự tạo dữ liệu lịch sử.
+flowchart TD
+    Start(["Bắt đầu<br/>Người dân đang ở danh sách kết quả tra cứu"])
+    Results["Danh sách kết quả tra cứu<br/>Hiển thị phản ánh phù hợp"]
+    Select["Chọn một phản ánh<br/>Chọn “Xem chi tiết”"]
+    Loading[/"Hiển thị trạng thái: Đang tải chi tiết…"/]
+    Exists{"Phản ánh còn tồn tại?"}
+    NotFound[/"Thông báo: Không tìm thấy phản ánh<br/>Có thể đã bị xóa hoặc đường dẫn không hợp lệ"/]
+    Permission{"Được phép xem phản ánh?"}
+    Denied[/"Thông báo: Bạn không có quyền xem phản ánh này<br/>Không tiết lộ dữ liệu"/]
+    Detail["Trang chi tiết phản ánh<br/>Thông tin phản ánh<br/>Trạng thái hiện tại bằng nhãn rõ nghĩa"]
+    HasUpdate{"Có thời điểm cập nhật?"}
+    ShowUpdate["Hiển thị thời điểm cập nhật"]
+    NoUpdate[/"Ghi rõ: Chưa có thông tin cập nhật mới"/]
+    HasHistory{"Có dữ liệu lịch sử xử lý?"}
+    History["Hiển thị lịch sử xử lý<br/>Theo thứ tự thời gian, nếu có"]
+    NoHistory[/"Ghi rõ: Chưa có lịch sử cập nhật"/]
+    Back["Chọn “Quay lại kết quả”"]
+    End(["Kết thúc: Trở về danh sách kết quả"])
+
+    Start --> Results --> Select --> Loading --> Exists
+    Exists -->|"Không"| NotFound --> Back
+    Exists -->|"Có"| Permission
+    Permission -->|"Không"| Denied --> Back
+    Permission -->|"Có"| Detail --> HasUpdate
+    HasUpdate -->|"Có"| ShowUpdate --> HasHistory
+    HasUpdate -->|"Không"| NoUpdate --> HasHistory
+    HasHistory -->|"Có"| History --> Back
+    HasHistory -->|"Không"| NoHistory --> Back
+    Back --> End
+
+    classDef startEnd fill:#1F4E79,color:#FFFFFF,stroke:#1F4E79,stroke-width:2px;
+    classDef screen fill:#DEEBF7,stroke:#2E75B6,stroke-width:1.5px,color:#1F1F1F;
+    classDef action fill:#FFF2CC,stroke:#BF9000,stroke-width:1.5px,color:#1F1F1F;
+    classDef feedback fill:#E2F0D9,stroke:#548235,stroke-width:1.5px,color:#1F1F1F;
+    classDef error fill:#FCE4D6,stroke:#C00000,stroke-width:1.5px,color:#1F1F1F;
+    classDef decision fill:#EDE7F6,stroke:#5E35B1,stroke-width:1.5px,color:#1F1F1F;
+    class Start,End startEnd;
+    class Results,Detail,History screen;
+    class Select,ShowUpdate,Back action;
+    class Loading,NoUpdate,NoHistory feedback;
+    class NotFound,Denied error;
+    class Exists,Permission,HasUpdate,HasHistory decision;

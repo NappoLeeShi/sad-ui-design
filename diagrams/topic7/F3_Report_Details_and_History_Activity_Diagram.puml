@@ -1,0 +1,52 @@
+@startuml
+!pragma layout smetana
+title F3 — Xem chi tiết và lịch sử xử lý (View Report Details and History)\n<size:12>Activity Diagram · Tác nhân: Người dân · Mục đích: xem thông tin, trạng thái và lịch sử nếu có</size>
+skinparam style strictuml
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName "DejaVu Sans"
+skinparam defaultFontSize 13
+skinparam swimlaneWidth 270
+skinparam wrapWidth 230
+skinparam nodesep 22
+skinparam ranksep 28
+
+|Người dân|
+start
+:Chọn một phản ánh từ danh sách kết quả;
+:Chọn “Xem chi tiết”;
+
+|Hệ thống|
+:Tải thông tin phản ánh;
+if (Phản ánh còn tồn tại?) then (Có)
+  if (Người dân được phép xem?) then (Có)
+    :Hiển thị thông tin phản ánh và trạng thái hiện tại;
+    if (Có thời điểm cập nhật?) then (Có)
+      :Hiển thị thời điểm cập nhật;
+    else (Không)
+      :Ghi rõ chưa có thông tin cập nhật mới;
+    endif
+    if (Có dữ liệu lịch sử xử lý?) then (Có)
+      :Hiển thị lịch sử xử lý theo thứ tự thời gian;
+    else (Không)
+      :Ghi rõ chưa có lịch sử cập nhật;
+    endif
+    |Người dân|
+    :Đọc thông tin, trạng thái và lịch sử;
+    :Chọn “Quay lại kết quả”;
+    |Hệ thống|
+    :Hiển thị lại danh sách kết quả tra cứu;
+    stop
+  else (Không)
+    :Thông báo không có quyền xem và không tiết lộ dữ liệu;
+    |Người dân|
+    :Quay lại danh sách kết quả;
+    stop
+  endif
+else (Không)
+  :Thông báo không tìm thấy phản ánh;
+  |Người dân|
+  :Quay lại danh sách kết quả;
+  stop
+endif
+@enduml

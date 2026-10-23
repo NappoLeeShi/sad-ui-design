@@ -1,0 +1,108 @@
+@startuml
+!pragma layout smetana
+title F5 — Cập nhật tiến độ hoặc kết quả xử lý (Update Processing)\n<size:12>Activity Diagram · Tác nhân: Cán bộ xử lý · Mục đích: cập nhật trạng thái, ghi chú/kết quả và lưu lịch sử nếu có</size>
+skinparam style strictuml
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName "DejaVu Sans"
+skinparam defaultFontSize 13
+skinparam swimlaneWidth 270
+skinparam wrapWidth 230
+skinparam nodesep 22
+skinparam ranksep 28
+
+|Cán bộ xử lý|
+start
+:Mở khu vực phản ánh được phân công;
+
+|Hệ thống|
+if (Có quyền xử lý?) then (Có)
+  :Tải danh sách phản ánh được phân công;
+  if (Có phản ánh được phân công?) then (Có)
+    :Hiển thị danh sách và trạng thái hiện tại;
+  else (Không)
+    :Thông báo không có phản ánh được phân công;
+    |Cán bộ xử lý|
+    :Kết thúc;
+    stop
+  endif
+else (Không)
+  :Thông báo không có quyền truy cập;
+  |Cán bộ xử lý|
+  :Kết thúc;
+  stop
+endif
+
+|Cán bộ xử lý|
+:Chọn một phản ánh;
+|Hệ thống|
+:Tải chi tiết phản ánh;
+if (Được phân công cho cán bộ này?) then (Có)
+  :Hiển thị chi tiết, trạng thái và lịch sử hiện có;
+else (Không)
+  :Thông báo không có quyền cập nhật phản ánh này;
+  |Cán bộ xử lý|
+  :Quay về danh sách;
+  stop
+endif
+
+|Cán bộ xử lý|
+:Chọn “Cập nhật xử lý”;
+|Hệ thống|
+:Hiển thị biểu mẫu cập nhật;
+
+|Cán bộ xử lý|
+repeat
+  :Chọn trạng thái mới từ danh sách hỗ trợ;
+  :Nhập ghi chú hoặc kết quả xử lý;
+  :Chọn “Xem lại cập nhật”;
+  |Hệ thống|
+  if (Dữ liệu hợp lệ?) then (Có)
+    :Hiển thị thông tin cập nhật để xem lại;
+    |Cán bộ xử lý|
+    :Xem lại thông tin cập nhật;
+    if (Cần chỉnh sửa?) then (Có)
+      :Chọn “Quay lại chỉnh sửa”;
+      |Hệ thống|
+      :Hiển thị lại biểu mẫu và giữ dữ liệu;
+    else (Không)
+      :Giữ nguyên thông tin cập nhật;
+    endif
+  else (Không hợp lệ)
+    :Hiển thị lỗi tại trường cần sửa;
+    |Cán bộ xử lý|
+    :Chỉnh sửa thông tin cập nhật;
+  endif
+repeat while (Cần chỉnh sửa hoặc dữ liệu chưa hợp lệ?) is (Đúng) not (Sẵn sàng lưu)
+
+|Hệ thống|
+if (Điều kiện cập nhật hợp lệ?) then (Có)
+  |Cán bộ xử lý|
+  :Chọn “Lưu cập nhật”;
+  |Hệ thống|
+  while (Chưa lưu thành công?) is (Đúng)
+    :Thực hiện lưu cập nhật;
+    if (Lưu thành công?) then (Có)
+      :Ghi lịch sử xử lý nếu được hỗ trợ;
+      :Hiển thị xác nhận cập nhật thành công;
+    else (Không)
+      :Thông báo chưa lưu được và giữ dữ liệu;
+      |Cán bộ xử lý|
+      if (Thử lại?) then (Có)
+        |Hệ thống|
+      else (Không)
+        :Quay về chi tiết phản ánh;
+        stop
+      endif
+    endif
+  endwhile (Đã lưu thành công)
+  |Cán bộ xử lý|
+  :Nhận xác nhận;
+  stop
+else (Không)
+  :Thông báo không thể cập nhật do quyền hoặc điều kiện nghiệp vụ;
+  |Cán bộ xử lý|
+  :Quay về chi tiết phản ánh;
+  stop
+endif
+@enduml

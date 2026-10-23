@@ -1,0 +1,97 @@
+@startuml
+!pragma layout smetana
+title F4 — Tiếp nhận và phân loại phản ánh (Receive and Classify Reports)\n<size:12>Activity Diagram · Tác nhân: Cán bộ tiếp nhận · Mục đích: kiểm tra, phân loại và xác nhận tiếp nhận</size>
+skinparam style strictuml
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName "DejaVu Sans"
+skinparam defaultFontSize 13
+skinparam swimlaneWidth 270
+skinparam wrapWidth 230
+skinparam nodesep 22
+skinparam ranksep 28
+
+|Cán bộ tiếp nhận|
+start
+:Mở khu vực tiếp nhận;
+
+|Hệ thống|
+if (Có quyền tiếp nhận?) then (Có)
+  :Tải danh sách phản ánh chờ tiếp nhận;
+  if (Có phản ánh chờ xử lý?) then (Có)
+    :Hiển thị danh sách phản ánh chờ tiếp nhận;
+  else (Không)
+    :Thông báo không có phản ánh chờ xử lý;
+    |Cán bộ tiếp nhận|
+    :Kết thúc;
+    stop
+  endif
+else (Không)
+  :Thông báo không có quyền truy cập;
+  |Cán bộ tiếp nhận|
+  :Kết thúc;
+  stop
+endif
+
+|Cán bộ tiếp nhận|
+:Chọn một phản ánh;
+|Hệ thống|
+:Tải chi tiết phản ánh;
+if (Có quyền xem phản ánh?) then (Có)
+  :Hiển thị nội dung và thông tin liên quan;
+else (Không)
+  :Thông báo không có quyền xem;
+  |Cán bộ tiếp nhận|
+  :Quay về danh sách;
+  stop
+endif
+
+|Cán bộ tiếp nhận|
+:Xem nội dung và kiểm tra thông tin;
+if (Thông tin đầy đủ và hợp lệ?) then (Có)
+  |Hệ thống|
+  :Hiển thị biểu mẫu phân loại;
+  |Cán bộ tiếp nhận|
+  repeat
+    :Chọn phân loại từ danh sách hệ thống cung cấp;
+    :Chọn “Xác nhận tiếp nhận”;
+    |Hệ thống|
+    if (Phân loại hợp lệ?) then (Có)
+      :Chấp nhận phân loại;
+    else (Không)
+      :Hiển thị lỗi phân loại và yêu cầu chọn lại;
+    endif
+  repeat while (Phân loại chưa hợp lệ?) is (Đúng) not (Đã hợp lệ)
+  if (Còn đủ điều kiện tiếp nhận?) then (Có)
+    |Hệ thống|
+    while (Chưa lưu thành công?) is (Đúng)
+      :Thực hiện lưu kết quả tiếp nhận và phân loại;
+      if (Lưu thành công?) then (Có)
+        :Hiển thị xác nhận đã tiếp nhận;
+      else (Không)
+        :Thông báo chưa lưu được và giữ kết quả;
+        |Cán bộ tiếp nhận|
+        if (Thử lại?) then (Có)
+          |Hệ thống|
+        else (Không)
+          :Quay về chi tiết phản ánh;
+          stop
+        endif
+      endif
+    endwhile (Đã lưu thành công)
+    |Cán bộ tiếp nhận|
+    :Nhận xác nhận;
+    stop
+  else (Không)
+    :Thông báo không thể tiếp nhận do quyền hoặc điều kiện hiện hành;
+    |Cán bộ tiếp nhận|
+    :Quay về danh sách;
+    stop
+  endif
+else (Không)
+  :Thông báo chưa thể phân loại do thiếu hoặc sai thông tin;
+  |Cán bộ tiếp nhận|
+  :Quay về danh sách để xử lý tiếp;
+  stop
+endif
+@enduml

@@ -1,0 +1,131 @@
+@startuml
+!pragma layout smetana
+title F1 — Gửi phản ánh (Submit a Report)\n<size:12>Activity Diagram · Tác nhân: Người dân · Mục đích: gửi phản ánh và nhận xác nhận kết quả</size>
+skinparam style strictuml
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName "DejaVu Sans"
+skinparam defaultFontSize 13
+skinparam swimlaneWidth 270
+skinparam wrapWidth 230
+skinparam nodesep 22
+skinparam ranksep 28
+
+|Người dân|
+start
+:Mở trang chính;
+:Chọn “Gửi phản ánh”;
+
+|Hệ thống|
+while (Không mở được biểu mẫu?) is (Đúng)
+  :Hiển thị thông báo không thể mở biểu mẫu và cách thử lại;
+  |Người dân|
+  if (Thử lại?) then (Có)
+    :Chọn thử lại;
+  else (Không)
+    :Quay về trang chính;
+    stop
+  endif
+  |Hệ thống|
+endwhile (Đã mở biểu mẫu)
+:Hiển thị bước chọn loại vấn đề;
+
+|Người dân|
+:Chọn loại vấn đề;
+|Hệ thống|
+while (Chưa chọn loại vấn đề?) is (Đúng)
+  :Hiển thị nhắc chọn loại vấn đề;
+  |Người dân|
+  :Chọn lại loại vấn đề;
+  |Hệ thống|
+endwhile (Đã chọn loại vấn đề)
+:Hiển thị bước chọn vị trí;
+
+|Người dân|
+:Tìm địa chỉ hoặc chọn vị trí trên bản đồ;
+if (Dùng vị trí hiện tại?) then (Có)
+  |Hệ thống|
+  if (Được cấp quyền vị trí?) then (Có)
+    :Gợi ý vị trí hiện tại trên bản đồ;
+  else (Không)
+    :Thông báo không có quyền vị trí;
+    :Vẫn hiển thị tìm kiếm và chọn thủ công;
+  endif
+else (Không)
+  |Hệ thống|
+  :Hiển thị tìm kiếm và bản đồ;
+endif
+|Người dân|
+:Đặt hoặc điều chỉnh ghim;
+:Chọn xác nhận vị trí;
+|Hệ thống|
+while (Chưa xác nhận vị trí?) is (Đúng)
+  :Hiển thị hướng dẫn điều chỉnh và xác nhận vị trí;
+  |Người dân|
+  :Điều chỉnh hoặc chọn lại vị trí;
+  :Chọn xác nhận vị trí;
+  |Hệ thống|
+endwhile (Đã xác nhận vị trí)
+:Hiển thị bước mô tả và đính kèm;
+
+|Người dân|
+:Nhập mô tả;
+:Đính kèm ảnh nếu có;
+label validate
+:Chọn “Xem lại”;
+
+|Hệ thống|
+if (Dữ liệu hợp lệ?) then (Có)
+  :Hiển thị thông tin xem lại;
+  |Người dân|
+  :Xem lại loại vấn đề, vị trí, mô tả và ảnh;
+  if (Cần chỉnh sửa?) then (Có)
+    :Chọn “Quay lại chỉnh sửa”;
+    |Hệ thống|
+    :Hiển thị bước cần sửa và giữ dữ liệu;
+    |Người dân|
+    :Chỉnh sửa thông tin;
+    |Hệ thống|
+    goto validate
+  else (Không)
+    :Chọn “Gửi phản ánh”;
+  endif
+else (Không hợp lệ)
+  :Hiển thị lỗi tại trường cần sửa;
+  |Người dân|
+  :Chỉnh sửa thông tin;
+  |Hệ thống|
+  goto validate
+endif
+
+|Hệ thống|
+while (Chưa ghi nhận thành công?) is (Đúng)
+  :Kiểm tra lại dữ liệu;
+  if (Dữ liệu hợp lệ?) then (Có)
+    :Thực hiện ghi nhận phản ánh;
+    if (Ghi nhận thành công?) then (Có)
+      :Cấp mã tham chiếu nếu được hỗ trợ;
+      :Hiển thị xác nhận gửi thành công;
+    else (Không)
+      :Thông báo chưa gửi được và giữ dữ liệu;
+      |Người dân|
+      if (Thử lại?) then (Có)
+        |Hệ thống|
+      else (Không)
+        :Quay về màn hình xem lại;
+        |Hệ thống|
+        goto validate
+      endif
+    endif
+  else (Không hợp lệ)
+    :Hiển thị lỗi tại trường cần sửa;
+    |Người dân|
+    :Chỉnh sửa thông tin;
+    |Hệ thống|
+    goto validate
+  endif
+endwhile (Đã ghi nhận thành công)
+|Người dân|
+:Nhận xác nhận và mã tham chiếu;
+stop
+@enduml

@@ -1,0 +1,58 @@
+---
+title: "F4 — Tiếp nhận và phân loại phản ánh (Receive and Classify Reports) — User Flow"
+---
+%%{init: {"htmlLabels": false, "flowchart": {"curve": "basis", "nodeSpacing": 35, "rankSpacing": 40, "padding": 8}, "theme": "base", "themeVariables": {"fontSize": "16px", "background": "#FFFFFF"}}}%%
+%% Mục đích: Mô tả hành trình cán bộ tiếp nhận mở hàng đợi, kiểm tra một phản ánh,
+%% phân loại theo danh sách do hệ thống cung cấp và xác nhận tiếp nhận.
+%% Lưu ý: vai trò cán bộ và hàng đợi chưa được đặc tả trong tài liệu Topic 7; xem README.
+flowchart TD
+    Start(["Bắt đầu<br/>Cán bộ tiếp nhận mở khu vực xử lý"])
+    Queue["Hàng đợi phản ánh<br/>Danh sách phản ánh chờ tiếp nhận"]
+    LoadQueue[/"Đang tải danh sách…"/]
+    HasPending{"Có phản ánh chờ xử lý?"}
+    Empty[/"Thông báo: Không có phản ánh chờ xử lý"/]
+    Select["Chọn một phản ánh trong danh sách"]
+    Permission{"Có quyền tiếp nhận?"}
+    Denied[/"Thông báo: Không có quyền thực hiện<br/>Quay về danh sách"/]
+    Details["Trang chi tiết phản ánh<br/>Nội dung và thông tin liên quan"]
+    Review["Xem nội dung và kiểm tra thông tin đã gửi"]
+    Valid{"Thông tin đầy đủ và hợp lệ?"}
+    Invalid[/"Thông báo: Chưa thể phân loại<br/>Thông tin chưa đầy đủ hoặc không hợp lệ"/]
+    Classify["Chọn phân loại từ danh sách<br/>do hệ thống cung cấp"]
+    ClassifyOK{"Phân loại hợp lệ?"}
+    ClassifyError[/"Hiển thị lỗi phân loại<br/>Yêu cầu chọn lại"/]
+    Confirm["Chọn “Xác nhận tiếp nhận”"]
+    SaveResult{"Lưu tiếp nhận thành công?"}
+    SaveError[/"Thông báo: Chưa lưu được kết quả<br/>Cho phép thử lại"/]
+    RetrySave{"Thử lại?"}
+    Success["Trang xác nhận<br/>Đã tiếp nhận và phân loại phản ánh"]
+    EndSuccess(["Kết thúc: Phản ánh đã được tiếp nhận"])
+    EndEmpty(["Kết thúc: Không có phản ánh cần xử lý"])
+    EndBack(["Kết thúc: Quay về danh sách"])
+
+    Start --> Queue --> LoadQueue --> HasPending
+    HasPending -->|"Không"| Empty --> EndEmpty
+    HasPending -->|"Có"| Select --> Permission
+    Permission -->|"Không"| Denied --> EndBack
+    Permission -->|"Có"| Details --> Review --> Valid
+    Valid -->|"Không hợp lệ"| Invalid --> EndBack
+    Valid -->|"Hợp lệ"| Classify --> ClassifyOK
+    ClassifyOK -->|"Chưa hợp lệ"| ClassifyError --> Classify
+    ClassifyOK -->|"Hợp lệ"| Confirm --> SaveResult
+    SaveResult -->|"Thành công"| Success --> EndSuccess
+    SaveResult -->|"Thất bại"| SaveError --> RetrySave
+    RetrySave -->|"Có"| Confirm
+    RetrySave -->|"Không"| Details
+
+    classDef startEnd fill:#1F4E79,color:#FFFFFF,stroke:#1F4E79,stroke-width:2px;
+    classDef screen fill:#DEEBF7,stroke:#2E75B6,stroke-width:1.5px,color:#1F1F1F;
+    classDef action fill:#FFF2CC,stroke:#BF9000,stroke-width:1.5px,color:#1F1F1F;
+    classDef feedback fill:#E2F0D9,stroke:#548235,stroke-width:1.5px,color:#1F1F1F;
+    classDef error fill:#FCE4D6,stroke:#C00000,stroke-width:1.5px,color:#1F1F1F;
+    classDef decision fill:#EDE7F6,stroke:#5E35B1,stroke-width:1.5px,color:#1F1F1F;
+    class Start,EndSuccess,EndEmpty,EndBack startEnd;
+    class Queue,Details,Success screen;
+    class Select,Review,Classify,Confirm action;
+    class LoadQueue,Empty,Invalid,ClassifyError,SaveError feedback;
+    class Denied error;
+    class HasPending,Permission,Valid,ClassifyOK,SaveResult,RetrySave decision;

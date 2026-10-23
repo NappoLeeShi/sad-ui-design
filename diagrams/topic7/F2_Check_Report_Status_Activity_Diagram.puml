@@ -1,0 +1,59 @@
+@startuml
+!pragma layout smetana
+title F2 — Tra cứu trạng thái phản ánh (Check Report Status)\n<size:12>Activity Diagram · Tác nhân: Người dân · Mục đích: tìm phản ánh và xem trạng thái hiện tại</size>
+skinparam style strictuml
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName "DejaVu Sans"
+skinparam defaultFontSize 13
+skinparam swimlaneWidth 270
+skinparam wrapWidth 230
+skinparam nodesep 22
+skinparam ranksep 28
+
+|Người dân|
+start
+:Mở chức năng tra cứu;
+label enter_lookup
+:Nhập mã tham chiếu;
+:Chọn “Tra cứu”;
+
+|Hệ thống|
+if (Thông tin hợp lệ?) then (Có)
+  :Thực hiện tra cứu;
+  if (Tra cứu thành công?) then (Có)
+    if (Tìm thấy phản ánh?) then (Có)
+      :Hiển thị kết quả và trạng thái hiện tại;
+      |Người dân|
+      :Xem kết quả tra cứu;
+      stop
+    else (Không)
+      :Thông báo không tìm thấy và gợi ý kiểm tra;
+      |Người dân|
+      if (Tra cứu lại?) then (Có)
+        |Hệ thống|
+        goto enter_lookup
+      else (Không)
+        :Quay về trang chính;
+        stop
+      endif
+    endif
+  else (Không)
+    :Thông báo lỗi tra cứu và cách thử lại;
+    |Người dân|
+    if (Thử lại?) then (Có)
+      |Hệ thống|
+      goto enter_lookup
+    else (Không)
+      :Quay về trang chính;
+      stop
+    endif
+  endif
+else (Không hợp lệ)
+  :Hiển thị lỗi tại ô nhập;
+  |Người dân|
+  :Chỉnh sửa mã tham chiếu;
+  |Hệ thống|
+  goto enter_lookup
+endif
+@enduml

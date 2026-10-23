@@ -1,0 +1,62 @@
+---
+title: "F5 — Cập nhật tiến độ hoặc kết quả xử lý (Update Processing) — User Flow"
+---
+%%{init: {"htmlLabels": false, "flowchart": {"curve": "basis", "nodeSpacing": 35, "rankSpacing": 40, "padding": 8}, "theme": "base", "themeVariables": {"fontSize": "16px", "background": "#FFFFFF"}}}%%
+%% Mục đích: Mô tả hành trình cán bộ xử lý mở phản ánh được phân công, cập nhật trạng thái
+%% và ghi chú/kết quả, xem lại, lưu cập nhật và nhận phản hồi.
+%% Lưu ý: vai trò, danh sách trạng thái và quy tắc cập nhật chưa được đặc tả trong Topic 7.
+flowchart TD
+    Start(["Bắt đầu<br/>Cán bộ xử lý mở khu vực phản ánh được phân công"])
+    Assigned["Danh sách phản ánh được phân công<br/>Trạng thái hiện tại của từng phản ánh"]
+    Load[/"Đang tải danh sách…"/]
+    HasAssigned{"Có phản ánh được phân công?"}
+    Empty[/"Thông báo: Không có phản ánh được phân công"/]
+    Select["Chọn một phản ánh"]
+    Permission{"Có quyền cập nhật?"}
+    Denied[/"Thông báo: Không có quyền cập nhật phản ánh này"/]
+    Details["Trang chi tiết phản ánh<br/>Thông tin, trạng thái và lịch sử hiện có"]
+    OpenUpdate["Chọn “Cập nhật xử lý”"]
+    UpdateForm["Biểu mẫu cập nhật<br/>Trạng thái mới từ danh sách hỗ trợ<br/>Ghi chú hoặc kết quả xử lý"]
+    EnterUpdate["Chọn trạng thái mới<br/>Nhập ghi chú hoặc kết quả"]
+    Review["Chọn “Xem lại cập nhật”"]
+    DataOK{"Dữ liệu hợp lệ?"}
+    DataError[/"Hiển thị lỗi tại trường cần sửa<br/>Giữ dữ liệu đã nhập"/]
+    FixData["Chỉnh sửa thông tin cập nhật"]
+    Operation{"Điều kiện cập nhật hợp lệ?"}
+    Rejected[/"Thông báo: Không thể cập nhật<br/>Không có quyền hoặc phản ánh không còn phù hợp"/]
+    Confirm["Chọn “Lưu cập nhật”"]
+    SaveResult{"Lưu thành công?"}
+    SaveError[/"Thông báo: Chưa lưu được cập nhật<br/>Cho phép thử lại"/]
+    RetrySave{"Thử lại?"}
+    Success["Trang xác nhận<br/>Cập nhật đã được lưu<br/>Lịch sử xử lý được ghi nếu hệ thống hỗ trợ"]
+    Updated["Chi tiết phản ánh<br/>Hiển thị trạng thái và thông tin mới"]
+    EndSuccess(["Kết thúc: Cập nhật xử lý đã được ghi nhận"])
+    EndEmpty(["Kết thúc: Không có phản ánh được phân công"])
+    EndBack(["Kết thúc: Quay về danh sách"])
+
+    Start --> Assigned --> Load --> HasAssigned
+    HasAssigned -->|"Không"| Empty --> EndEmpty
+    HasAssigned -->|"Có"| Select --> Permission
+    Permission -->|"Không"| Denied --> EndBack
+    Permission -->|"Có"| Details --> OpenUpdate --> UpdateForm --> EnterUpdate --> Review --> DataOK
+    DataOK -->|"Không hợp lệ"| DataError --> FixData --> UpdateForm
+    DataOK -->|"Hợp lệ"| Operation
+    Operation -->|"Không"| Rejected --> EndBack
+    Operation -->|"Có"| Confirm --> SaveResult
+    SaveResult -->|"Thành công"| Success --> Updated --> EndSuccess
+    SaveResult -->|"Thất bại"| SaveError --> RetrySave
+    RetrySave -->|"Có"| Confirm
+    RetrySave -->|"Không"| Details
+
+    classDef startEnd fill:#1F4E79,color:#FFFFFF,stroke:#1F4E79,stroke-width:2px;
+    classDef screen fill:#DEEBF7,stroke:#2E75B6,stroke-width:1.5px,color:#1F1F1F;
+    classDef action fill:#FFF2CC,stroke:#BF9000,stroke-width:1.5px,color:#1F1F1F;
+    classDef feedback fill:#E2F0D9,stroke:#548235,stroke-width:1.5px,color:#1F1F1F;
+    classDef error fill:#FCE4D6,stroke:#C00000,stroke-width:1.5px,color:#1F1F1F;
+    classDef decision fill:#EDE7F6,stroke:#5E35B1,stroke-width:1.5px,color:#1F1F1F;
+    class Start,EndSuccess,EndEmpty,EndBack startEnd;
+    class Assigned,Details,UpdateForm,Success,Updated screen;
+    class Select,OpenUpdate,EnterUpdate,Review,FixData,Confirm action;
+    class Load,Empty,DataError,SaveError feedback;
+    class Denied,Rejected error;
+    class HasAssigned,Permission,DataOK,Operation,SaveResult,RetrySave decision;

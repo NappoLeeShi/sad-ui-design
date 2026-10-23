@@ -1,0 +1,86 @@
+---
+title: "F1 — Gửi phản ánh (Submit a Report) — User Flow"
+---
+%%{init: {"htmlLabels": false, "flowchart": {"curve": "basis", "nodeSpacing": 35, "rankSpacing": 40, "padding": 8}, "theme": "base", "themeVariables": {"fontSize": "16px", "background": "#FFFFFF"}}}%%
+%% Mục đích: Mô tả hành trình người dân từ trang chính đến khi gửi phản ánh thành công,
+%% bao gồm các nhánh thiếu dữ liệu, vị trí chưa xác nhận, lỗi gửi và đường quay lại sửa.
+flowchart TD
+    Start(["Bắt đầu<br/>Người dân muốn gửi phản ánh"])
+    Home["Trang chính<br/>Hiển thị rõ hành động “Gửi phản ánh”"]
+    ClickSubmit["Chọn “Gửi phản ánh”"]
+    FormOpen{"Mở được biểu mẫu?"}
+    FormError[/"Thông báo: Không thể mở biểu mẫu<br/>Gợi ý thử lại hoặc quay về"/]
+    RetryOpen{"Thử lại?"}
+    CategoryScreen["Biểu mẫu — Bước 1<br/>Chọn loại vấn đề<br/>Hiển thị tên, mô tả và ví dụ"]
+    PickCategory["Chọn một loại vấn đề"]
+    CategoryOK{"Đã chọn loại vấn đề?"}
+    CategoryError[/"Nhắc tại chỗ: Vui lòng chọn loại vấn đề"/]
+    LocationScreen["Biểu mẫu — Bước 2<br/>Chọn vị trí<br/>Tìm kiếm, bản đồ, vị trí hiện tại hoặc nhập thủ công"]
+    PickLocation["Tìm hoặc chọn vị trí<br/>Đặt và điều chỉnh ghim"]
+    UseCurrent{"Dùng vị trí hiện tại?"}
+    Permission{"Cấp quyền vị trí?"}
+    PermissionError[/"Thông báo: Không có quyền vị trí<br/>Vẫn có thể tìm hoặc chọn thủ công"/]
+    ConfirmLocation["Xác nhận vị trí đã chọn"]
+    LocationOK{"Đã xác nhận vị trí?"}
+    LocationError[/"Hướng dẫn điều chỉnh và xác nhận vị trí"/]
+    DescribeScreen["Biểu mẫu — Bước 3<br/>Mô tả và đính kèm"]
+    EnterInfo["Nhập mô tả<br/>Đính kèm ảnh nếu có"]
+    ReviewScreen["Biểu mẫu — Bước 4<br/>Xem lại thông tin"]
+    DataOK{"Dữ liệu hợp lệ?"}
+    DataError[/"Hiển thị lỗi tại trường cần sửa<br/>Giữ dữ liệu đã nhập"/]
+    FixData["Chọn “Quay lại chỉnh sửa”"]
+    EditChoice{"Cần chỉnh sửa?"}
+    EditMenu["Chọn phần cần chỉnh sửa<br/>Loại vấn đề / Vị trí / Mô tả"]
+    Submit["Chọn “Gửi phản ánh”"]
+    Sending[/"Trạng thái: Đang gửi phản ánh…"/]
+    SubmitResult{"Kết quả gửi?"}
+    SubmitError[/"Thông báo: Chưa gửi được phản ánh<br/>Giữ dữ liệu và cho phép thử lại"/]
+    RetrySubmit{"Thử lại?"}
+    Success["Trang xác nhận<br/>Gửi thành công<br/>Mã tham chiếu nếu hệ thống cấp<br/>Hướng dẫn tra cứu"]
+    EndOK(["Kết thúc: Phản ánh được ghi nhận"])
+    EndBack(["Kết thúc: Quay về trang chính"])
+
+    Start --> Home --> ClickSubmit --> FormOpen
+    FormOpen -->|"Có"| CategoryScreen
+    FormOpen -->|"Không"| FormError --> RetryOpen
+    RetryOpen -->|"Có"| ClickSubmit
+    RetryOpen -->|"Không"| EndBack
+    CategoryScreen --> PickCategory --> CategoryOK
+    CategoryOK -->|"Chưa chọn"| CategoryError --> CategoryScreen
+    CategoryOK -->|"Đã chọn"| LocationScreen
+    LocationScreen --> PickLocation --> UseCurrent
+    UseCurrent -->|"Có"| Permission
+    UseCurrent -->|"Không"| ConfirmLocation
+    Permission -->|"Có"| ConfirmLocation
+    Permission -->|"Không"| PermissionError --> ConfirmLocation
+    ConfirmLocation --> LocationOK
+    LocationOK -->|"Chưa xác nhận"| LocationError --> ConfirmLocation
+    LocationOK -->|"Đã xác nhận"| DescribeScreen
+    DescribeScreen --> EnterInfo --> ReviewScreen
+    ReviewScreen --> DataOK
+    DataOK -->|"Không hợp lệ"| DataError --> FixData --> EditMenu
+    DataOK -->|"Hợp lệ"| EditChoice
+    EditChoice -->|"Có"| EditMenu
+    EditMenu -->|"Loại vấn đề"| CategoryScreen
+    EditMenu -->|"Vị trí"| LocationScreen
+    EditMenu -->|"Mô tả"| DescribeScreen
+    EditChoice -->|"Không"| Submit
+    Submit --> Sending --> SubmitResult
+    SubmitResult -->|"Thành công"| Success --> EndOK
+    SubmitResult -->|"Dữ liệu không hợp lệ"| DataError
+    SubmitResult -->|"Lỗi gửi"| SubmitError --> RetrySubmit
+    RetrySubmit -->|"Có"| Submit
+    RetrySubmit -->|"Không"| ReviewScreen
+
+    classDef startEnd fill:#1F4E79,color:#FFFFFF,stroke:#1F4E79,stroke-width:2px;
+    classDef screen fill:#DEEBF7,stroke:#2E75B6,stroke-width:1.5px,color:#1F1F1F;
+    classDef action fill:#FFF2CC,stroke:#BF9000,stroke-width:1.5px,color:#1F1F1F;
+    classDef feedback fill:#E2F0D9,stroke:#548235,stroke-width:1.5px,color:#1F1F1F;
+    classDef error fill:#FCE4D6,stroke:#C00000,stroke-width:1.5px,color:#1F1F1F;
+    classDef decision fill:#EDE7F6,stroke:#5E35B1,stroke-width:1.5px,color:#1F1F1F;
+    class Start,EndOK,EndBack startEnd;
+    class Home,CategoryScreen,LocationScreen,DescribeScreen,ReviewScreen,Success screen;
+    class ClickSubmit,PickCategory,PickLocation,ConfirmLocation,EnterInfo,FixData,EditMenu,Submit action;
+    class FormError,CategoryError,PermissionError,LocationError,DataError,SubmitError error;
+    class Sending feedback;
+    class FormOpen,RetryOpen,CategoryOK,UseCurrent,Permission,LocationOK,DataOK,EditChoice,SubmitResult,RetrySubmit decision;

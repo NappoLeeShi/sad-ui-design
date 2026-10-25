@@ -67,7 +67,7 @@ flowchart TD
     EditChoice -->|"Không"| Submit
     Submit --> Sending --> SubmitResult
     SubmitResult -->|"Thành công"| Success --> EndOK
-    SubmitResult -->|"Dữ liệu không hợp lệ"| DataError
+    SubmitResult -->|"Lỗi dữ liệu"| DataError
     SubmitResult -->|"Lỗi gửi"| SubmitError --> RetrySubmit
     RetrySubmit -->|"Có"| Submit
     RetrySubmit -->|"Không"| ReviewScreen

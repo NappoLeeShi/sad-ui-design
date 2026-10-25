@@ -1,95 +1,77 @@
-# Nguyên tắc thiết kế giao diện: Usability Heuristics (Áp dụng cho Case Study)
+# Nguyên tắc thiết kế giao diện: Usability Heuristics
 
-## Khái niệm cốt lõi
+## Khái niệm
 
-**Usability Heuristics** là 10 nguyên tắc kinh nghiệm của **Jakob Nielsen (1994)** dùng để đánh giá và thiết kế giao diện. Trong bài tập này, nhóm **chọn 5 nguyên tắc có liên quan trực tiếp** đến các vấn đề của **Hệ thống tiếp nhận và xử lý phản ánh người dân** để dẫn dắt quyết định thiết kế.
+Usability Heuristics là bộ nguyên tắc chung về thiết kế giao diện do Jakob Nielsen đề xuất (10 nguyên tắc). Đây là các "quy tắc ngón tay cái" giúp nhận diện và tránh những lỗi gây khó khăn cho người dùng, không phải quy định kỹ thuật cứng nhắc.
 
-| # | Heuristic | Ý nghĩa cốt lõi | Liên quan đến Case Study như thế nào? |
-|---|---|---|---|
-| **1** | **Visibility of system status** | Hệ thống luôn báo cho user biết "đang ở đâu", "vừa xong gì", "tiếp theo làm gì" | Progress bar 4 bước, trạng thái lựa chọn danh mục/vị trí, xác nhận đã gửi thành công |
-| **2** | **Match between system and real world** | Dùng ngôn ngữ, khái niệm, quy tắc của người dùng (không dùng thuật ngữ kỹ thuật/hành chính) | Đổi tên danh mục: "Đèn đường không sáng" thay vì "Hạ tầng điện"; ví dụ minh họa từng loại vấn đề |
-| **6** | **Recognition rather than recall** | Hiển thị lựa chọn, ví dụ, gợi ý — user không phải tự nhớ thông tin | Danh mục dạng thẻ có icon + mô tả ngắn; tìm kiếm địa chỉ gợi ý; hiển thị lại vị trí đã chọn trên bản đồ |
-| **5** | **Error prevention** | Thiết kế ngăn lỗi **trước khi xảy ra** (validate real-time, confirm hành động nguy hiểm) | Validate bắt buộc từng bước; xác nhận vị trí trước khi tiếp tục; disable nút "Tiếp" khi chưa đủ điều kiện |
-| **3** | **User control and freedom** | User có "lối thoát": Undo, Quay lại, Hủy, Chỉnh sửa — không bị mắc kẹt | Nút "Quay lại" ở mọi bước (giữ dữ liệu); nút "Sửa" tại màn hình Xem lại; hủy gửi thoát về trang chủ |
+Trong bài, nhóm chọn 5 nguyên tắc liên quan trực tiếp đến case study:
 
-> **Nguyên tắc chọn**: 5 heuristic này覆盖了 case study 3 vấn đề chính: (1) Khó tìm chức năng → #1, #6; (2) Danh mục khó hiểu → #2, #6; (3) Nhập vị trí khó, dễ sai, không sửa được → #5, #3.
+- **Visibility of system status (Hiển thị trạng thái hệ thống):** Cho người dùng biết họ đang ở bước nào, hệ thống đang làm gì.
+- **Match between system and the real world (Phù hợp với thế giới thực):** Dùng ngôn ngữ và khái niệm quen thuộc với người dùng.
+- **Recognition rather than recall (Nhận biết hơn ghi nhớ):** Hiển thị sẵn lựa chọn, ví dụ để người dùng không phải tự nhớ.
+- **Error prevention (Ngăn ngừa lỗi):** Thiết kế để hạn chế lỗi ngay từ đầu, thay vì chỉ báo lỗi sau khi xảy ra.
+- **User control and freedom (Quyền kiểm soát và tự do):** Cho phép quay lại, chỉnh sửa, hủy bỏ mà không mất dữ liệu.
 
-## Tại sao cần thiết? (Trong bối cảnh bài tập)
+## Vì sao cần thiết?
 
-- **Kết nối lý thuyết – thực tiễn**: Mỗi quyết định thiết kế (wireframe, user flow) phải trích dẫn heuristic cụ thể → Slide 25 "Đối chiếu vấn đề – lý thuyết – giải pháp" sẽ súc tích, thuyết phục.
-- **Tiêu chuẩn hóa đánh giá**: Heuristic Evaluation nội bộ nhóm (trước khi test user) dùng chung 5 tiêu chí này → nhất quán, không đánh giá theo cảm tính.
-- **Tiết kiệm thời gian**: Thay vì bàn luận "nên hay không nên", nhóm dùng heuristic làm "luật chơi" để quyết định nhanh.
+Nhiều lỗi giao diện lặp đi lặp lại ở nhiều hệ thống: người dùng không biết mình đang ở đâu, không hiểu thuật ngữ, phải nhớ thông tin, nhập sai mà không được cảnh báo, hoặc không thể quay lại sửa.
 
-## Phương pháp hoặc quy trình thực hiện: Heuristic Evaluation cho Case Study
+Heuristics giúp nhóm thiết kế phát hiện sớm các vấn đề này, ngay cả khi chưa có người dùng thật tham gia. Với dịch vụ công, người dùng đa dạng nên các nguyên tắc này càng quan trọng. Lưu ý heuristics chỉ là cơ sở để thiết kế và đánh giá, vẫn cần kiểm thử với người dùng để xác nhận.
 
-```text
+## Áp dụng
+
+```
 ┌──────────────────────────────────────────────────────────────────────┐
-│ 1. Chuẩn bị: 3 thành viên (không phải người vẽ wireframe) làm evaluator│
-│    - Phạm vi: 5 màn hình chính (Trang chủ → Chọn loại → Vị trí       │
-│      → Mô tả → Xem lại/Gửi) + các nhánh lỗi                          │
-│    - Checklist: 5 heuristic trên, mỗi màn hình ghi: vi phạm gì,      │
-│      mức độ (Cosmetic/Minor/Major/Catastrophic), evidence, đề xuất  │
+│                  1. Xác định vấn đề của người dùng                   │
+│                                                                      │
+│           Họ gặp khó khăn ở bước nào? Vì sao khó khăn?               │
 └──────────────────────────────────────────────────────────────────────┘
                                   ↓
 ┌──────────────────────────────────────────────────────────────────────┐
-│ 2. Đánh giá độc lập (mỗi người 30-45 phút)                           │
-│    - Duyệt luồng "Gửi phản ánh đèn đường hỏng" trên prototype Figma  │
-│    - Ghi nhận: "Màn hình 2: không có progress bar → vi phạm #1,     │
-│      Major → thêm stepper 4 bước"                                    │
+│                  2. Chọn nguyên tắc liên quan                        │
+│                                                                      │
+│            Vấn đề này vi phạm hoặc cần áp dụng nguyên tắc nào?       │
 └──────────────────────────────────────────────────────────────────────┘
                                   ↓
 ┌──────────────────────────────────────────────────────────────────────┐
-│ 3. Họp tổng hợp (30 phút)                                            │
-│    - Gom issue trùng, thống nhất severity, loại Cosmetic nếu ít tác  │
-│      động task. Ưu tiên sửa: Catastrophic/Major → Minor              │
+│                 3. Chuyển thành quyết định thiết kế                  │
+│                                                                      │
+│              Mỗi nguyên tắc dẫn đến một thay đổi cụ thể.             │
 └──────────────────────────────────────────────────────────────────────┘
                                   ↓
 ┌──────────────────────────────────────────────────────────────────────┐
-│ 4. Cập nhật prototype & Báo cáo                                      │
-│    - Bảng: Màn hình | Heuristic | Vấn đề | Severity | Đã sửa/Chưa   │
-│    - Dùng lại bảng này cho Slide 17 "Từ nguyên tắc đến quyết định"  │
+│                       4. Kiểm tra lại                                │
+│                                                                      │
+│      Đánh giá theo nguyên tắc và kiểm thử với người dùng.            │
 └──────────────────────────────────────────────────────────────────────┘
-                                  ↓
-└──────────────────────────────────────────────────────────────────────┘
-                    5. Usability Testing với người dùng thật (validate)
 ```
 
-**Mức độ nghiêm trọng (Severity) – áp dụng cho bài tập:**
-| Mức | Định nghĩa | Ví dụ trong case study |
-|---|---|---|
-| **Catastrophic (4)** | User không thể hoàn thành nhiệm vụ chính | Không tìm thấy nút "Gửi phản ánh"; không thể chọn vị trí |
-| **Major (3)** | User hoàn thành được nhưng rất khó, sai nhiều, cần trợ giúp | Danh mục không hiểu, nhập vị trí sai liên tục, mất dữ liệu khi sửa |
-| **Minor (2)** | Phiền toái nhưng không cản trở task | Không có progress bar; font chữ nhỏ; icon không rõ nghĩa |
-| **Cosmetic (1)** | Chỉ thẩm mỹ, không ảnh hưởng usability | Màu sắc không đồng nhất; khoảng cách không đều |
+Từ nguyên tắc đến quyết định thiết kế trong case study:
 
-## Ví dụ áp dụng: Heuristic Evaluation cho Case Study
+| Nguyên tắc | Quyết định thiết kế |
+|---|---|
+| Visibility of system status | Hiển thị bước hiện tại (ví dụ "Bước 2/5") và thông báo kết quả sau khi gửi |
+| Match between system and the real world | Đặt tên danh mục bằng ngôn ngữ đời thường, thêm mô tả ngắn và ví dụ |
+| Recognition rather than recall | Hiển thị sẵn thẻ danh mục và gợi ý địa điểm, không bắt người dùng tự nhớ tên mục hay địa chỉ |
+| Error prevention | Kiểm tra trường bắt buộc, yêu cầu xác nhận vị trí trước khi tiếp tục |
+| User control and freedom | Cho quay lại từng bước và chỉnh sửa, dữ liệu đã nhập được giữ nguyên |
 
-> **Bối cảnh**: Đánh giá prototype **Màn hình 2: Chọn loại vấn đề** (wireframe phiên bản đầu)
+Phân biệt: **Heuristic Evaluation** là chuyên gia hoặc nhóm thiết kế đánh giá giao diện theo các nguyên tắc; **Usability Testing** là quan sát người dùng thực hiện nhiệm vụ.
 
-| # | Heuristic | Vấn đề cụ thể (Evidence) | Severity | Quyết định thiết kế (To-Be) |
-|---|---|---|---|---|
-| 1 | **#1 Visibility of system status** | Không có chỉ báo bước hiện tại. User không biết đang ở bước 2/4. | Major | Thêm **Stepper** trên cùng: Trang chủ → **Chọn loại** → Vị trí → Mô tả → Xem lại. Highlight bước "Chọn loại". |
-| 2 | **#2 Match system & real world** | Danh mục: "Vấn đề giao thông", "Công trình kỹ thuật", "Môi trường tự nhiên". Người dân không hiểu đèn đường thuộc nhóm nào. | Catastrophic | **Đổi tên theo ngôn ngữ đời thường**: "Đèn đường không sáng", "Đường hư/vỉa hè hỏng", "Rác thải/việc sinh", "Ngập úng/Thoát nước", "Vấn đề khác". Mỗi mục có **icon + 1 dòng ví dụ**. |
-| 3 | **#6 Recognition rather than recall** | Chỉ hiển thị tên danh mục. User phải nhớ định nghĩa từng mục (đã đọc ở đâu đó). | Major | Thêm **mô tả ngắn + ví dụ** hiển thị ngay dưới tên: "Đèn đường không sáng: Đèn chiếu sáng công cộng bị hỏng, chớp tắt, không sáng". Thêm link "Chưa biết chọn mục nào?" mở modal hướng dẫn. |
-| 4 | **#5 Error prevention** | Nút "Tiếp theo" luôn enable. User bấm chưa chọn danh mục → báo lỗi toast đỏ toàn màn hình. | Major | **Disable nút "Tiếp theo"** cho đến khi user chọn 1 danh mục. Khi chọn → nút bật xanh, chuyển trạng thái. Validate real-time, không chờ submit. |
-| 5 | **#3 User control and freedom** | Không có nút "Quay lại". Muốn đổi danh mục phải bấm back trình duyệt → mất lựa chọn. | Minor | Thêm nút **"Quay lại trang chủ"** (góc trái) và **"Bỏ chọn"** (góc phải card danh mục). Giữ lựa chọn nếu user quay lại từ màn hình Vị trí. |
+## Ví dụ
 
-> **Kết quả sau cải tiến (dự kiến)**
->
-> - Heuristic Evaluation lần 2: 0 Catastrophic, 0 Major, 2 Minor (chỉ cosmetic: khoảng cách card, màu icon).
-> - Usability Testing: 9/9 người chọn đúng danh mục "Đèn đường không sáng" trong < 10 giây, 0 người hỏi "mục này là gì?".
-> - Mỗi quyết định trên sẽ được trình bày tại **Slide 17 & Slide 25** của bài thuyết trình.
->
-> *Lưu ý: Đây là ví dụ minh họa quy trình heuristic evaluation gắn với case study. Kết quả thực tế cập nhật sau khi đánh giá prototype.*
+> Vấn đề
 
----
+Khi gửi phản ánh, người dân phải tự gõ địa chỉ của chiếc đèn đường hỏng. Nếu không nhớ tên đường, họ có thể nhập sai hoặc bỏ dở. Khi quay lại sửa mô tả, họ lo nội dung đã nhập sẽ bị mất.
 
-### Checklist nhanh 5 Heuristics cho Case Study (dùng khi review wireframe/prototype)
+> Áp dụng Heuristics
 
-| Heuristic | Câu hỏi check (Yes/No) | Nếu "No" → Action gợi ý |
-|---|---|---|
-| **#1 Visibility of system status** | User nhìn 2 giây biết: đang ở màn hình nào? Bước mấy/bao nhiêu? Vừa làm xong gì? | Thêm stepper, highlight tab/menu, toast/thông báo trạng thái sau hành động |
-| **#2 Match system & real world** | Mọi nhãn, danh mục, thông báo: người dân 50 tuổi, ít dùng smartphone có hiểu ngay không? | Thay thuật ngữ hành chính → ngôn ngữ đời thường; thêm ví dụ, icon minh họa |
-| **#6 Recognition rather than recall** | User có phải nhớ thông tin từ màn hình trước? (danh mục đã chọn, vị trí đã đặt) | Hiển thị tóm tắt lựa chọn ở màn hình sau; cho xem lại trên bản đồ; autocomplete gợi ý |
-| **#5 Error prevention** | Có validate real-time? Nút chính disable khi chưa hợp lệ? Có confirm trước hành động xóa/gửi? | Inline validation; disable/enable nút theo điều kiện; modal confirm "Bạn chắc chắn gửi?" |
-| **#3 User control and freedom** | Ở mọi bước: có nút Quay lại? Có nút Sửa lựa chọn? Dữ liệu có bị mất khi quay lại? | Nút back giữ state; màn hình Xem lại có nút "Sửa" từng section; không clear form khi navigation |
+Nhóm đối chiếu vấn đề với các nguyên tắc:
+
+- Phải tự nhớ địa chỉ: liên quan đến Recognition rather than recall.
+- Nhập sai vị trí mà không biết: liên quan đến Error prevention.
+- Sợ mất dữ liệu khi sửa: liên quan đến User control and freedom.
+
+> Quyết định thiết kế
+
+Nhóm cho phép tìm địa điểm và chọn trên bản đồ, yêu cầu xác nhận vị trí trước khi tiếp tục, và giữ lại dữ liệu khi người dùng quay lại bước trước. Đây là ví dụ giả định về cách áp dụng heuristics, không phải kết quả kiểm thử thực tế.

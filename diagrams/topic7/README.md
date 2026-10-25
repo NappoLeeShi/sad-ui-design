@@ -106,7 +106,7 @@ Kích thước tham khảo (SVG làm tròn theo `viewBox`):
 
 | Chức năng | User Flow SVG | Activity SVG | User Flow PNG | Activity PNG |
 |---|---|---|---|---|
-| F1 | 1601 × 3599 | 1488 × 2854 | 4802 × 10798 | 4464 × 8562 |
+| F1 | 1619 × 3599 | 1488 × 2854 | 4858 × 10798 | 4464 × 8562 |
 | F2 | 1289 × 1805 | 1869 × 770 | 3866 × 5414 | 5607 × 2310 |
 | F3 | 1118 × 1944 | 1591 × 991 | 3355 × 5831 | 4773 × 2973 |
 | F4 | 1159 × 2334 | 1835 × 2075 | 3477 × 7002 | 5505 × 6225 |
@@ -189,7 +189,7 @@ Các SVG Mermaid trong repo đã được thêm `width`/`height` theo `viewBox` 
 
 Các điểm sau **không được đặc tả rõ** trong tài liệu hiện có. Sơ đồ dùng cách hiểu hợp lý nhất nhưng cần giảng viên/nhóm xác nhận:
 
-1. **Phạm vi F4/F5:** Đặc tả chỉ có ACT-01 Người dân. Dàn ý có nhắc `cán bộ tiếp nhận/xử lý` như vai trò tùy chọn (Slide 12, 15), nhưng không đặc tả nghiệp vụ. Hàng đợi, phân công và quyền xử lý là giả định.
+1. **Phạm vi F4/F5:** Đặc tả chỉ có ACT-01 Người dân. F4/F5 là luồng mở rộng cho cán bộ; tên vai trò, hàng đợi và quyền xử lý là giả định.
 2. **Tra cứu bằng mã tham chiếu:** Lấy từ `FR-UI-04/05` và dàn ý. Không giả định người dân có tài khoản đăng nhập.
 3. **Quyền xem/cập nhật:** Mô hình hóa bằng kiểm tra quyền chung; không tự đặt cơ chế đăng nhập, SSO hay phân quyền cụ thể.
 4. **Trường dữ liệu F1:** Loại vấn đề, vị trí, mô tả, ảnh đính kèm (không bắt buộc) theo dàn ý. Các trường bắt buộc chính thức cần đối chiếu lại; chưa thêm thông tin liên hệ.
@@ -202,34 +202,6 @@ Các điểm sau **không được đặc tả rõ** trong tài liệu hiện c�
 11. **Nội dung chữ, màu sắc và nhãn** là đề xuất thiết kế, không phải copy chính thức của sản phẩm.
 12. **Trạng thái tải** (“Đang gửi…”, “Đang tra cứu…”, “Đang tải…”) là phản hồi gợi ý, không phải yêu cầu bắt buộc.
 
-### Phân loại giả định F4/F5
-
-Mức hỗ trợ:
-
-- **Có căn cứ (tùy chọn):** tài liệu nguồn có nhắc đến vai trò nhưng không bắt buộc.
-- **Hợp lý nhưng chưa xác nhận:** suy ra từ yêu cầu chung hoặc quy trình tự nhiên, chưa có đặc tả riêng.
-- **Không có căn cứ/cần làm rõ:** chi tiết do sơ đồ tự thêm, cần chốt lại với nhóm/giảng viên.
-- **Quyết định phạm vi:** nội dung chủ động không đưa vào vì thiếu yêu cầu.
-
-| Mã | Giả định trong sơ đồ | Mức | Căn cứ/ghi chú |
-|---|---|---|---|
-| F4-1 | Vai trò `Cán bộ tiếp nhận` | Có căn cứ (tùy chọn) | `functional specification_demo.md` §3 (P2, dòng 34); dàn ý Slide 12 (dòng 97), Slide 15 (dòng 113) |
-| F4-2 | Có hàng đợi “chờ tiếp nhận” và chọn phản ánh từ danh sách | Hợp lý nhưng chưa xác nhận | Không có đặc tả về hàng đợi; chỉ suy ra từ vai trò tiếp nhận |
-| F4-3 | Kiểm tra quyền trước khi xem/xử lý | Hợp lý nhưng chưa xác nhận | `FR-UI-06` có nhắc quyền xem; không quy định cơ chế phân quyền |
-| F4-4 | Cán bộ kiểm tra thông tin đầy đủ/hợp lệ | Hợp lý nhưng chưa xác nhận | `FR-UI-03`/`FR-UI-07` dành cho biểu mẫu người dân, không phải bước tiếp nhận |
-| F4-5 | Phân loại bằng danh sách do hệ thống cung cấp | Hợp lý nhưng chưa xác nhận | Dàn ý Slide 20 (dòng 150–153) chỉ nói danh mục phải theo phạm vi nghiệp vụ |
-| F4-6 | Xác nhận tiếp nhận và lưu kết quả | Hợp lý nhưng chưa xác nhận | `FR-UI-04` mô tả xác nhận gửi của người dân, không phải xác nhận tiếp nhận của cán bộ |
-| F4-7 | Nhánh `Còn đủ điều kiện tiếp nhận?` | Không có căn cứ/cần làm rõ | Không có yêu cầu về điều kiện/hiệu lực của phản ánh tại thời điểm tiếp nhận |
-| F5-1 | Vai trò `Cán bộ xử lý` | Có căn cứ (tùy chọn) | Cùng căn cứ với F4-1 |
-| F5-2 | Danh sách phản ánh “được phân công” | Không có căn cứ/cần làm rõ | Không có đặc tả phân công; sơ đồ giả định phân công đến từ quy trình ngoài phạm vi |
-| F5-3 | Kiểm tra quyền trước khi cập nhật | Hợp lý nhưng chưa xác nhận | Cùng căn cứ với F4-3; không quy định vai trò/quyền cụ thể |
-| F5-4 | Chọn trạng thái mới từ danh sách hỗ trợ và nhập ghi chú/kết quả | Hợp lý nhưng chưa xác nhận | `FR-UI-06` chỉ đặc tả phía người dân xem trạng thái/lịch sử, không đặc tả cán bộ cập nhật |
-| F5-5 | Ghi nhận lịch sử sau cập nhật | Hợp lý nhưng chưa xác nhận | `FR-UI-06` nói hiển thị lịch sử nếu có dữ liệu; không quy định việc ghi lịch sử |
-| F5-6 | Nhánh `Điều kiện cập nhật hợp lệ?` | Không có căn cứ/cần làm rõ | Không có yêu cầu về điều kiện được phép cập nhật |
-| F5-7 | Màn hình xác nhận sau khi lưu | Hợp lý nhưng chưa xác nhận | Suy ra từ mẫu phản hồi chung `FR-UI-04`/`FR-UI-07` |
-| F5-8 | Lưu thất bại thì báo lỗi và cho thử lại | Hợp lý nhưng chưa xác nhận | `FR-UI-07` là mẫu phản hồi lỗi chung, không riêng luồng cán bộ |
-| F5-9 | Không đưa vào bộ trạng thái cụ thể, SLA, thông báo, phê duyệt, chuyển tiếp | Quyết định phạm vi | Các nội dung này không có trong đặc tả; xem thêm mục 9.10 |
-
 ## 10. Kiểm chứng
 
 ### Kiểm tra nguồn và cú pháp
@@ -239,10 +211,6 @@ Mức hỗ trợ:
 - `java -jar /tmp/tools/plantuml.jar -checkonly diagrams/topic7/*.puml` trả về mã thoát `0`.
 - Cả 5 tệp Mermaid đều render thành SVG hợp lệ qua `mermaid.ink`; không có lỗi cú pháp hoặc biểu tượng lỗi trong SVG.
 - Cả 10 SVG đều mở/parse được bằng `rsvg-convert`; 10 PNG đều đọc được bằng ImageMagick `identify`.
-- 10 PNG hiện tại khớp pixel với ảnh render lại từ SVG bằng `rsvg-convert -z 3` (ImageMagick `compare -metric AE` = 0 cho cả 10).
-- Kiểm tra bố cục bằng bbox từ SVG/PDF: không phát hiện node chồng lấn, chữ tràn khỏi node/trang hoặc cặp nhãn khác dòng chồng nhau trên 5% diện tích.
-- F1 User Flow từng có nhãn `Dữ liệu không hợp lệ` và `Thành công` chồng nhau khoảng 20%; đã rút gọn nhãn nhánh lỗi thành `Lỗi dữ liệu` và render lại. Kiểm tra lại không còn chồng nhãn.
-- F1 User Flow cao 3599 px; không phát hiện chữ bị cắt, node chồng lấn hoặc nhãn ngoài trang. Giữ bố cục dọc thay vì nén thêm.
 
 ### Đối chiếu User Flow và Activity Diagram
 
@@ -268,7 +236,7 @@ Hai loại sơ đồ dùng cùng logic nghiệp vụ; khác nhau ở mức trừ
 
 ### Hạn chế kiểm chứng
 
-Trong phiên này không thể xem ảnh trực tiếp; việc kiểm tra dựa trên render SVG/PDF, trích xuất bbox từng từ, hình học node/cạnh và đối chiếu nhánh. Cách này phát hiện được chồng lấn/tràn chữ nhưng không thay thế hoàn toàn việc duyệt bằng mắt. Trước khi nộp, nên mở ít nhất F1 User Flow và F4/F5 để kiểm tra độ đọc của nhãn, hướng mũi tên và bố cục tổng thể.
+Chưa có bước duyệt hình ảnh bằng mắt trên từng ảnh. Việc kiểm tra hiện dựa trên render thành công, kích thước, trích xuất văn bản từ SVG/PDF và đối chiếu nhánh. Trước khi nộp, nên mở ít nhất các SVG F1 và F4/F5 để kiểm tra bố cục, độ đọc của nhãn và hướng mũi tên.
 
 ## 11. Bàn giao
 

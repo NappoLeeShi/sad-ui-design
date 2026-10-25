@@ -1,84 +1,79 @@
 # Usability: Khả năng sử dụng và tiêu chí đánh giá
 
-## Khái niệm cốt lõi
+## Khái niệm
 
-**Usability (Khả năng sử dụng)** là mức độ mà một sản phẩm có thể được sử dụng bởi người dùng cụ thể để đạt được mục tiêu cụ thể với **hiệu quả** (Effectiveness), **hiệu suất** (Efficiency) và **sự hài lòng** (Satisfaction) trong một bối cảnh sử dụng nhất định (theo **ISO 9241-11**).
+Usability (khả năng sử dụng) là mức độ mà một sản phẩm cho phép những người dùng cụ thể đạt được mục tiêu của họ một cách **hiệu quả**, **hiệu suất** và **hài lòng** trong một **bối cảnh sử dụng cụ thể** (theo cách tiếp cận của ISO 9241-11).
 
-Ba tiêu chí cốt lõi:
-- **Effectiveness (Hiệu quả)**: Người dùng có hoàn thành **đúng** nhiệm vụ và đạt **đúng** mục tiêu không? (Đo bằng: tỷ lệ hoàn thành nhiệm vụ, số lỗi nghiêm trọng).
-- **Efficiency (Hiệu suất)**: Mức độ tài nguyên (thời gian, số thao tác, nỗ lực nhận thức) người dùng tiêu tốn để hoàn thành nhiệm vụ. (Đo bằng: thời gian hoàn thành, số click/nhấn, số lần quay lại).
-- **Satisfaction (Sự hài lòng)**: Cảm giác chủ quan của người dùng về trải nghiệm — dễ hiểu, dễ chịu, có muốn dùng tiếp không? (Đo bằng: phiếu phản hồi, SUS, NPS, quan sát biểu cảm/thái độ).
+Ba tiêu chí đánh giá:
 
-> **Lưu ý**: ISO 9241-11 nhấn mạnh **bối cảnh sử dụng** (người dùng nào, nhiệm vụ gì, môi trường ra sao). Không đánh giá usability trừu tượng ngoài bối cảnh.
+- **Effectiveness (Hiệu quả):** Người dùng có hoàn thành đúng nhiệm vụ không?
+- **Efficiency (Hiệu suất):** Họ mất bao lâu, cần bao nhiêu thao tác, mắc bao nhiêu lỗi?
+- **Satisfaction (Mức độ hài lòng):** Trải nghiệm có dễ hiểu và dễ chịu không?
 
-## Tại sao cần thiết? (Gắn với Case Study: Hệ thống phản ánh người dân)
+Lưu ý: usability không phải là thuộc tính cố định của giao diện. Cùng một giao diện có thể dễ dùng với nhóm người dùng này nhưng khó dùng với nhóm khác, nên luôn phải xét theo ai dùng, làm nhiệm vụ gì, trong hoàn cảnh nào.
 
-Hệ thống dịch vụ công phục vụ **người dân đa dạng** (tuổi tác, trình độ công nghệ, vùng miền khác nhau). Nếu chỉ đảm bảo "có chức năng" mà bỏ qua usability:
+## Vì sao cần thiết?
 
-| Rủi ro | Hậu quả thực tế |
-|---|---|
-| Thiếu **Effectiveness** | Người dân chọn sai danh mục vấn đề (đường hư vs đèn đường), nhập sai vị trí → phản ánh sai tuyến, cơ quan xử lý mất thời gian xác minh. |
-| Thiếu **Efficiency** | Luồng gửi phản ánh quá nhiều bước, nhập lại dữ liệu khi quay lại sửa → người dân bỏ cuộc giữa chừng, tỷ lệ gửi thành công thấp. |
-| Thiếu **Satisfaction** | Thuật ngữ hành chính khó hiểu, không có hướng dẫn, lỗi không báo rõ nguyên nhân → người dân nản lòng, không tin dùng dịch vụ công trực tuyến. |
+Giao diện đẹp hoặc đủ chức năng chưa chắc đã dễ dùng. Người dùng vẫn có thể không tìm thấy chức năng, chọn nhầm mục hoặc bỏ dở giữa chừng.
 
-Đo lường usability **trước khi triển khai** (bằng prototype) giúp phát hiện và sửa vấn đề với chi phí thấp hơn gấp 10-100 lần so với sửa sau khi đã lên sản phẩm.
+Với hệ thống dịch vụ công, người dùng có trình độ công nghệ rất khác nhau, nên cần có tiêu chí cụ thể để đánh giá thiết kế bằng việc người dùng làm được gì, thay vì cảm nhận chủ quan của nhóm thiết kế.
 
-## Phương pháp hoặc quy trình thực hiện
+## Áp dụng
 
-```text
+```
 ┌──────────────────────────────────────────────────────────────────────┐
-│ 1. Xác định bối cảnh & người dùng đại diện                           │
-│    - Người dân: khác tuổi, trình độ IT, vùng đô thị/nông thôn       │
-│    - Nhiệm vụ: Gửi phản ánh đèn đường hỏng, rác thải, ngập úng...   │
-│    - Môi trường: Điện thoại, mạng 4G/weak, ánh nắng ngoài trời       │
+│                     1. Xác định bối cảnh sử dụng                     │
+│                                                                      │
+│          Ai dùng? Nhiệm vụ gì? Dùng ở đâu, trên thiết bị nào?        │
 └──────────────────────────────────────────────────────────────────────┘
                                   ↓
 ┌──────────────────────────────────────────────────────────────────────┐
-│ 2. Thiết kế prototype dựa trên nguyên tắc (Heuristics, UCD)          │
-│    - Ưu tiên: hiệu quả (đúng danh mục, đúng vị trí), hiệu suất      │
-│      (ít bước, không nhập lại), hài lòng (ngôn ngữ đời thường)       │
+│                  2. Chọn nhiệm vụ cần đánh giá                       │
+│                                                                      │
+│        Chọn các nhiệm vụ chính, cụ thể, có điểm bắt đầu và kết thúc. │
 └──────────────────────────────────────────────────────────────────────┘
                                   ↓
 ┌──────────────────────────────────────────────────────────────────────┐
-│ 3. Kiểm tra Usability Testing với người dùng thật                    │
-│    - Kịch bản: "Gửi phản ánh đèn đường hỏng gần chợ/Bến xe"         │
-│    - Đo: Tỷ lệ hoàn thành, Thời gian, Số lỗi/quay lại, Cần trợ giúp │
-│    - Ghi nhận: Bước nào khó, thuật ngữ nào gây nhầm lẫn, phản hồi   │
+│               3. Gắn chỉ số cho từng tiêu chí                        │
+│                                                                      │
+│              Hiệu quả  |  Hiệu suất  |  Mức độ hài lòng             │
 └──────────────────────────────────────────────────────────────────────┘
                                   ↓
+┌──────────────────────────────────────────────────────────────────────┐
+│               4. Thu thập dữ liệu khi người dùng thao tác            │
+│                                                                      │
+│              Quan sát, ghi nhận, hỏi phản hồi sau khi làm.           │
 └──────────────────────────────────────────────────────────────────────┘
-            4. Phân tích kết quả → Cải tiến prototype → Kiểm tra lại
+                                  ↓
+┌──────────────────────────────────────────────────────────────────────┐
+│                      5. Phân tích và cải tiến                        │
+│                                                                      │
+│       Tìm điểm gây khó khăn, sửa thiết kế rồi đánh giá lại.          │
+└──────────────────────────────────────────────────────────────────────┘
 ```
 
-**Chỉ số đo lường trong bài tập này:**
-| Chỉ số | Cách đo | Mục tiêu mong đợi |
+Chỉ số gợi ý cho từng tiêu chí:
+
+| Tiêu chí | Câu hỏi cần trả lời | Chỉ số đo |
 |---|---|---|
-| **Task Success Rate** | % người tham gia gửi thành công phản ánh | ≥ 90% |
-| **Time on Task** | Thời gian từ trang chủ đến màn hình "Đã gửi" | ≤ 3 phút |
-| **Error Count** | Số lần chọn sai danh mục, nhập sai vị trí, phải quay lại sửa | ≤ 1 lỗi/người |
-| **Help Needed** | Số lần người tham gia hỏi "ô này điền gì?", "nút nào bấm?" | = 0 |
-| **SUS / Phản hồi định tính** | 5-10 câu hỏi sau test + phỏng vấn ngắn | SUS ≥ 80; phản hồi tích cực |
+| Hiệu quả | Hoàn thành đúng nhiệm vụ không? | Tỷ lệ hoàn thành nhiệm vụ, số lỗi nghiêm trọng (chọn sai danh mục, sai vị trí) |
+| Hiệu suất | Tốn bao nhiêu công sức? | Thời gian hoàn thành, số thao tác/lần quay lại không cần thiết, mức độ cần trợ giúp |
+| Hài lòng | Dùng có dễ chịu không? | Phản hồi ngắn sau khi làm, thang điểm tự đánh giá (ví dụ SUS), bước người dùng thấy khó hiểu nhất |
 
-## Ví dụ áp dụng (Case Study: Hệ thống phản ánh người dân)
+## Ví dụ
 
-> **Vấn đề quan sát được (As-Is)**
->
-> - Người dân mở app, không thấy nút "Gửi phản ánh" ngay (chôn trong menu).
-> - Danh mục: "Vấn đề đường bộ", "Hạ tầng điện", "Môi trường" — người dân không biết đèn đường hỏng chọn mục nào.
-> - Nhập vị trí: chỉ có ô text "Địa chỉ" — người dân ở xã/thôn không nhớ tên đường chính xác.
-> - Không có màn hình "Xem lại" — nhấn gửi xong không biết đã thành công hay chưa.
+> Vấn đề
 
-> **Áp dụng Usability (ISO 9241-11) để thiết kế To-Be**
->
-> 1. **Effectiveness →** Đưa nút "Gửi phản ánh" lên trang chủ (Discoverability). Danh mục đổi tên: "Đèn đường không sáng", "Đường hư/vỉa hè hỏng", "Rác thải/việc sinh" — có **ví dụ minh họa** từng mục.
-> 2. **Efficiency →** Vị trí: cho **tìm kiếm địa chỉ**, **chọn trên bản đồ 2D**, **dùng GPS hiện tại** — người dân chọn cách phù hợp. Thêm màn hình **Xem lại** trước khi gửi.
-> 3. **Satisfaction →** Ngôn ngữ đời thường, hướng dẫn ngắn ("Chưa biết chọn mục nào?"), thông báo lỗi rõ ràng ("Vui lòng chọn vị trí trên bản đồ"), giữ dữ liệu khi quay lại sửa.
+Người dân muốn gửi phản ánh về một đèn đường bị hỏng, nhưng ứng dụng có nhiều chức năng nên có thể khó tìm mục "Gửi phản ánh", và một số danh mục khó hiểu.
 
-> **Kết quả kiểm thử giả định (sau khi có prototype To-Be)**
->
-> - 8/9 người tham gia hoàn thành đúng luồng gửi phản ánh đèn đường hỏng.
-> - Thời gian trung bình: 2 phút 15 giây (so với 6 phút hệ thống cũ).
-> - 0 người hỏi trợ giúp; 1 người chọn sai danh mục lần đầu nhưng tự sửa nhờ ví dụ minh họa.
-> - Phản hồi: "Dễ hiểu, không cần ai hướng dẫn", "Chọn vị trí trên bản đồ rất nhanh".
->
-> *Lưu ý: Số liệu trên là ví dụ minh họa quy trình. Kết quả thực tế sẽ báo cáo sau khi kiểm thử prototype.*
+> Áp dụng Usability
+
+Nhóm xác định bối cảnh: người dân có trình độ công nghệ khác nhau, thao tác trên điện thoại. Nhiệm vụ đánh giá là "Gửi phản ánh về đèn đường hỏng". Với nhiệm vụ này, nhóm theo dõi ba nhóm chỉ số:
+
+- Hiệu quả: người dùng có đi đến bước gửi và chọn đúng danh mục không?
+- Hiệu suất: mất bao lâu, có phải quay lại nhiều lần không?
+- Hài lòng: người dùng thấy bước nào khó hiểu nhất?
+
+> Quyết định thiết kế
+
+Nếu quan sát thấy nhiều người mất thời gian tìm nút gửi hoặc chọn nhầm danh mục, nhóm sẽ đưa "Gửi phản ánh" lên vị trí dễ thấy hơn và thêm mô tả, ví dụ cho từng danh mục, rồi kiểm thử lại. Đây là ví dụ giả định về cách áp dụng usability, không phải kết quả kiểm thử thực tế.

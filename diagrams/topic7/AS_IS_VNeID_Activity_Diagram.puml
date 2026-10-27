@@ -1,0 +1,91 @@
+@startuml
+!pragma layout smetana
+title AS-IS — Chức năng "Phản ánh kiến nghị về dịch vụ công" trên ứng dụng VNeID\n<size:12>Activity Diagram · Tác nhân: Công dân · Mục đích: Tạo yêu cầu phản ánh và xem chi tiết yêu cầu hiện có</size>
+skinparam style strictuml
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName "DejaVu Sans"
+skinparam defaultFontSize 13
+skinparam swimlaneWidth 270
+skinparam wrapWidth 230
+skinparam nodesep 22
+skinparam ranksep 28
+
+|Công dân|
+start
+:Đăng nhập VNeID bằng tài khoản định danh điện tử mức 2;
+
+|Giao diện VNeID|
+:Hiển thị màn hình chính / dịch vụ;
+
+|Công dân|
+:Chọn "Dịch vụ khác" (`Dịch vụ khác`);
+|Giao diện VNeID|
+:Hiển thị danh mục dịch vụ khác;
+
+|Công dân|
+:Chọn "Tiếp nhận góp ý, phản ánh & vướng mắc" (`Tiếp nhận góp ý, phản ánh & vướng mắc`);
+|Giao diện VNeID|
+:Hiển thị màn hình "Tiếp nhận góp ý, phản ánh & vướng mắc";
+
+|Công dân|
+:Chọn "Phản ánh kiến nghị về dịch vụ công" (`Phản ánh kiến nghị về dịch vụ công`);
+|Giao diện VNeID|
+:Hiển thị màn hình "Phản ánh kiến nghị về dịch vụ công";
+
+fork
+  partition "Tạo yêu cầu phản ánh" {
+    |Công dân|
+    :Chọn "Tạo mới yêu cầu" (`Tạo mới yêu cầu`);
+    |Giao diện VNeID|
+    :Hiển thị biểu mẫu phản ánh;
+    
+    |Công dân|
+    :Nhập mã hồ sơ;
+    :Chọn "Phản ánh kiến nghị về việc" (loại phản ánh);
+    :Nhập nội dung phản ánh;
+    if (Có tài liệu đính kèm?) then (Có)
+      :Chọn tệp đính kèm tại "Tài liệu đính kèm";
+    else (Không)
+    endif
+    :Kiểm tra các trường bắt buộc có dấu * đỏ;
+    :Tích chọn "Tôi xin cam đoan những thông tin kê khai trên là đúng sự thật";
+    :Chọn "Gửi phản ánh" (`Gửi phản ánh`);
+    
+    |Giao diện VNeID|
+    :Tạo yêu cầu thành công;
+    :Hiển thị màn hình gửi yêu cầu thành công;
+    
+    if (Lựa chọn sau khi tạo?) then ("Tiếp tục phản ánh")
+      |Công dân|
+      :Chọn "Tiếp tục phản ánh" (`Tiếp tục phản ánh`);
+      |Giao diện VNeID|
+      goto CreateRequest
+    else ("Trang chủ")
+      |Công dân|
+      :Chọn "Trang chủ" (`Trang chủ`);
+      |Giao diện VNeID|
+      :Quay về màn hình trang chủ VNeID;
+      stop
+    endif
+  }
+
+  partition "Xem chi tiết yêu cầu hiện có" {
+    |Công dân|
+    :Tại màn hình "Phản ánh kiến nghị về dịch vụ công", chọn bản ghi trong lịch sử yêu cầu;
+    |Giao diện VNeID|
+    :Hiển thị màn hình chi tiết yêu cầu;
+    
+    |Công dân|
+    if (Muốn xem tài liệu đính kèm?) then (Có)
+      :Chọn "Xem" (`Xem`) để xem tài liệu đính kèm;
+      |Giao diện VNeID|
+      :Mở tài liệu đính kèm;
+    else (Không)
+    endif
+    stop
+  }
+end fork
+
+label CreateRequest
+@enduml

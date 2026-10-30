@@ -1,10 +1,3 @@
-# PHẦN: PROTOTYPE VÀ USABILITY TESTING
-## Thiết kế giao diện và kiểm chứng luồng thao tác người dùng
-
-- **Case study:** Hệ thống tiếp nhận và xử lý phản ánh của người dân (SAD)
-- **Phạm vi:** Trình bày chi tiết khái niệm cốt lõi, vai trò, quy trình thực hiện và ví dụ áp dụng thực tế gắn liền với các chức năng cốt lõi (P1) của đồ án.
-
----
 
 ## 1. Khái niệm cốt lõi
 

@@ -83,5 +83,3 @@
 ### 4.3. Từ kết quả kiểm thử đến Quyết định cải tiến thiết kế
 1. **Khắc phục vấn đề của Người dùng B:** Nút "Hủy" và "Tiếp tục" có trọng lượng thị giác tương đương gây nhầm lẫn $\rightarrow$ **Cải tiến:** Đổi nút "Tiếp tục" thành màu chủ đạo nổi bật (Primary), chuyển nút "Hủy" thành dạng văn bản phụ (Text button) để phân cấp rõ ràng.
 2. **Khắc phục vấn đề của Người dùng C:** Tránh phụ thuộc hoàn toàn vào bản đồ số đối với người ít rành công nghệ $\rightarrow$ **Cải tiến:** Bổ sung ô nhập địa chỉ văn bản thủ công song song với bản đồ số (tuân thủ nguyên tắc *Error Prevention* và *User Control and Freedom*).
-
-*Lưu ý: Đây là ví dụ minh họa phương pháp luận và cách phân tích kết quả trong đồ án, không phải số liệu thống kê từ một thử nghiệm thực tế ngoài đời thực.*

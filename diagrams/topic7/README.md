@@ -84,6 +84,7 @@ Giới hạn quan trọng:
 | F3 | [F3_Report_Details_and_History_User_Flow.mmd](F3_Report_Details_and_History_User_Flow.mmd) | [F3_Report_Details_and_History_Activity_Diagram.puml](F3_Report_Details_and_History_Activity_Diagram.puml) |
 | F4 | [F4_Receive_and_Classify_Report_User_Flow.mmd](F4_Receive_and_Classify_Report_User_Flow.mmd) | [F4_Receive_and_Classify_Report_Activity_Diagram.puml](F4_Receive_and_Classify_Report_Activity_Diagram.puml) |
 | F5 | [F5_Update_Processing_User_Flow.mmd](F5_Update_Processing_User_Flow.mmd) | [F5_Update_Processing_Activity_Diagram.puml](F5_Update_Processing_Activity_Diagram.puml) |
+| AS-IS (VNeID) | — | [AS_IS_VNeID_Activity_Diagram.puml](AS_IS_VNeID_Activity_Diagram.puml) |
 
 ## 6. Tệp đã render
 
@@ -101,6 +102,7 @@ Mỗi chức năng có một SVG và một PNG. PNG được xuất ở tỉ l�
 | F4 | Activity | [SVG](rendered/F4_Receive_and_Classify_Report_Activity_Diagram.svg) | [PNG](rendered/F4_Receive_and_Classify_Report_Activity_Diagram.png) |
 | F5 | User Flow | [SVG](rendered/F5_Update_Processing_User_Flow.svg) | [PNG](rendered/F5_Update_Processing_User_Flow.png) |
 | F5 | Activity | [SVG](rendered/F5_Update_Processing_Activity_Diagram.svg) | [PNG](rendered/F5_Update_Processing_Activity_Diagram.png) |
+| AS-IS (VNeID) | Activity | [SVG](rendered/AS_IS_VNeID_Activity_Diagram.svg) | [PNG](rendered/AS_IS_VNeID_Activity_Diagram.png) |
 
 Kích thước tham khảo (SVG làm tròn theo `viewBox`):
 
@@ -242,7 +244,8 @@ Chưa có bước duyệt hình ảnh bằng mắt trên từng ảnh. Việc ki
 
 - [x] 5 User Flow Mermaid
 - [x] 5 Activity Diagram PlantUML
-- [x] 10 SVG + 10 PNG đã render
+- [x] AS-IS VNeID Activity Diagram (PlantUML) + rendered SVG/PNG
+- [x] 10 SVG + 10 PNG đã render (trước đó) + bổ sung AS-IS
 - [x] README mô tả luồng, giả định và kiểm chứng
 - [ ] Xác nhận với giảng viên/nhóm về phạm vi F4/F5 và các giả định ở mục 9
 - [ ] Duyệt hình ảnh trước khi đưa vào báo cáo/slide

@@ -1,0 +1,20 @@
+@startsalt
+title Trang chính — Gửi phản ánh nổi bật (To-Be)
+{
+<b>VNeID</b> | <&bell>
+  --
+  <b>Xin chào, Công dân</b>
+  Tài khoản định danh mức 2 | Đã xác thực
+  .
+  {^"Công cụ yêu thích"
+    [<&plus> Gửi phản ánh]
+    [<&magnifying-glass> Tra cứu phản ánh]
+  }
+  .
+  <b>Dịch vụ</b>
+  * Dịch vụ khác  >
+  .
+  --
+  <&home> Trang chủ | <&person> Cá nhân
+}
+@endsalt

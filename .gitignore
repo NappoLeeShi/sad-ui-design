@@ -1,0 +1,8 @@
+# citizen-feedback
+citizen-feedback/node_modules/
+citizen-feedback/.next/
+citizen-feedback/out/
+citizen-feedback/build/
+citizen-feedback/coverage/
+citizen-feedback/.turbo/
+citizen-feedback/.vercel/

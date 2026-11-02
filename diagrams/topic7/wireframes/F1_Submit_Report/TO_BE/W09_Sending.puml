@@ -1,0 +1,8 @@
+@startsalt
+title Đang gửi phản ánh — To-Be
+{
+<&clock>
+  <b>Đang gửi phản ánh...</b>
+  Vui lòng không đóng ứng dụng.
+}
+@endsalt

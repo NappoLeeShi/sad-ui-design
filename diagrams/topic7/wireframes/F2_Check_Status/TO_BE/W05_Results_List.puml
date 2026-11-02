@@ -1,0 +1,14 @@
+@startsalt
+title Danh sách phản ánh đã gửi — To-Be
+{
+<&chevron-left> Phản ánh của tôi
+  --
+  "Tìm trong danh sách..."
+  .
+  * PA-2026-000123 — Đèn đường hỏng — Đang xử lý — 28/10/2026  >
+  * PA-2026-000122 — Rác thải — Đã tiếp nhận — 25/10/2026  >
+  * PA-2026-000121 — Vỉa hè hỏng — Hoàn thành — 20/10/2026  >
+  .
+  [<&plus> Gửi phản ánh mới]
+}
+@endsalt

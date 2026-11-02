@@ -1,0 +1,13 @@
+@startsalt
+title Phản ánh kiến nghị về dịch vụ công — As-Is
+{
+<&chevron-left> Phản ánh kiến nghị về dịch vụ công
+  --
+  <b>Phản ánh kiến nghị về dịch vụ công</b>
+  [<&plus> Tạo mới yêu cầu]
+  .
+  <b>Lịch sử yêu cầu</b>
+  * PA-2025-001 — Đèn đường hỏng — 12/10/2025  >
+  * PA-2025-002 — Rác thải — 08/10/2025  >
+}
+@endsalt

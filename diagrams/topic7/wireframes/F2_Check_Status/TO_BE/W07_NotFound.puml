@@ -1,0 +1,12 @@
+@startsalt
+title Không tìm thấy phản ánh — To-Be
+{
+<&chevron-left> Kết quả tra cứu
+  --
+  <&info>
+  <b>Không tìm thấy phản ánh</b>
+  Vui lòng kiểm tra lại mã tham chiếu.
+  .
+  [Thử lại] | [Về trang chủ]
+}
+@endsalt

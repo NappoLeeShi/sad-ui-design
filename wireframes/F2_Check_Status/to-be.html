@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>F2 — Tra cứu trạng thái · To-Be · VNeID Topic 7 Wireframes</title>
+  <link rel="stylesheet" href="../assets/wireframe.css">
+</head>
+<body>
+  <header class="page-header">
+    <p class="breadcrumb">TO-BE · F2 — Tra cứu trạng thái</p>
+    <h1>F2 — Tra cứu trạng thái · To-Be</h1>
+    <p class="page-lead">Luồng đề xuất: nhập mã tham chiếu → tra cứu → xem kết quả hoặc danh sách. Có đầy đủ trạng thái đang tra cứu, lỗi nhập, không tìm thấy, lỗi hệ thống và danh sách trống.</p>
+    <nav class="page-nav">
+      <a href="../index.html"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Thư viện wireframe</a>
+      <a href="../function-screen-mapping.md">Function–screen mapping</a>
+      <a href="../design-system.md">Design system</a>
+      <a class="active" href="as-is.html">← Xem As-Is</a>
+    </nav>
+  </header>
+
+  <div class="flow-strip" aria-label="Luồng màn hình"><span class="flow-step">Trang chính</span> <span class="flow-arrow">→</span> <span class="flow-step">Tra cứu</span> <span class="flow-arrow">→</span> <span class="flow-step">Đang tra cứu</span> <span class="flow-arrow">→</span> <span class="flow-step">Kết quả</span> <span class="flow-arrow">→</span> <span class="flow-step">Danh sách</span> <span class="flow-arrow">→</span> <span class="flow-step">Chi tiết</span></div>
+
+  <div class="scope-note">
+    <div class="callout"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg><div><strong>Phạm vi To-Be:</strong> tra cứu bằng mã tham chiếu là giả định đã ghi trong <em>diagrams/topic7/README.md</em>. Danh sách phản ánh được giữ lại từ As-Is và bổ sung trạng thái/thời điểm cập nhật. Không thêm bộ lọc, thông báo tự động hay SLA.</div></div>
+  </div>
+
+  <main class="screens-section">
+    <div class="section-heading">
+      <h2>Danh sách màn hình</h2>
+      <p>8 màn hình / trạng thái</p>
+    </div>
+    <div class="screens-grid">
+      
+<article class="screen-card" id="to-be-f2-01">
+  <div class="screen-head">
+    <span class="screen-id">TO-BE-F2-01</span>
+    <h3>Tra cứu phản ánh</h3>
+  </div>
+  <div class="device to-be">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Tra cứu phản ánh</div></div></div>
+<div class="content">
+  <p class="small muted" style="margin:0 0 12px">Nhập mã tham chiếu để xem trạng thái phản ánh đã gửi.</p>
+  <div class="field"><label class="label">Mã tham chiếu <span class="req">*</span></label><input class="input" type="text" value="" placeholder="Ví dụ: PA-2026-000123"><div class="helper">Mã được hiển thị sau khi gửi phản ánh thành công.</div></div>
+  <div class="alert alert-info" style="margin-top:10px">
+    <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg>
+    <div>Bạn chưa biết mã? Hãy xem danh sách phản ánh đã gửi bên dưới.</div>
+  </div>
+  <a class="btn btn-primary btn-block" style="margin-top:12px" href="#to-be-f2-03">Tra cứu</a>
+  <a class="btn btn-ghost btn-block" href="#to-be-f2-05">Xem danh sách phản ánh đã gửi</a>
+</div>
+</div>
+  </div>
+  <p class="purpose">Màn hình nhập mã tham chiếu với hướng dẫn định dạng; trạng thái lỗi nhắc nhập mã.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Ô nhập “Mã tham chiếu”</li><li>Hướng dẫn và ví dụ</li><li>Nút “Tra cứu”</li><li>Liên kết xem danh sách phản ánh</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Nhập mã và chạm “Tra cứu”.</li><li>Nếu bỏ trống, lỗi hiển thị ngay dưới ô nhập.</li><li>Chuyển sang danh sách nếu không có mã.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">F2_Check_Report_Status_User_Flow.mmd — màn hình tra cứu; functional specification FR-UI-05.</div></div>
+      <div><div class="detail-label">Cải tiến so với As-Is</div><ul class="detail-list"><li>Bổ sung tra cứu trực tiếp bằng mã tham chiếu thay vì chỉ mở lịch sử.</li><li>Có ví dụ định dạng và hướng dẫn khi chưa biết mã.</li><li>Lỗi nhập được chỉ ra tại trường.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Định dạng mã chỉ là ví dụ minh họa; repo chưa quy định quy tắc mã chính thức.</li><li>Việc tra cứu bằng mã là giả định đã ghi trong diagrams/topic7/README.md.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="to-be-f2-02">
+  <div class="screen-head">
+    <span class="screen-id">TO-BE-F2-02</span>
+    <h3>Tra cứu — lỗi nhập mã</h3>
+  </div>
+  <div class="device to-be">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Tra cứu phản ánh</div></div></div>
+<div class="content">
+  <p class="small muted" style="margin:0 0 12px">Nhập mã tham chiếu để xem trạng thái phản ánh đã gửi.</p>
+  <div class="field"><label class="label">Mã tham chiếu <span class="req">*</span></label><input class="input error" type="text" value="" placeholder="Ví dụ: PA-2026-000123"><div class="helper">Mã được hiển thị sau khi gửi phản ánh thành công.</div><div class="error-text">Vui lòng nhập mã tham chiếu.</div></div>
+  <div class="alert alert-info" style="margin-top:10px">
+    <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg>
+    <div>Bạn chưa biết mã? Hãy xem danh sách phản ánh đã gửi bên dưới.</div>
+  </div>
+  <a class="btn btn-primary btn-block" style="margin-top:12px" href="#to-be-f2-02">Tra cứu</a>
+  <a class="btn btn-ghost btn-block" href="#to-be-f2-05">Xem danh sách phản ánh đã gửi</a>
+</div>
+</div>
+  </div>
+  <p class="purpose">Màn hình nhập mã tham chiếu với hướng dẫn định dạng; trạng thái lỗi nhắc nhập mã.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Ô nhập “Mã tham chiếu”</li><li>Hướng dẫn và ví dụ</li><li>Nút “Tra cứu”</li><li>Liên kết xem danh sách phản ánh</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Nhập mã và chạm “Tra cứu”.</li><li>Nếu bỏ trống, lỗi hiển thị ngay dưới ô nhập.</li><li>Chuyển sang danh sách nếu không có mã.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">F2_Check_Report_Status_User_Flow.mmd — màn hình tra cứu; functional specification FR-UI-05.</div></div>
+      <div><div class="detail-label">Cải tiến so với As-Is</div><ul class="detail-list"><li>Bổ sung tra cứu trực tiếp bằng mã tham chiếu thay vì chỉ mở lịch sử.</li><li>Có ví dụ định dạng và hướng dẫn khi chưa biết mã.</li><li>Lỗi nhập được chỉ ra tại trường.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Định dạng mã chỉ là ví dụ minh họa; repo chưa quy định quy tắc mã chính thức.</li><li>Việc tra cứu bằng mã là giả định đã ghi trong diagrams/topic7/README.md.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="to-be-f2-03">
+  <div class="screen-head">
+    <span class="screen-id">TO-BE-F2-03</span>
+    <h3>Đang tra cứu</h3>
+  </div>
+  <div class="device to-be">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Tra cứu phản ánh</div></div></div>
+<div class="content">
+  <p class="small muted" style="margin:0 0 12px">Nhập mã tham chiếu để xem trạng thái phản ánh đã gửi.</p>
+  <div class="field"><label class="label">Mã tham chiếu <span class="req">*</span></label><input class="input" type="text" value="PA-2026-000123" placeholder=""><div class="helper">Mã được hiển thị sau khi gửi phản ánh thành công.</div></div>
+  <span class="btn btn-primary btn-block disabled" style="margin-top:12px"><span class="spinner" style="width:14px;height:14px;margin:0;border-width:2px"></span> Đang tra cứu…</span>
+  <div class="card" style="margin-top:14px">
+    <div class="stack-sm">
+      <div style="height:10px;width:45%;background:var(--soft);border-radius:4px"></div>
+      <div style="height:10px;width:75%;background:var(--soft);border-radius:4px"></div>
+      <div style="height:10px;width:60%;background:var(--soft);border-radius:4px"></div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+  <p class="purpose">Trạng thái chờ khi hệ thống đang tra cứu mã tham chiếu.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Ô nhập mã đã điền</li><li>Nút “Đang tra cứu…”</li><li>Khung xương kết quả</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Chờ phản hồi từ hệ thống.</li><li>Không nhấn tra cứu lặp.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">F2_Check_Report_Status_User_Flow.mmd — trạng thái “Đang tra cứu…”.</div></div>
+      <div><div class="detail-label">Cải tiến so với As-Is</div><ul class="detail-list"><li>Thể hiện trạng thái đang xử lý để người dùng biết hệ thống đã tiếp nhận thao tác.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Thời gian chờ và cơ chế hủy không được đặc tả.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="to-be-f2-04">
+  <div class="screen-head">
+    <span class="screen-id">TO-BE-F2-04</span>
+    <h3>Kết quả tra cứu</h3>
+  </div>
+  <div class="device to-be">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Kết quả tra cứu</div></div></div>
+<div class="content">
+  <div class="card">
+    <div class="row-between">
+      <div>
+        <div class="tiny muted">Mã tham chiếu</div>
+        <div class="strong" style="font-size:15px">PA-2026-000123</div>
+      </div>
+      <span class="badge badge-dark"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Đang xử lý</span>
+    </div>
+    <div class="tiny muted" style="margin-top:5px">Cập nhật lúc 01/11/2026 14:30</div>
+  </div>
+  <div class="section" style="margin-top:12px">
+    <div class="section-title">Thông tin phản ánh</div>
+    <div class="card stack-sm">
+      <div><div class="tiny muted">Loại vấn đề</div><div class="small strong">Đèn đường</div></div>
+      <div><div class="tiny muted">Vị trí</div><div class="small">Đường Hoa Sen, phường An Phú, TP. Thủ Đức</div></div>
+    </div>
+  </div>
+  <a class="btn btn-primary btn-block" href="../F3_View_Details_History/to-be.html#to-be-f3-01">Xem chi tiết</a>
+  <a class="btn btn-ghost btn-block" style="margin-top:7px" href="#to-be-f2-01">Tra cứu mã khác</a>
+</div>
+</div>
+  </div>
+  <p class="purpose">Hiển thị phản ánh tìm thấy, trạng thái hiện tại, thời điểm cập nhật và đường dẫn xem chi tiết.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Mã tham chiếu</li><li>Nhãn trạng thái có biểu tượng</li><li>Thời điểm cập nhật</li><li>Loại vấn đề và vị trí</li><li>Nút “Xem chi tiết”</li><li>Liên kết tra cứu mã khác</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Đọc trạng thái và thời điểm cập nhật.</li><li>Chạm “Xem chi tiết” để mở F3.</li><li>Chọn “Tra cứu mã khác” để quay lại nhập mã.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">F2_Check_Report_Status_User_Flow.mmd — màn hình kết quả; functional specification FR-UI-05/06.</div></div>
+      <div><div class="detail-label">Cải tiến so với As-Is</div><ul class="detail-list"><li>Kết quả tra cứu thể hiện trạng thái bằng nhãn chữ kèm biểu tượng, không chỉ dựa vào màu.</li><li>Có thời điểm cập nhật nếu dữ liệu tồn tại.</li><li>Có đường dẫn rõ ràng sang chi tiết.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Nhãn “Đang xử lý” và thời điểm là dữ liệu minh họa; bộ trạng thái chính thức chưa được đặc tả.</li><li>Không có kết quả và lỗi hệ thống được tách thành hai trạng thái riêng.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="to-be-f2-05">
+  <div class="screen-head">
+    <span class="screen-id">TO-BE-F2-05</span>
+    <h3>Danh sách phản ánh đã gửi</h3>
+  </div>
+  <div class="device to-be">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Phản ánh đã gửi</div></div></div>
+<div class="content">
+  <div class="row-between" style="margin-bottom:10px">
+    <span class="tiny muted">Danh sách phản ánh đã gửi</span>
+    <a class="text-link" href="#to-be-f2-01">Tra cứu bằng mã</a>
+  </div>
+  
+  <div class="list">
+    <a class="list-item" href="../F3_View_Details_History/to-be.html#to-be-f3-01">
+      <span class="body">
+        <span class="row-between"><span class="list-title">PA-2026-000123</span><span class="badge badge-dark"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Đang xử lý</span></span>
+        <span class="list-meta">Đèn đường · Cập nhật 01/11/2026 14:30</span>
+      </span>
+      <span class="chevron"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></span>
+    </a>
+    <a class="list-item" href="../F3_View_Details_History/to-be.html#to-be-f3-01">
+      <span class="body">
+        <span class="row-between"><span class="list-title">PA-2026-000118</span><span class="badge"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Đã tiếp nhận</span></span>
+        <span class="list-meta">Rác thải / vệ sinh · Cập nhật 29/10/2026 09:10</span>
+      </span>
+      <span class="chevron"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></span>
+    </a>
+    <a class="list-item" href="../F3_View_Details_History/to-be.html#to-be-f3-01">
+      <span class="body">
+        <span class="row-between"><span class="list-title">PA-2026-000095</span><span class="badge"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Đã xử lý</span></span>
+        <span class="list-meta">Thoát nước / ngập úng · Cập nhật 20/10/2026 16:45</span>
+      </span>
+      <span class="chevron"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></span>
+    </a>
+  </div>
+
+</div>
+</div>
+  </div>
+  <p class="purpose">Danh sách phản ánh thay thế cho việc chỉ xem lịch sử ở As-Is; trạng thái trống hướng người dân gửi phản ánh mới.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Danh sách phản ánh</li><li>Mã tham chiếu, loại vấn đề, trạng thái, thời điểm cập nhật</li><li>Liên kết “Tra cứu bằng mã”</li><li>Trạng thái trống (nếu chưa có)</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Chạm một phản ánh để mở chi tiết (F3).</li><li>Chuyển sang tra cứu bằng mã.</li><li>Khi danh sách trống, chạm “Gửi phản ánh” để bắt đầu F1.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">F2/F3 User Flow — “Danh sách kết quả tra cứu”; AS-IS lịch sử yêu cầu; functional specification FR-UI-05/06.</div></div>
+      <div><div class="detail-label">Cải tiến so với As-Is</div><ul class="detail-list"><li>Danh sách hiển thị trạng thái và thời điểm cập nhật thay vì chỉ mã/ngày.</li><li>Có trạng thái trống rõ ràng.</li><li>Vẫn giữ lịch sử như As-Is, nhưng bổ sung tra cứu bằng mã.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Danh sách 3 phản ánh và các nhãn trạng thái là dữ liệu minh họa.</li><li>Bộ lọc/sắp xếp không được thêm vì không có trong luồng.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="to-be-f2-06">
+  <div class="screen-head">
+    <span class="screen-id">TO-BE-F2-06</span>
+    <h3>Danh sách phản ánh — trạng thái trống</h3>
+  </div>
+  <div class="device to-be">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Phản ánh đã gửi</div></div></div>
+<div class="content">
+  <div class="row-between" style="margin-bottom:10px">
+    <span class="tiny muted">Danh sách phản ánh đã gửi</span>
+    <a class="text-link" href="#to-be-f2-01">Tra cứu bằng mã</a>
+  </div>
+  <div class="empty"><div class="empty-icon"><svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 12h4l2 3h4l2-3h4"/></svg></div><div class="empty-title">Chưa có phản ánh nào</div><div class="empty-desc">Các phản ánh bạn đã gửi sẽ xuất hiện tại đây.</div><a class="btn btn-primary btn-block" href="../F1_Submit_Report/to-be.html#to-be-f1-02">Gửi phản ánh</a></div>
+</div>
+</div>
+  </div>
+  <p class="purpose">Danh sách phản ánh thay thế cho việc chỉ xem lịch sử ở As-Is; trạng thái trống hướng người dân gửi phản ánh mới.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Danh sách phản ánh</li><li>Mã tham chiếu, loại vấn đề, trạng thái, thời điểm cập nhật</li><li>Liên kết “Tra cứu bằng mã”</li><li>Trạng thái trống (nếu chưa có)</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Chạm một phản ánh để mở chi tiết (F3).</li><li>Chuyển sang tra cứu bằng mã.</li><li>Khi danh sách trống, chạm “Gửi phản ánh” để bắt đầu F1.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">F2/F3 User Flow — “Danh sách kết quả tra cứu”; AS-IS lịch sử yêu cầu; functional specification FR-UI-05/06.</div></div>
+      <div><div class="detail-label">Cải tiến so với As-Is</div><ul class="detail-list"><li>Danh sách hiển thị trạng thái và thời điểm cập nhật thay vì chỉ mã/ngày.</li><li>Có trạng thái trống rõ ràng.</li><li>Vẫn giữ lịch sử như As-Is, nhưng bổ sung tra cứu bằng mã.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Danh sách 3 phản ánh và các nhãn trạng thái là dữ liệu minh họa.</li><li>Bộ lọc/sắp xếp không được thêm vì không có trong luồng.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="to-be-f2-07">
+  <div class="screen-head">
+    <span class="screen-id">TO-BE-F2-07</span>
+    <h3>Không tìm thấy phản ánh</h3>
+  </div>
+  <div class="device to-be">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Kết quả tra cứu</div></div></div>
+<div class="content" style="display:flex;flex-direction:column;justify-content:center">
+  <div class="empty">
+    <div class="empty-icon"><svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></div>
+    <div class="empty-title">Không tìm thấy phản ánh</div>
+    <div class="empty-desc">Mã tham chiếu không khớp với phản ánh nào. Vui lòng kiểm tra lại mã.</div>
+    <a class="btn btn-primary btn-block" href="#to-be-f2-01">Kiểm tra lại mã</a>
+    <a class="btn btn-ghost btn-block" style="margin-top:7px" href="../F1_Submit_Report/to-be.html#to-be-f1-01">Về trang chủ</a>
+  </div>
+</div>
+</div>
+  </div>
+  <p class="purpose">Trạng thái không có kết quả, được phân biệt rõ với lỗi hệ thống.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Biểu tượng tìm kiếm</li><li>Thông báo không tìm thấy</li><li>Nút “Kiểm tra lại mã”</li><li>Nút “Về trang chủ”</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Chọn “Kiểm tra lại mã” để quay lại màn hình tra cứu.</li><li>Chọn “Về trang chủ” để kết thúc.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">F2_Check_Report_Status_User_Flow.mmd — nhánh “Không tìm thấy phản ánh”; functional specification FR-UI-05.</div></div>
+      <div><div class="detail-label">Cải tiến so với As-Is</div><ul class="detail-list"><li>Tách “không tìm thấy” khỏi “lỗi hệ thống” để người dùng biết cần sửa mã hay thử lại.</li><li>Có hành động tiếp theo rõ ràng.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Nội dung thông báo là đề xuất; repo không quy định câu chữ chính thức.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="to-be-f2-08">
+  <div class="screen-head">
+    <span class="screen-id">TO-BE-F2-08</span>
+    <h3>Lỗi hệ thống khi tra cứu</h3>
+  </div>
+  <div class="device to-be">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Tra cứu phản ánh</div></div></div>
+<div class="content" style="display:flex;flex-direction:column;justify-content:center">
+  <div class="empty">
+    <div class="empty-icon"><svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.3 3.6L2.5 17a2 2 0 0 0 1.7 3h15.6a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></div>
+    <div class="empty-title">Chưa thể tra cứu</div>
+    <div class="empty-desc">Đã xảy ra lỗi khi tra cứu. Vui lòng thử lại sau.</div>
+    <a class="btn btn-primary btn-block" href="#to-be-f2-03">Thử lại</a>
+    <a class="btn btn-ghost btn-block" style="margin-top:7px" href="../F1_Submit_Report/to-be.html#to-be-f1-01">Về trang chủ</a>
+  </div>
+</div>
+</div>
+  </div>
+  <p class="purpose">Trạng thái lỗi hệ thống với thông báo dễ hiểu và cách thử lại, không tiết lộ chi tiết kỹ thuật.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Biểu tượng cảnh báo</li><li>Thông báo lỗi</li><li>Nút “Thử lại”</li><li>Nút “Về trang chủ”</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Chọn “Thử lại” để tra cứu lại.</li><li>Chọn “Về trang chủ” để kết thúc.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">F2_Check_Report_Status_User_Flow.mmd — nhánh “Lỗi hệ thống”; functional specification FR-UI-07.</div></div>
+      <div><div class="detail-label">Cải tiến so với As-Is</div><ul class="detail-list"><li>Thông báo lỗi không chỉ ghi “Có lỗi” mà nêu vấn đề và hướng xử lý.</li><li>Không hiển thị thông tin kỹ thuật nhạy cảm.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Mã lỗi và thời gian chờ không được đặc tả; wireframe không đưa vào.</li></ul></div>
+    </div>
+  </details>
+</article>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    Mã trang: <strong>F2_Check_Status/to-be.html</strong> · Dữ liệu cá nhân, mã hồ sơ và địa chỉ trong wireframe là dữ liệu minh họa.
+    Nguồn: <em>diagrams/topic7</em> và <em>theoretical_basis</em>.
+  </footer>
+</body>
+</html>

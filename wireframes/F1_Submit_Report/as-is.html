@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>F1 — Gửi phản ánh · As-Is · VNeID Topic 7 Wireframes</title>
+  <link rel="stylesheet" href="../assets/wireframe.css">
+</head>
+<body>
+  <header class="page-header">
+    <p class="breadcrumb">AS-IS · F1 — Gửi phản ánh</p>
+    <h1>F1 — Gửi phản ánh · As-Is</h1>
+    <p class="page-lead">Luồng hiện tại trên VNeID: từ trang chính qua các danh mục “Dịch vụ khác”, “Tiếp nhận góp ý, phản ánh & vướng mắc” đến biểu mẫu phản ánh. Màn hình được dựng từ Activity Diagram As-Is, không bổ sung trường hoặc bước chưa được xác nhận.</p>
+    <nav class="page-nav">
+      <a href="../index.html"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Thư viện wireframe</a>
+      <a href="../function-screen-mapping.md">Function–screen mapping</a>
+      <a href="../design-system.md">Design system</a>
+      <a class="active" href="to-be.html">Xem To-Be →</a>
+    </nav>
+  </header>
+
+  <div class="flow-strip" aria-label="Luồng màn hình"><span class="flow-step">Trang chính</span> <span class="flow-arrow">→</span> <span class="flow-step">Dịch vụ khác</span> <span class="flow-arrow">→</span> <span class="flow-step">Tiếp nhận góp ý</span> <span class="flow-arrow">→</span> <span class="flow-step">Phản ánh kiến nghị</span> <span class="flow-arrow">→</span> <span class="flow-step">Biểu mẫu</span> <span class="flow-arrow">→</span> <span class="flow-step">Xác nhận</span></div>
+
+  <div class="scope-note">
+    <div class="callout"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg><div><strong>Phạm vi As-Is:</strong> chỉ thể hiện các bước được mô tả trong <em>AS_IS_VNeID_Activity_Diagram.puml</em>. Các trường “Mã hồ sơ”, loại phản ánh, nội dung, tài liệu đính kèm và cam đoan là các thành phần được nguồn xác nhận; giá trị danh mục và câu chữ lỗi chưa được đặc tả nên được ghi rõ trong phần giả định.</div></div>
+  </div>
+
+  <main class="screens-section">
+    <div class="section-heading">
+      <h2>Danh sách màn hình</h2>
+      <p>7 màn hình / trạng thái</p>
+    </div>
+    <div class="screens-grid">
+      
+<article class="screen-card" id="as-is-f1-01">
+  <div class="screen-head">
+    <span class="screen-id">AS-IS-F1-01</span>
+    <h3>Trang chính VNeID</h3>
+  </div>
+  <div class="device as-is">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><div style="flex:1;min-width:0"><div class="appbar-title">VNeID</div></div><span class="appbar-btn"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg></span></div>
+<div class="content">
+  <div class="card card-dark">
+    <div class="row-between">
+      <div>
+        <div class="tiny" style="color:#d4d4d8">Tài khoản định danh điện tử</div>
+        <div class="strong" style="font-size:14px;margin-top:2px">Công dân · Mức 2</div>
+      </div>
+      <span class="badge badge-soft">Đã xác thực</span>
+    </div>
+  </div>
+  <div class="section" style="margin-top:14px">
+    <div class="section-title">Dịch vụ</div>
+    <a class="list-item" href="#as-is-f1-02">
+      <span class="empty-icon" style="width:38px;height:38px;margin:0"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+      <span class="body">
+        <span class="list-title">Dịch vụ khác</span>
+        <span class="list-meta">Xem toàn bộ dịch vụ của VNeID</span>
+      </span>
+      <span class="chevron"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></span>
+    </a>
+  </div>
+  <div class="card card-soft small muted">Màn hình chính là điểm bắt đầu được mô tả trong Activity Diagram As-Is. Các dịch vụ ngoài phạm vi không được thiết kế lại.</div>
+</div>
+<div class="bottom-nav"><span class="nav-item active"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg><span>Trang chủ</span></span><span class="nav-item"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Dịch vụ</span></span><span class="nav-item"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg><span>Thông báo</span></span><span class="nav-item"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg><span>Tài khoản</span></span></div>
+</div>
+  </div>
+  <p class="purpose">Người dân mở ứng dụng và tìm mục “Dịch vụ khác” để đi tới chức năng phản ánh.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Thanh trạng thái và thanh ứng dụng VNeID</li><li>Thẻ tài khoản định danh mức 2</li><li>Mục “Dịch vụ khác”</li><li>Thanh điều hướng dưới</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Chạm “Dịch vụ khác” để mở danh mục dịch vụ.</li><li>Thanh điều hướng dưới chỉ là bối cảnh, không thuộc luồng phản ánh.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">AS_IS_VNeID_Activity_Diagram.puml — bước đăng nhập và màn hình chính/dịch vụ.</div></div>
+      <div><div class="detail-label">Quan sát As-Is</div><ul class="detail-list"><li>Chức năng phản ánh nằm sau mục “Dịch vụ khác”, không hiện trực tiếp trên trang chính.</li><li>Người dân phải nhớ đường đi qua nhiều lớp danh mục.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Sơ đồ As-Is xác nhận đăng nhập VNeID mức 2; màn hình đăng nhập không được vẽ lại.</li><li>Các dịch vụ khác trên trang chính không được mô tả trong nguồn nên không đưa vào.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="as-is-f1-02">
+  <div class="screen-head">
+    <span class="screen-id">AS-IS-F1-02</span>
+    <h3>Dịch vụ khác</h3>
+  </div>
+  <div class="device as-is">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Dịch vụ khác</div></div></div>
+<div class="content">
+  <div class="input" style="display:flex;align-items:center;gap:7px;color:var(--muted)">
+    <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg> <span>Tìm kiếm dịch vụ</span>
+  </div>
+  <div class="section" style="margin-top:14px">
+    <div class="section-title">Danh mục dịch vụ</div>
+    <a class="list-item" href="#as-is-f1-03">
+      <span class="empty-icon" style="width:38px;height:38px;margin:0"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg></span>
+      <span class="body">
+        <span class="list-title">Tiếp nhận góp ý, phản ánh &amp; vướng mắc</span>
+        <span class="list-meta">Gửi và theo dõi phản ánh</span>
+      </span>
+      <span class="chevron"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></span>
+    </a>
+  </div>
+</div>
+</div>
+  </div>
+  <p class="purpose">Danh mục trung gian chứa mục “Tiếp nhận góp ý, phản ánh & vướng mắc”.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Thanh ứng dụng có nút quay lại</li><li>Ô tìm kiếm dịch vụ</li><li>Danh sách dịch vụ</li><li>Mục “Tiếp nhận góp ý, phản ánh & vướng mắc”</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Chạm mục “Tiếp nhận góp ý, phản ánh & vướng mắc” để đi tiếp.</li><li>Nút quay lại trở về trang chính.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">AS_IS_VNeID_Activity_Diagram.puml — bước chọn “Dịch vụ khác” và hiển thị danh mục.</div></div>
+      <div><div class="detail-label">Quan sát As-Is</div><ul class="detail-list"><li>Tên dịch vụ dài, dễ bị rút gọn trên màn hình nhỏ.</li><li>Không có mô tả phân biệt rõ các dịch vụ liên quan.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Sơ đồ chỉ xác nhận mục “Tiếp nhận góp ý, phản ánh & vướng mắc”; các dịch vụ khác không được thêm vào.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="as-is-f1-03">
+  <div class="screen-head">
+    <span class="screen-id">AS-IS-F1-03</span>
+    <h3>Tiếp nhận góp ý, phản ánh & vướng mắc</h3>
+  </div>
+  <div class="device as-is">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Tiếp nhận góp ý, phản ánh & vướng mắc</div></div></div>
+<div class="content">
+  <p class="small muted" style="margin:0 0 10px">Chọn nội dung bạn muốn phản ánh.</p>
+  <a class="list-item" href="#as-is-f1-04">
+    <span class="empty-icon" style="width:38px;height:38px;margin:0"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg></span>
+    <span class="body">
+      <span class="list-title">Phản ánh kiến nghị về dịch vụ công</span>
+      <span class="list-meta">Tạo mới hoặc xem lại yêu cầu đã gửi</span>
+    </span>
+    <span class="chevron"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></span>
+  </a>
+</div>
+</div>
+  </div>
+  <p class="purpose">Màn hình module liệt kê chức năng con “Phản ánh kiến nghị về dịch vụ công”.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Thanh ứng dụng có nút quay lại</li><li>Mô tả ngắn</li><li>Mục “Phản ánh kiến nghị về dịch vụ công”</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Chạm mục phản ánh để mở màn hình tạo mới/lịch sử yêu cầu.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">AS_IS_VNeID_Activity_Diagram.puml — bước chọn “Phản ánh kiến nghị về dịch vụ công”.</div></div>
+      <div><div class="detail-label">Quan sát As-Is</div><ul class="detail-list"><li>Một màn hình trung gian nữa khiến người dân phải đi qua nhiều bước trước khi thấy nút tạo yêu cầu.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Không có chức năng con nào khác được nêu trong nguồn As-Is.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="as-is-f1-04">
+  <div class="screen-head">
+    <span class="screen-id">AS-IS-F1-04</span>
+    <h3>Phản ánh kiến nghị về dịch vụ công</h3>
+  </div>
+  <div class="device as-is">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Phản ánh kiến nghị về dịch vụ công</div></div></div>
+<div class="content">
+  <a class="btn btn-primary btn-block" href="#as-is-f1-05"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg> Tạo mới yêu cầu</a>
+  <div class="section" style="margin-top:16px">
+    <div class="row-between">
+      <div class="section-title" style="margin:0">Lịch sử yêu cầu</div>
+      <span class="tiny muted">2 yêu cầu</span>
+    </div>
+    <div class="list" style="margin-top:7px">
+      <a class="list-item" href="../F3_View_Details_History/as-is.html#as-is-f3-01">
+        <span class="body">
+          <span class="list-title">HS-2026-001234</span>
+          <span class="list-meta">28/10/2026 · Phản ánh kiến nghị về dịch vụ công</span>
+        </span>
+        <span class="chevron"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></span>
+      </a>
+      <a class="list-item" href="../F3_View_Details_History/as-is.html#as-is-f3-01">
+        <span class="body">
+          <span class="list-title">HS-2026-001198</span>
+          <span class="list-meta">15/10/2026 · Phản ánh kiến nghị về dịch vụ công</span>
+        </span>
+        <span class="chevron"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></span>
+      </a>
+    </div>
+  </div>
+  <div class="alert alert-info" style="margin-top:14px">
+    <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg>
+    <div>Màn hình này được dùng chung cho F1 (tạo yêu cầu) và F2 (xem lịch sử).</div>
+  </div>
+</div>
+</div>
+  </div>
+  <p class="purpose">Màn hình đích sau khi đi qua các danh mục; có nút “Tạo mới yêu cầu” và danh sách lịch sử yêu cầu.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Thanh ứng dụng</li><li>Nút “Tạo mới yêu cầu”</li><li>Danh sách lịch sử yêu cầu</li><li>Liên kết tới chi tiết yêu cầu</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Chạm “Tạo mới yêu cầu” để mở biểu mẫu.</li><li>Chạm một bản ghi lịch sử để mở chi tiết yêu cầu (F3).</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">AS_IS_VNeID_Activity_Diagram.puml — nhánh “Tạo yêu cầu phản ánh” và “Xem chi tiết yêu cầu hiện có”.</div></div>
+      <div><div class="detail-label">Quan sát As-Is</div><ul class="detail-list"><li>Màn hình gộp hai mục đích: tạo mới và xem lịch sử.</li><li>Danh sách chưa thể hiện trạng thái xử lý; người dân phải mở từng yêu cầu.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Sơ đồ xác nhận có “lịch sử yêu cầu” nhưng không mô tả chi tiết từng dòng; mã hồ sơ và ngày gửi là dữ liệu minh họa.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="as-is-f1-05">
+  <div class="screen-head">
+    <span class="screen-id">AS-IS-F1-05</span>
+    <h3>Biểu mẫu phản ánh</h3>
+  </div>
+  <div class="device as-is">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Tạo mới yêu cầu</div></div></div>
+<div class="content">
+  
+  <div class="form">
+    <div class="field"><label class="label">Mã hồ sơ <span class="req">*</span></label><input class="input" type="text" value="" placeholder="Nhập mã hồ sơ"></div>
+    <div class="field"><label class="label">Phản ánh kiến nghị về việc <span class="req">*</span></label><div class="input select"><span>Chọn loại phản ánh</span><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></div></div>
+    <div class="field"><label class="label">Nội dung phản ánh <span class="req">*</span></label><textarea class="input" placeholder="Nhập nội dung phản ánh" rows="4"></textarea></div>
+    <div class="field">
+      <label class="label">Tài liệu đính kèm</label>
+      <div class="upload">
+        <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5l-8.5 8.5a5 5 0 0 1-7-7l9-9a3.5 3.5 0 0 1 5 5l-9 9a2 2 0 0 1-3-3l8-8"/></svg>
+        <span class="small strong">Chọn tệp đính kèm</span>
+        <span class="tiny muted">Không bắt buộc · Tệp minh họa</span>
+      </div>
+    </div>
+    <div class="check-row">
+      <span class="checkbox checked"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>
+      <span class="check-text">Tôi xin cam đoan những thông tin kê khai trên là đúng sự thật.</span>
+    </div>
+    
+    <a class="btn btn-primary btn-block" href="#as-is-f1-07">Gửi phản ánh</a>
+  </div>
+</div>
+</div>
+  </div>
+  <p class="purpose">Biểu mẫu hiện tại với các trường được mô tả trong As-Is; trạng thái lỗi minh họa việc kiểm tra trường bắt buộc.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Trường “Mã hồ sơ”</li><li>Trường chọn “Phản ánh kiến nghị về việc”</li><li>Vùng “Nội dung phản ánh”</li><li>Vùng “Tài liệu đính kèm”</li><li>Checkbox cam đoan</li><li>Nút “Gửi phản ánh”</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Nhập mã hồ sơ, chọn loại phản ánh và nhập nội dung.</li><li>Đính kèm tài liệu nếu có.</li><li>Tích cam đoan rồi gửi phản ánh.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">AS_IS_VNeID_Activity_Diagram.puml — màn hình biểu mẫu và kiểm tra trường bắt buộc có dấu * đỏ.</div></div>
+      <div><div class="detail-label">Quan sát As-Is</div><ul class="detail-list"><li>Biểu mẫu dài trên một màn hình; người dân phải cuộn và tự đối chiếu nhiều trường.</li><li>Thông báo lỗi trong sơ đồ As-Is chỉ được mô tả ở mức kiểm tra trường bắt buộc, không nêu nội dung cụ thể.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Sơ đồ không liệt kê toàn bộ giá trị của trường chọn loại phản ánh; wireframe chỉ hiển thị trường chọn, không tự đặt danh mục chính thức.</li><li>Thứ tự trường và nội dung thông báo lỗi là suy luận hợp lý từ sơ đồ; cần đối chiếu giao diện VNeID thực tế.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="as-is-f1-06">
+  <div class="screen-head">
+    <span class="screen-id">AS-IS-F1-06</span>
+    <h3>Biểu mẫu phản ánh — lỗi trường bắt buộc</h3>
+  </div>
+  <div class="device as-is">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Tạo mới yêu cầu</div></div></div>
+<div class="content">
+  <div class="alert alert-error" style="margin-bottom:12px"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.3 3.6L2.5 17a2 2 0 0 0 1.7 3h15.6a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg><div><div class="alert-title">Vui lòng kiểm tra các trường bắt buộc</div>Một số thông tin còn thiếu hoặc chưa được xác nhận.</div></div>
+  <div class="form">
+    <div class="field"><label class="label">Mã hồ sơ <span class="req">*</span></label><input class="input error" type="text" value="HS-2026-001234" placeholder="Nhập mã hồ sơ"><div class="error-text">Vui lòng nhập mã hồ sơ.</div></div>
+    <div class="field"><label class="label">Phản ánh kiến nghị về việc <span class="req">*</span></label><div class="input select"><span>Phản ánh kiến nghị về dịch vụ công</span><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></div></div>
+    <div class="field"><label class="label">Nội dung phản ánh <span class="req">*</span></label><textarea class="input error" placeholder="Nhập nội dung phản ánh" rows="4"></textarea><div class="error-text">Vui lòng nhập nội dung phản ánh.</div></div>
+    <div class="field">
+      <label class="label">Tài liệu đính kèm</label>
+      <div class="upload">
+        <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5l-8.5 8.5a5 5 0 0 1-7-7l9-9a3.5 3.5 0 0 1 5 5l-9 9a2 2 0 0 1-3-3l8-8"/></svg>
+        <span class="small strong">Chọn tệp đính kèm</span>
+        <span class="tiny muted">Không bắt buộc · Tệp minh họa</span>
+      </div>
+    </div>
+    <div class="check-row">
+      <span class="checkbox"></span>
+      <span class="check-text">Tôi xin cam đoan những thông tin kê khai trên là đúng sự thật.</span>
+    </div>
+    <div class="error-text">Vui lòng xác nhận cam đoan thông tin.</div>
+    <a class="btn btn-primary btn-block" href="#as-is-f1-07">Gửi phản ánh</a>
+  </div>
+</div>
+</div>
+  </div>
+  <p class="purpose">Biểu mẫu hiện tại với các trường được mô tả trong As-Is; trạng thái lỗi minh họa việc kiểm tra trường bắt buộc.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Trường “Mã hồ sơ”</li><li>Trường chọn “Phản ánh kiến nghị về việc”</li><li>Vùng “Nội dung phản ánh”</li><li>Vùng “Tài liệu đính kèm”</li><li>Checkbox cam đoan</li><li>Nút “Gửi phản ánh”</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Nhập mã hồ sơ, chọn loại phản ánh và nhập nội dung.</li><li>Đính kèm tài liệu nếu có.</li><li>Tích cam đoan rồi gửi phản ánh.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">AS_IS_VNeID_Activity_Diagram.puml — màn hình biểu mẫu và kiểm tra trường bắt buộc có dấu * đỏ.</div></div>
+      <div><div class="detail-label">Quan sát As-Is</div><ul class="detail-list"><li>Biểu mẫu dài trên một màn hình; người dân phải cuộn và tự đối chiếu nhiều trường.</li><li>Thông báo lỗi trong sơ đồ As-Is chỉ được mô tả ở mức kiểm tra trường bắt buộc, không nêu nội dung cụ thể.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Sơ đồ không liệt kê toàn bộ giá trị của trường chọn loại phản ánh; wireframe chỉ hiển thị trường chọn, không tự đặt danh mục chính thức.</li><li>Thứ tự trường và nội dung thông báo lỗi là suy luận hợp lý từ sơ đồ; cần đối chiếu giao diện VNeID thực tế.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="as-is-f1-07">
+  <div class="screen-head">
+    <span class="screen-id">AS-IS-F1-07</span>
+    <h3>Gửi yêu cầu thành công</h3>
+  </div>
+  <div class="device as-is">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="content" style="display:flex;flex-direction:column;justify-content:center">
+  <div class="success-hero">
+    <div class="success-icon"><svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></div>
+    <div class="success-title">Tạo yêu cầu thành công</div>
+    <div class="success-desc">Yêu cầu phản ánh của bạn đã được ghi nhận.</div>
+  </div>
+  <div class="stack" style="margin-top:14px">
+    <a class="btn btn-primary btn-block" href="#as-is-f1-05">Tiếp tục phản ánh</a>
+    <a class="btn btn-secondary btn-block" href="#as-is-f1-01">Trang chủ</a>
+  </div>
+  <div class="alert alert-info" style="margin-top:14px">
+    <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg>
+    <div>Sơ đồ As-Is không mô tả mã tham chiếu do hệ thống cấp; màn hình này chỉ hiển thị xác nhận thành công.</div>
+  </div>
+</div>
+</div>
+  </div>
+  <p class="purpose">Màn hình xác nhận hiện tại sau khi gửi, với hai lựa chọn “Tiếp tục phản ánh” và “Trang chủ”.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Biểu tượng thành công</li><li>Thông báo thành công</li><li>Nút “Tiếp tục phản ánh”</li><li>Nút “Trang chủ”</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Chọn “Tiếp tục phản ánh” để quay lại biểu mẫu.</li><li>Chọn “Trang chủ” để kết thúc luồng.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">AS_IS_VNeID_Activity_Diagram.puml — nhánh sau khi tạo yêu cầu thành công.</div></div>
+      <div><div class="detail-label">Quan sát As-Is</div><ul class="detail-list"><li>Màn hình thành công không cho thấy mã tham chiếu hay hướng dẫn tra cứu.</li><li>Hai lựa chọn được xác nhận trong sơ đồ; không có nút xem lại yêu cầu vừa gửi.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Việc hệ thống có cấp mã tham chiếu hay không không được nêu trong nguồn As-Is.</li></ul></div>
+    </div>
+  </details>
+</article>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    Mã trang: <strong>F1_Submit_Report/as-is.html</strong> · Dữ liệu cá nhân, mã hồ sơ và địa chỉ trong wireframe là dữ liệu minh họa.
+    Nguồn: <em>diagrams/topic7</em> và <em>theoretical_basis</em>.
+  </footer>
+</body>
+</html>

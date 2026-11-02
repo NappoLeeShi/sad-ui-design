@@ -1,0 +1,19 @@
+@startsalt
+title Kết quả tra cứu — To-Be
+{
+<&chevron-left> Kết quả tra cứu
+  --
+  <b>PA-2026-000123</b>
+  Trạng thái: Đang xử lý
+  Cập nhật lúc: 09:30, 28/10/2026
+  .
+  {^"Thông tin phản ánh"
+    Loại: Đèn đường / chiếu sáng
+    Vị trí: Số 12, đường Hoa Sen, phường An Phú
+    Nội dung: Đèn đường trước số 12 không sáng từ tối 27/10/2026.
+  }
+  .
+  [Xem chi tiết và lịch sử]
+  [Tra cứu mã khác]
+}
+@endsalt

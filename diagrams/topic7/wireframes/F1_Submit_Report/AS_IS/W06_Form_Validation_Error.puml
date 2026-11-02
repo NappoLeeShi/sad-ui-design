@@ -1,0 +1,33 @@
+@startsalt
+title Biểu mẫu phản ánh — Lỗi trường bắt buộc (As-Is)
+{
+<&chevron-left> Tạo phản ánh
+  --
+  {^"Vui lòng kiểm tra thông tin"
+    Các trường có dấu * là bắt buộc.
+  }
+  .
+  Mã hồ sơ: *
+  "..."
+  <b>Vui lòng nhập mã hồ sơ.</b>
+  .
+  Phản ánh kiến nghị về việc: *
+  ^Chọn loại phản ánh^
+  <b>Vui lòng chọn loại phản ánh.</b>
+  .
+  Nội dung phản ánh: *
+  {+
+    "Nhập nội dung phản ánh..."
+    .
+    .
+  }
+  <b>Vui lòng nhập nội dung phản ánh.</b>
+  .
+  Tài liệu đính kèm (không bắt buộc):
+  [<&paperclip> Chọn tệp]
+  .
+  [ ] Tôi xin cam đoan những thông tin kê khai trên là đúng sự thật
+  .
+  [Hủy] | [Gửi phản ánh]
+}
+@endsalt

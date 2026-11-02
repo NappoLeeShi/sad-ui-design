@@ -1,0 +1,29 @@
+@startsalt
+title Xem lại và gửi — Bước 4/4 (To-Be)
+{
+<&chevron-left> Gửi phản ánh | Bước 4/4
+  --
+  <b>Kiểm tra thông tin trước khi gửi</b>
+  .
+  <b>Loại vấn đề</b>
+  Đèn đường / chiếu sáng | [Sửa]
+  .
+  <b>Vị trí</b>
+  Số 12, đường Hoa Sen, phường An Phú | [Sửa]
+  .
+  <b>Mã hồ sơ</b>
+  HS-2026-001234 | [Sửa]
+  .
+  <b>Nội dung</b>
+  Đèn đường trước số 12 không sáng
+  từ tối 27/10/2026. | [Sửa]
+  .
+  <b>Tài liệu</b>
+  anh_den_duong.jpg | [Sửa]
+  .
+  [X] Tôi xin cam đoan những thông tin kê khai trên là đúng sự thật.
+  .
+  [Hủy] | [Gửi phản ánh]
+  [Quay lại chỉnh sửa]
+}
+@endsalt

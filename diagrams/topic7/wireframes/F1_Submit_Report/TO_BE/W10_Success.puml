@@ -1,0 +1,16 @@
+@startsalt
+title Gửi phản ánh thành công — To-Be
+{
+<&check>
+  <b>Gửi phản ánh thành công</b>
+  Phản ánh của bạn đã được ghi nhận.
+  .
+  Mã tham chiếu:
+  <b>PA-2026-000123</b>
+  Dùng mã này để tra cứu trạng thái xử lý.
+  .
+  [Tra cứu phản ánh]
+  [Về trang chủ]
+  [Gửi phản ánh khác]
+}
+@endsalt

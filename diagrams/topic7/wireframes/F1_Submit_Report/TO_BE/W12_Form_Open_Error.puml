@@ -1,0 +1,13 @@
+@startsalt
+title Không thể mở biểu mẫu — To-Be
+{
+<b>VNeID</b> | <&bell>
+  --
+  {^"Không thể mở biểu mẫu"
+    <&circle-x> Hiện chưa thể mở biểu mẫu gửi phản ánh.
+    Vui lòng thử lại hoặc quay về trang chính.
+    .
+    [Thử lại] | [Quay về]
+  }
+}
+@endsalt

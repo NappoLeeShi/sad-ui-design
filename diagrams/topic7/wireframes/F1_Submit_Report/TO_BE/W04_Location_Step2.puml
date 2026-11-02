@@ -1,0 +1,22 @@
+@startsalt
+title Chọn vị trí — Bước 2/4 (To-Be)
+{
+<&chevron-left> Gửi phản ánh | Bước 2/4
+  --
+  <b>Vị trí phản ánh</b>
+  "Tìm địa chỉ, tên đường..."
+  [<&magnifying-glass> Tìm kiếm] | [<&map-marker> Vị trí hiện tại]
+  .
+  {^"Bản đồ minh họa"
+    .
+    <&map-marker> Ghim vị trí
+    .
+  }
+  .
+  Địa chỉ đã chọn:
+  <b>Số 12, đường Hoa Sen, phường An Phú</b>
+  [Điều chỉnh ghim]
+  .
+  [Quay lại] | [Tiếp tục]
+}
+@endsalt

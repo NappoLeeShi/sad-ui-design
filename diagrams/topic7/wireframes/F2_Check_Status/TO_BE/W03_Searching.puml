@@ -1,0 +1,8 @@
+@startsalt
+title Đang tra cứu — To-Be
+{
+<&clock>
+  <b>Đang tra cứu...</b>
+  Vui lòng chờ trong giây lát.
+}
+@endsalt

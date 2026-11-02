@@ -89,7 +89,7 @@ Chọn 4–5 nguyên tắc của Jakob Nielsen có liên quan trực tiếp:
 
 ---
 
-# PHẦN 3. CASE STUDY VÀ PHÂN TÍCH HIỆN TRẠNG (Slide 12–16)
+# PHẦN 3. CASE STUDY VÀ PHÂN TÍCH HIỆN TRẠNG (Slide 12–15)
 
 ## Slide 12. Giới thiệu hệ thống
 - Mục đích: giúp người dân báo cáo vấn đề công cộng như đường hư hỏng, đèn đường không sáng, rác thải hoặc ngập úng.
@@ -107,15 +107,7 @@ Chọn 4–5 nguyên tắc của Jakob Nielsen có liên quan trực tiếp:
 - Đánh dấu điểm gây khó khăn đã ghi nhận và giả thuyết cần kiểm thử.
 - Chỉ thể hiện các bước và nhánh nhóm thực sự quan sát được; không tự thêm chi tiết nghiệp vụ chưa xác minh.
 
-## Slide 15. Use Case Diagram
-- Mục đích: thể hiện tác nhân và các chức năng chính trong phạm vi hệ thống.
-- Tác nhân chính: Người dân.
-- Tác nhân cán bộ tiếp nhận/xử lý chỉ đưa vào nếu nhóm có mô hình hóa phần nghiệp vụ đó.
-- Use case chính: Gửi phản ánh; có thể bao gồm chọn danh mục, xác định vị trí, nhập mô tả, đính kèm ảnh và xem lại thông tin.
-- Tránh biến từng cú nhấp chuột thành một use case.
-- Nếu chỉ làm prototype giao diện, ghi rõ chức năng backend là phần đề xuất.
-
-## Slide 16. Activity Diagram As-Is và To-Be
+## Slide 15. Activity Diagram As-Is và To-Be
 - Có thể dùng hai sơ đồ đặt cạnh nhau hoặc hai slide nếu sơ đồ quá dày.
 - **As-Is:** luồng hiện tại và các điểm vướng mắc.
 - **To-Be:** trang chủ -> chọn danh mục có giải thích -> chọn vị trí qua tìm kiếm/bản đồ -> mô tả -> xem lại -> gửi.
@@ -124,55 +116,55 @@ Chọn 4–5 nguyên tắc của Jakob Nielsen có liên quan trực tiếp:
 
 ---
 
-# PHẦN 4. THIẾT KẾ GIẢI PHÁP UI VÀ LUỒNG THAO TÁC (Slide 17–25)
+# PHẦN 4. THIẾT KẾ GIẢI PHÁP UI VÀ LUỒNG THAO TÁC (Slide 16–24)
 
-## Slide 17. Từ nguyên tắc lý thuyết đến quyết định thiết kế
+## Slide 16. Từ nguyên tắc lý thuyết đến quyết định thiết kế
 - Khó tìm chức năng -> tăng khả năng nhận biết và cải thiện điều hướng.
 - Danh mục khó hiểu -> dùng ngôn ngữ đời thường, ví dụ và trợ giúp chọn mục.
 - Nhập vị trí có thể khó -> hỗ trợ tìm kiếm, bản đồ 2D và chế độ xem 3D tùy chọn.
 - Dữ liệu có thể nhập sai -> xác nhận, kiểm tra trường và cho phép sửa.
 - Thông điệp: mỗi quyết định phải gắn với một vấn đề và một nguyên tắc thiết kế.
 
-## Slide 18. User Flow và wireframe tổng thể
+## Slide 17. User Flow và wireframe tổng thể
 - User Flow: Trang chủ -> Chọn loại vấn đề -> Chọn vị trí -> Mô tả/ảnh -> Xem lại và gửi.
 - Wireframe thể hiện bố cục năm màn hình chính.
 - Chú thích: User Flow và wireframe là công cụ thiết kế UX; không phải sơ đồ UML chuẩn.
 - Trực quan: một luồng tổng thể cùng các wireframe thu nhỏ.
 
-## Slide 19. Màn hình 1: Trang chủ
+## Slide 18. Màn hình 1: Trang chủ
 - Đặt **“Công cụ yêu thích”** ở khu vực đầu trang.
 - Làm nổi bật hành động **“Gửi phản ánh”**; có thể thiết lập sẵn trong prototype.
 - Các chức năng phụ như tra cứu và hướng dẫn vẫn dễ tìm nhưng ít nổi bật hơn hành động chính.
 - Liên hệ lý thuyết: khả năng tìm thấy chức năng, cấu trúc thông tin và recognition rather than recall.
 
-## Slide 20. Màn hình 2: Chọn loại vấn đề
+## Slide 19. Màn hình 2: Chọn loại vấn đề
 - Tiêu đề dễ hiểu: “Bạn muốn phản ánh điều gì?”
 - Thẻ danh mục có tên rõ ràng, mô tả ngắn và ví dụ.
 - Ví dụ minh họa: đường sá/vỉa hè; đèn đường; rác thải/vệ sinh; thoát nước/ngập úng; vấn đề khác.
 - Danh mục cuối cùng phải phù hợp với phạm vi nghiệp vụ được nhóm xác định; không tự thay thế danh mục chính thức nếu chưa phân tích yêu cầu.
 - Có trợ giúp “Chưa biết chọn mục nào?” và hiển thị rõ lựa chọn đang chọn.
 
-## Slide 21. Màn hình 3: Chọn vị trí
+## Slide 20. Màn hình 3: Chọn vị trí
 - Cho phép tìm địa chỉ bằng chữ, chọn vị trí trên bản đồ hoặc dùng vị trí hiện tại nếu người dùng đồng ý.
 - Bản đồ 2D là lựa chọn cơ bản; góc nhìn khu dân cư 3D là lựa chọn bổ sung nếu thực sự giúp nhận biết vị trí.
 - Cho đặt/điều chỉnh ghim và xem địa chỉ/địa điểm được xác định trước khi xác nhận.
 - Nếu không dùng quyền vị trí hoặc bản đồ không xác định được địa chỉ, vẫn cần cách nhập/chọn thủ công.
 - Không khẳng định 3D luôn chính xác hơn 2D; cần kiểm thử xem nó có giúp người dùng xác định vị trí tốt hơn hay không.
 
-## Slide 22. Màn hình 4: Mô tả và đính kèm
+## Slide 21. Màn hình 4: Mô tả và đính kèm
 - Hiển thị loại vấn đề và vị trí đã chọn để người dùng đối chiếu.
 - Trường mô tả có gợi ý ngắn; phân biệt trường bắt buộc và tùy chọn.
 - Ảnh là tùy chọn nếu nghiệp vụ cho phép.
 - Báo lỗi gần trường cần sửa và giữ lại nội dung đã nhập.
 - Liên hệ lý thuyết: ngăn ngừa lỗi, phản hồi rõ ràng và giảm gánh nặng ghi nhớ/nhập liệu.
 
-## Slide 23. Màn hình 5: Xem lại và gửi
+## Slide 22. Màn hình 5: Xem lại và gửi
 - Tóm tắt danh mục, vị trí, mô tả và tệp đính kèm.
 - Có nút chỉnh sửa từng phần, quay lại đúng bước và giữ dữ liệu.
 - Sau khi gửi, hiển thị trạng thái mô phỏng phù hợp với prototype.
 - Mã tham chiếu, thành công/thất bại chỉ là dữ liệu demo nếu chưa kết nối backend thật.
 
-## Slide 24. Nhánh phụ và xử lý lỗi
+## Slide 23. Nhánh phụ và xử lý lỗi
 - Chưa chọn danh mục -> nhắc chọn trước khi tiếp tục.
 - Chưa xác nhận vị trí -> hướng dẫn điều chỉnh/xác nhận.
 - Không cấp quyền vị trí -> vẫn cho tìm kiếm hoặc chọn thủ công.
@@ -180,7 +172,7 @@ Chọn 4–5 nguyên tắc của Jakob Nielsen có liên quan trực tiếp:
 - Gửi lỗi -> giải thích dễ hiểu và cho thử lại.
 - Trực quan: nhánh chính và các nhánh lỗi trên một sơ đồ gọn.
 
-## Slide 25. Đối chiếu vấn đề, lý thuyết và giải pháp
+## Slide 24. Đối chiếu vấn đề, lý thuyết và giải pháp
 | Vấn đề | Cơ sở lý thuyết | Quyết định thiết kế |
 |---|---|---|
 | Khó tìm chức năng | Discoverability, Information Architecture, Recognition rather than Recall | Đưa “Gửi phản ánh” lên khu vực dễ thấy |
@@ -191,22 +183,22 @@ Chọn 4–5 nguyên tắc của Jakob Nielsen có liên quan trực tiếp:
 
 ---
 
-# PHẦN 5. KIỂM CHỨNG KHẢ NĂNG SỬ DỤNG (Slide 26–29)
+# PHẦN 5. KIỂM CHỨNG KHẢ NĂNG SỬ DỤNG (Slide 25–28)
 
-## Slide 26. Kế hoạch usability testing
+## Slide 25. Kế hoạch usability testing
 - Mục tiêu: xem người dùng có hoàn thành các nhiệm vụ chính trên prototype không.
 - Người tham gia: một số người có mức độ thành thạo công nghệ khác nhau; nêu rõ số lượng thực tế khi đã tuyển được.
 - Cách làm: giao nhiệm vụ, để người dùng tự thao tác, quan sát và ghi nhận; tránh hướng dẫn từng bước.
 - Không yêu cầu người tham gia gửi phản ánh thật lên hệ thống chính thức.
 
-## Slide 27. Kịch bản kiểm thử
+## Slide 26. Kịch bản kiểm thử
 1. **Tìm chức năng:** “Bạn nhìn thấy một đèn đường bị hỏng. Hãy bắt đầu gửi phản ánh.”
 2. **Chọn danh mục:** “Chọn mục phù hợp để báo cáo.”
 3. **Chọn vị trí:** “Hãy đánh dấu vị trí của chiếc đèn đường hỏng gần một địa điểm dễ nhận biết.”
 4. **Sửa thông tin:** “Hãy quay lại chỉnh sửa mô tả trước khi gửi.”
 - Các kịch bản cần khớp với tính năng thực sự có trong prototype.
 
-## Slide 28. Chỉ số và ghi nhận kết quả
+## Slide 27. Chỉ số và ghi nhận kết quả
 - Tỷ lệ hoàn thành nhiệm vụ.
 - Thời gian hoàn thành.
 - Số lỗi hoặc lần quay lại không cần thiết.
@@ -215,7 +207,7 @@ Chọn 4–5 nguyên tắc của Jakob Nielsen có liên quan trực tiếp:
 - Trực quan: bảng ghi nhiệm vụ, kết quả, thời gian, lỗi và nhận xét.
 - Chỉ trình bày số liệu sau khi thử nghiệm thật; nếu chưa kiểm thử, trình bày kế hoạch thay vì kết quả.
 
-## Slide 29. Từ kết quả đến cải tiến
+## Slide 28. Từ kết quả đến cải tiến
 - Nhóm lỗi theo mức độ ảnh hưởng tới việc hoàn thành nhiệm vụ.
 - Ưu tiên lỗi khiến người dùng không thể tiếp tục hoặc chọn sai thông tin.
 - Sửa nhãn, vị trí nút, hướng dẫn, phản hồi lỗi hoặc thao tác đặt ghim theo bằng chứng thu thập được.
@@ -224,44 +216,44 @@ Chọn 4–5 nguyên tắc của Jakob Nielsen có liên quan trực tiếp:
 
 ---
 
-# PHẦN 6. MÔ HÌNH KỸ THUẬT VÀ DEMO (Slide 30–34)
+# PHẦN 6. MÔ HÌNH KỸ THUẬT VÀ DEMO (Slide 29–32)
 
 > Phần này demo nhanh, lý thuyết đã nói trước đó.
 
-## Slide 30. Sequence Diagram: Điều gì xảy ra khi gửi phản ánh?
+## Slide 29. Sequence Diagram: Điều gì xảy ra khi gửi phản ánh?
 - Lifeline gợi ý: Người dân -> Frontend -> Backend/API -> Database.
 - Luồng cơ bản: người dùng gửi -> kiểm tra dữ liệu -> lưu dữ liệu -> trả kết quả -> giao diện hiển thị phản hồi.
 - Có thể thể hiện nhánh dữ liệu không hợp lệ hoặc lưu thất bại.
 - Backend không thuyết trình do không hợp topic. Nếu có làm backend cho môn khác thì cũng không cần show.
 
-## Slide 31. Demo: Tìm chức năng và chọn danh mục
+## Slide 30. Demo: Tìm chức năng và chọn danh mục
 - Bắt đầu từ trang chủ và chỉ ra nút “Gửi phản ánh”.
 - Chọn tình huống mẫu như đèn đường không sáng.
 - Cho thấy nhãn, mô tả và trạng thái lựa chọn.
 - Thử tiếp tục khi chưa chọn danh mục để minh họa phản hồi lỗi.
 
-## Slide 32. Demo: Chọn vị trí và hoàn tất luồng
+## Slide 31. Demo: Chọn vị trí và hoàn tất luồng
 - Tìm địa điểm, đặt/điều chỉnh ghim và xác nhận vị trí.
 - Nếu có 3D, cho thấy cách bật/tắt và giải thích đây là lựa chọn bổ sung.
 - Nhập mô tả, xem lại và quay lại sửa để chứng minh dữ liệu được giữ.
 - Minh họa kết quả gửi mô phỏng; ghi rõ phần nào chưa kết nối backend thật.
 
-## Slide 33. Demo tình huống lỗi
+## Slide 32. Demo tình huống lỗi
 - Chọn một tình huống phù hợp với chức năng prototype: thiếu dữ liệu, không cấp quyền vị trí hoặc gửi thất bại mô phỏng.
 - Cho thấy thông báo rõ ràng và cách tiếp tục.
 - Chốt lại: demo chứng minh hành vi của prototype, không chứng minh hệ thống chính thức đang vận hành.
 
 ---
 
-# PHẦN 7. KẾT LUẬN VÀ ÔN TẬP (Slide 35–36)
+# PHẦN 7. KẾT LUẬN VÀ ÔN TẬP (Slide 33–34)
 
-## Slide 34. Tổng kết
+## Slide 33. Tổng kết
 - Vấn đề -> quyết định thiết kế -> cách kiểm chứng.
 - Giao diện cần hỗ trợ người dùng hoàn thành nhiệm vụ, không chỉ đẹp.
 - Các quyết định thiết kế dựa trên lý thuyết cần được kiểm tra bằng quan sát thực tế.
 - 3D chỉ nên giữ lại nếu chứng minh được giá trị hỗ trợ chọn vị trí.
 
-## Slide 35. Câu hỏi ôn tập và hỏi đáp
+## Slide 34. Câu hỏi ôn tập và hỏi đáp
 - Dùng 20 câu hỏi Kahoot ngắn, tập trung vào:
   - Phân biệt Activity Diagram và User Flow.
   - Ba tiêu chí usability.
@@ -273,7 +265,6 @@ Chọn 4–5 nguyên tắc của Jakob Nielsen có liên quan trực tiếp:
 # Danh sách sản phẩm cần chuẩn bị
 
 - [ ] Bằng chứng/ghi chép về các vấn đề đã quan sát và giả thuyết cần kiểm thử.
-- [ ] Use Case Diagram.
 - [ ] Activity Diagram As-Is và To-Be.
 - [ ] User Flow và wireframe/prototype của năm màn hình chính.
 - [ ] Kịch bản usability testing và bảng ghi kết quả.

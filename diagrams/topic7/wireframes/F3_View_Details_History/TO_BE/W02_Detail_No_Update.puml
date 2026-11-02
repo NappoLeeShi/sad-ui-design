@@ -1,0 +1,24 @@
+@startsalt
+title Chi tiết phản ánh — Chưa có cập nhật (To-Be)
+{
+<&chevron-left> Chi tiết phản ánh
+  --
+  <b>PA-2026-000124</b>
+  Trạng thái: Đã tiếp nhận
+  .
+  {^"Thông tin phản ánh"
+    Loại: Rác thải / vệ sinh môi trường
+    Vị trí: Số 08, đường Hoa Sen, phường An Phú
+    Nội dung: Rác ứ đọng trước cổng công viên.
+  }
+  .
+  {^"Cập nhật"
+    <&info> Chưa có thông tin cập nhật mới.
+  }
+  {^"Lịch sử xử lý"
+    <&info> Chưa có lịch sử cập nhật.
+  }
+  .
+  [Quay lại kết quả]
+}
+@endsalt

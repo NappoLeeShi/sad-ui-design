@@ -1,0 +1,12 @@
+@startsalt
+title Không có quyền xem — To-Be
+{
+<&chevron-left> Chi tiết phản ánh
+  --
+  <&circle-x>
+  <b>Bạn không có quyền xem phản ánh này</b>
+  Vui lòng quay lại danh sách hoặc liên hệ cơ quan tiếp nhận.
+  .
+  [Quay lại kết quả]
+}
+@endsalt

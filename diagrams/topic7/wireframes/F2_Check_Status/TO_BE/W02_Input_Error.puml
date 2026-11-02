@@ -1,0 +1,15 @@
+@startsalt
+title Tra cứu — Lỗi nhập mã (To-Be)
+{
+<&chevron-left> Tra cứu phản ánh
+  --
+  {^"Vui lòng kiểm tra mã tham chiếu"
+    Mã tham chiếu không đúng định dạng.
+  }
+  <b>Nhập mã tham chiếu</b>
+  "PA-2026"
+  <b>Mã tham chiếu phải có dạng PA-2026-000123.</b>
+  .
+  [<&magnifying-glass> Tra cứu]
+}
+@endsalt

@@ -1,0 +1,10 @@
+@startsalt
+title Lỗi hệ thống khi tra cứu — To-Be
+{
+<&circle-x>
+  <b>Chưa thể tra cứu</b>
+  Đã xảy ra lỗi hệ thống. Vui lòng thử lại sau.
+  .
+  [Thử lại] | [Về trang chủ]
+}
+@endsalt

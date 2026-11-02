@@ -1,0 +1,17 @@
+@startsalt
+title Lỗi gửi phản ánh — To-Be
+{
+<&circle-x>
+  <b>Chưa gửi được phản ánh</b>
+  Dữ liệu của bạn vẫn được giữ. Vui lòng thử lại.
+  .
+  {^"Thông tin phản ánh"
+    Loại: Đèn đường / chiếu sáng
+    Vị trí: Số 12, đường Hoa Sen, phường An Phú
+    Nội dung: Đèn đường trước số 12
+    không sáng từ tối 27/10/2026.
+  }
+  .
+  [Thử lại] | [Quay lại xem lại]
+}
+@endsalt

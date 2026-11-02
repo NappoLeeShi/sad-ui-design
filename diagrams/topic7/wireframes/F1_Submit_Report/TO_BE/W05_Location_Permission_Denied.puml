@@ -1,0 +1,18 @@
+@startsalt
+title Chọn vị trí — Không có quyền vị trí (To-Be)
+{
+<&chevron-left> Gửi phản ánh | Bước 2/4
+  --
+  <b>Vị trí phản ánh</b>
+  {^"Không có quyền truy cập vị trí"
+    Bạn vẫn có thể tìm địa chỉ hoặc nhập vị trí thủ công.
+  }
+  "Tìm địa chỉ, tên đường..."
+  [<&magnifying-glass> Tìm kiếm] | [Nhập thủ công]
+  .
+  Địa chỉ đã chọn:
+  <b>Số 12, đường Hoa Sen, phường An Phú</b>
+  .
+  [Quay lại] | [Tiếp tục]
+}
+@endsalt

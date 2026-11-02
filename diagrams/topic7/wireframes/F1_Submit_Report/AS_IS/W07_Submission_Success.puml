@@ -1,0 +1,10 @@
+@startsalt
+title Gửi yêu cầu thành công — As-Is
+{
+<&check>
+  <b>Tạo yêu cầu thành công</b>
+  Phản ánh của bạn đã được ghi nhận.
+  .
+  [Tiếp tục phản ánh] | [Trang chủ]
+}
+@endsalt

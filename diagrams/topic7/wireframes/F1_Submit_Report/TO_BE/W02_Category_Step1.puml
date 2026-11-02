@@ -1,0 +1,20 @@
+@startsalt
+title Chọn loại vấn đề — Bước 1/4 (To-Be)
+{
+<&chevron-left> Gửi phản ánh | Bước 1/4
+  --
+  <b>Bạn muốn phản ánh điều gì?</b>
+  Chọn một loại vấn đề gần nhất với tình huống của bạn.
+  .
+  (X) | <b>Đèn đường / chiếu sáng</b>
+  .   | Đèn hỏng, chập chờn, không sáng
+  ( ) | <b>Rác thải / vệ sinh môi trường</b>
+  .   | Rác ứ đọng, đổ sai quy định
+  ( ) | <b>Đường giao thông</b>
+  .   | Ổ gà, vỉa hè hỏng, ngập nước
+  ( ) | <b>Cấp thoát nước</b>
+  .   | Rò rỉ, mất nước, nước bẩn
+  .
+  [Quay lại] | [Tiếp tục]
+}
+@endsalt

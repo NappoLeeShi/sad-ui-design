@@ -1,0 +1,26 @@
+@startsalt
+title Mô tả và đính kèm — Bước 3/4 (To-Be)
+{
+<&chevron-left> Gửi phản ánh | Bước 3/4
+  --
+  {^"Thông tin đã chọn"
+    Loại vấn đề: Đèn đường / chiếu sáng
+    Vị trí: Số 12, đường Hoa Sen, phường An Phú
+  }
+  .
+  Mã hồ sơ: *
+  "HS-2026-001234"
+  .
+  Nội dung phản ánh: *
+  {+
+    "Đèn đường trước số 12 không sáng từ tối 27/10/2026."
+    .
+    .
+  }
+  .
+  Tài liệu đính kèm (không bắt buộc):
+  [<&paperclip> Thêm ảnh hoặc tệp]
+  .
+  [Quay lại] | [Tiếp tục]
+}
+@endsalt

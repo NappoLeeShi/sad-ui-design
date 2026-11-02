@@ -1,0 +1,23 @@
+@startsalt
+title Chọn loại vấn đề — Lỗi chưa chọn (To-Be)
+{
+<&chevron-left> Gửi phản ánh | Bước 1/4
+  --
+  {^"Vui lòng chọn loại vấn đề"
+    Bạn cần chọn một loại trước khi tiếp tục.
+  }
+  <b>Bạn muốn phản ánh điều gì?</b>
+  Chọn một loại vấn đề gần nhất với tình huống của bạn.
+  .
+  ( ) | <b>Đèn đường / chiếu sáng</b>
+  .   | Đèn hỏng, chập chờn, không sáng
+  ( ) | <b>Rác thải / vệ sinh môi trường</b>
+  .   | Rác ứ đọng, đổ sai quy định
+  ( ) | <b>Đường giao thông</b>
+  .   | Ổ gà, vỉa hè hỏng, ngập nước
+  ( ) | <b>Cấp thoát nước</b>
+  .   | Rò rỉ, mất nước, nước bẩn
+  .
+  [Quay lại] | [Tiếp tục]
+}
+@endsalt

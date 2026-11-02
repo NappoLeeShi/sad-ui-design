@@ -1,0 +1,12 @@
+@startsalt
+title Danh sách phản ánh trống — To-Be
+{
+<&chevron-left> Phản ánh của tôi
+  --
+  <&info>
+  <b>Chưa có phản ánh nào</b>
+  Các phản ánh bạn gửi sẽ xuất hiện tại đây.
+  .
+  [<&plus> Gửi phản ánh mới]
+}
+@endsalt

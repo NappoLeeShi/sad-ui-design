@@ -1,0 +1,14 @@
+@startsalt
+title Tra cứu phản ánh — To-Be
+{
+<&chevron-left> Tra cứu phản ánh
+  --
+  <b>Nhập mã tham chiếu</b>
+  Mã tham chiếu có dạng PA-2026-000123.
+  "Ví dụ: PA-2026-000123"
+  .
+  [<&magnifying-glass> Tra cứu]
+  .
+  [Xem danh sách phản ánh đã gửi]
+}
+@endsalt

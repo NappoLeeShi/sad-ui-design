@@ -1,0 +1,16 @@
+@startsalt
+title Xem tài liệu đính kèm — As-Is
+{
+<&chevron-left> Tài liệu đính kèm
+  --
+  <b>anh_den_duong.jpg</b>
+  .
+  {^"Khung xem ảnh"
+    .
+    Ảnh minh họa
+    .
+  }
+  .
+  [Đóng]
+}
+@endsalt

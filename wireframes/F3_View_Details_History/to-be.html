@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>F3 — Chi tiết và lịch sử · To-Be · VNeID Topic 7 Wireframes</title>
+  <link rel="stylesheet" href="../assets/wireframe.css">
+</head>
+<body>
+  <header class="page-header">
+    <p class="breadcrumb">TO-BE · F3 — Xem chi tiết và lịch sử</p>
+    <h1>F3 — Chi tiết và lịch sử · To-Be</h1>
+    <p class="page-lead">Màn hình chi tiết đề xuất: trạng thái hiện tại, thời điểm cập nhật, thông tin phản ánh, tài liệu đính kèm và lịch sử xử lý. Có trạng thái chưa có cập nhật/lịch sử, không tìm thấy và không có quyền.</p>
+    <nav class="page-nav">
+      <a href="../index.html"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Thư viện wireframe</a>
+      <a href="../function-screen-mapping.md">Function–screen mapping</a>
+      <a href="../design-system.md">Design system</a>
+      <a class="active" href="as-is.html">← Xem As-Is</a>
+    </nav>
+  </header>
+
+  <div class="flow-strip" aria-label="Luồng màn hình"><span class="flow-step">Kết quả tra cứu</span> <span class="flow-arrow">→</span> <span class="flow-step">Danh sách</span> <span class="flow-arrow">→</span> <span class="flow-step">Chi tiết</span> <span class="flow-arrow">→</span> <span class="flow-step">Lịch sử</span> <span class="flow-arrow">→</span> <span class="flow-step">Tài liệu</span></div>
+
+  <div class="scope-note">
+    <div class="callout"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg><div><strong>Phạm vi To-Be:</strong> bổ sung trạng thái và lịch sử theo F3 User Flow và FR-UI-06. Lịch sử chỉ hiển thị khi có dữ liệu; khi chưa có, giao diện ghi rõ. Không tạo sự kiện giả trong hệ thống thật; dữ liệu trong wireframe là mẫu minh họa.</div></div>
+  </div>
+
+  <main class="screens-section">
+    <div class="section-heading">
+      <h2>Danh sách màn hình</h2>
+      <p>5 màn hình / trạng thái</p>
+    </div>
+    <div class="screens-grid">
+      
+<article class="screen-card" id="to-be-f3-01">
+  <div class="screen-head">
+    <span class="screen-id">TO-BE-F3-01</span>
+    <h3>Chi tiết phản ánh và lịch sử xử lý</h3>
+  </div>
+  <div class="device to-be">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Chi tiết phản ánh</div></div></div>
+<div class="content">
+  
+  <div class="card">
+    <div class="row-between">
+      <div>
+        <div class="tiny muted">Mã tham chiếu</div>
+        <div class="strong" style="font-size:15px">PA-2026-000123</div>
+      </div>
+      <span class="badge badge-dark"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Đang xử lý</span>
+    </div>
+    <div class="tiny muted" style="margin-top:5px">Cập nhật lúc 01/11/2026 14:30</div>
+  </div>
+  <div class="section" style="margin-top:12px">
+    <div class="section-title">Thông tin phản ánh</div>
+    <div class="card stack-sm">
+      <div><div class="tiny muted">Loại vấn đề</div><div class="small strong">Đèn đường</div></div>
+      <div><div class="tiny muted">Vị trí</div><div class="small">Đường Hoa Sen, phường An Phú, TP. Thủ Đức</div></div>
+      <div><div class="tiny muted">Mã hồ sơ</div><div class="small">HS-2026-001234</div></div>
+      <div><div class="tiny muted">Nội dung</div><div class="small">Đèn đường trước số 12 không sáng từ tối 27/10/2026.</div></div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Tài liệu đính kèm</div>
+    <a class="file-row" href="#to-be-f3-03"><span class="file-thumb"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5L5 20"/></svg></span><span style="flex:1;min-width:0"><span class="file-name">anh_den_duong.jpg</span><span class="file-meta" style="display:block">Ảnh hiện trường · 1,2 MB</span></span><span class="btn btn-secondary btn-sm">Xem</span></a>
+  </div>
+  <div class="section">
+    <div class="section-title">Lịch sử xử lý</div>
+    
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <div class="timeline-date">28/10/2026 09:15</div>
+      <div class="timeline-title">Đã gửi phản ánh</div>
+      <div class="timeline-desc">Phản ánh được ghi nhận trên hệ thống.</div>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <div class="timeline-date">29/10/2026 10:05</div>
+      <div class="timeline-title">Đã tiếp nhận</div>
+      <div class="timeline-desc">Cơ quan tiếp nhận đã tiếp nhận phản ánh.</div>
+    </div>
+    <div class="timeline-item current">
+      <span class="timeline-dot"></span>
+      <div class="timeline-date">01/11/2026 14:30</div>
+      <div class="timeline-title">Đang xử lý</div>
+      <div class="timeline-desc">Đơn vị chức năng đang kiểm tra tại hiện trường.</div>
+    </div>
+  </div>
+  </div>
+  <a class="btn btn-secondary btn-block" href="../F2_Check_Status/to-be.html#to-be-f2-05">Quay lại danh sách</a>
+</div>
+</div>
+  </div>
+  <p class="purpose">Màn hình chi tiết đề xuất có trạng thái, thời điểm cập nhật, lịch sử xử lý và tài liệu đính kèm; trạng thái chưa có cập nhật được ghi rõ.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Mã tham chiếu và nhãn trạng thái</li><li>Thời điểm cập nhật</li><li>Thông tin phản ánh</li><li>Tài liệu đính kèm</li><li>Dòng thời gian lịch sử xử lý</li><li>Nút quay lại danh sách</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Đọc trạng thái và lịch sử theo thứ tự thời gian.</li><li>Mở tài liệu đính kèm.</li><li>Quay lại danh sách (F2).</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">F3_Report_Details_and_History_User_Flow.mmd; functional specification FR-UI-06.</div></div>
+      <div><div class="detail-label">Cải tiến so với As-Is</div><ul class="detail-list"><li>Bổ sung trạng thái hiện tại, thời điểm cập nhật và lịch sử xử lý mà As-Is không có.</li><li>Trạng thái dùng nhãn chữ kèm biểu tượng, không chỉ dựa vào màu.</li><li>Khi chưa có cập nhật/lịch sử, giao diện ghi rõ thay vì để trống.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Lịch sử 3 mốc và nhãn trạng thái là dữ liệu minh họa; repo yêu cầu không tạo sự kiện giả trong hệ thống thật.</li><li>Bộ trạng thái chính thức chưa được đặc tả.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="to-be-f3-02">
+  <div class="screen-head">
+    <span class="screen-id">TO-BE-F3-02</span>
+    <h3>Chi tiết phản ánh — chưa có cập nhật</h3>
+  </div>
+  <div class="device to-be">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Chi tiết phản ánh</div></div></div>
+<div class="content">
+  
+  <div class="card">
+    <div class="row-between">
+      <div>
+        <div class="tiny muted">Mã tham chiếu</div>
+        <div class="strong" style="font-size:15px">PA-2026-000123</div>
+      </div>
+      <span class="badge"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Đã tiếp nhận</span>
+    </div>
+    <div class="tiny muted" style="margin-top:5px">Chưa có thông tin cập nhật mới</div>
+  </div>
+  <div class="section" style="margin-top:12px">
+    <div class="section-title">Thông tin phản ánh</div>
+    <div class="card stack-sm">
+      <div><div class="tiny muted">Loại vấn đề</div><div class="small strong">Đèn đường</div></div>
+      <div><div class="tiny muted">Vị trí</div><div class="small">Đường Hoa Sen, phường An Phú, TP. Thủ Đức</div></div>
+      <div><div class="tiny muted">Mã hồ sơ</div><div class="small">HS-2026-001234</div></div>
+      <div><div class="tiny muted">Nội dung</div><div class="small">Đèn đường trước số 12 không sáng từ tối 27/10/2026.</div></div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Tài liệu đính kèm</div>
+    <a class="file-row" href="#to-be-f3-03"><span class="file-thumb"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5L5 20"/></svg></span><span style="flex:1;min-width:0"><span class="file-name">anh_den_duong.jpg</span><span class="file-meta" style="display:block">Ảnh hiện trường · 1,2 MB</span></span><span class="btn btn-secondary btn-sm">Xem</span></a>
+  </div>
+  <div class="section">
+    <div class="section-title">Lịch sử xử lý</div>
+    <div class="card card-soft small muted">Chưa có lịch sử cập nhật.</div>
+  </div>
+  <a class="btn btn-secondary btn-block" href="../F2_Check_Status/to-be.html#to-be-f2-05">Quay lại danh sách</a>
+</div>
+</div>
+  </div>
+  <p class="purpose">Màn hình chi tiết đề xuất có trạng thái, thời điểm cập nhật, lịch sử xử lý và tài liệu đính kèm; trạng thái chưa có cập nhật được ghi rõ.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Mã tham chiếu và nhãn trạng thái</li><li>Thời điểm cập nhật</li><li>Thông tin phản ánh</li><li>Tài liệu đính kèm</li><li>Dòng thời gian lịch sử xử lý</li><li>Nút quay lại danh sách</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Đọc trạng thái và lịch sử theo thứ tự thời gian.</li><li>Mở tài liệu đính kèm.</li><li>Quay lại danh sách (F2).</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">F3_Report_Details_and_History_User_Flow.mmd; functional specification FR-UI-06.</div></div>
+      <div><div class="detail-label">Cải tiến so với As-Is</div><ul class="detail-list"><li>Bổ sung trạng thái hiện tại, thời điểm cập nhật và lịch sử xử lý mà As-Is không có.</li><li>Trạng thái dùng nhãn chữ kèm biểu tượng, không chỉ dựa vào màu.</li><li>Khi chưa có cập nhật/lịch sử, giao diện ghi rõ thay vì để trống.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Lịch sử 3 mốc và nhãn trạng thái là dữ liệu minh họa; repo yêu cầu không tạo sự kiện giả trong hệ thống thật.</li><li>Bộ trạng thái chính thức chưa được đặc tả.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="to-be-f3-03">
+  <div class="screen-head">
+    <span class="screen-id">TO-BE-F3-03</span>
+    <h3>Xem tài liệu đính kèm</h3>
+  </div>
+  <div class="device to-be">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Tài liệu đính kèm</div></div></div>
+<div class="content flush">
+  <div style="height:430px;display:grid;place-items:center;border-bottom:1px solid var(--line);background:var(--surface-2)">
+    <div style="text-align:center">
+      <div class="empty-icon" style="width:64px;height:64px"><svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5L5 20"/></svg></div>
+      <div class="small strong">Ảnh hiện trường</div>
+      <div class="tiny muted">Khung xem tài liệu · dữ liệu minh họa</div>
+    </div>
+  </div>
+  <div style="padding:14px">
+    <div class="file-name">anh_den_duong.jpg</div>
+    <div class="file-meta">1,2 MB · Tài liệu do người dân đính kèm</div>
+    <a class="btn btn-secondary btn-block" style="margin-top:12px" href="#to-be-f3-01">Đóng</a>
+  </div>
+</div>
+</div>
+  </div>
+  <p class="purpose">Khung xem ảnh/tài liệu đính kèm từ màn hình chi tiết.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Thanh ứng dụng</li><li>Khung xem tài liệu</li><li>Tên tệp và dung lượng minh họa</li><li>Nút “Đóng”</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Xem tài liệu.</li><li>Chọn “Đóng” để quay lại chi tiết.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">F3 User Flow — tài liệu đính kèm nếu có; AS-IS bước “Xem” tài liệu.</div></div>
+      <div><div class="detail-label">Cải tiến so với As-Is</div><ul class="detail-list"><li>Giữ thao tác xem tài liệu như As-Is và bổ sung ngữ cảnh tệp.</li><li>Không thêm tải xuống/chia sẻ vì nguồn không yêu cầu.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Định dạng tệp và cách hiển thị PDF/ảnh chưa được đặc tả.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="to-be-f3-04">
+  <div class="screen-head">
+    <span class="screen-id">TO-BE-F3-04</span>
+    <h3>Không tìm thấy phản ánh</h3>
+  </div>
+  <div class="device to-be">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Chi tiết phản ánh</div></div></div>
+<div class="content" style="display:flex;flex-direction:column;justify-content:center">
+  <div class="empty">
+    <div class="empty-icon"><svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></div>
+    <div class="empty-title">Không tìm thấy phản ánh</div>
+    <div class="empty-desc">Phản ánh có thể đã bị xóa hoặc đường dẫn không hợp lệ.</div>
+    <a class="btn btn-primary btn-block" href="../F2_Check_Status/to-be.html#to-be-f2-05">Quay lại danh sách</a>
+  </div>
+</div>
+</div>
+  </div>
+  <p class="purpose">Trạng thái lỗi khi phản ánh không còn tồn tại hoặc người dùng không có quyền xem.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Biểu tượng lỗi</li><li>Thông báo không tiết lộ dữ liệu</li><li>Nút quay lại danh sách</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Đọc thông báo.</li><li>Chọn “Quay lại danh sách” để tiếp tục.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">F3_Report_Details_and_History_User_Flow.mmd — nhánh “không tồn tại” / “không có quyền”; functional specification FR-UI-06/07.</div></div>
+      <div><div class="detail-label">Cải tiến so với As-Is</div><ul class="detail-list"><li>Thông báo không tìm thấy rõ ràng, không tiết lộ dữ liệu.</li><li>Có đường quay lại danh sách.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Sơ đồ F3 xác nhận nhánh “phản ánh không còn tồn tại”; câu chữ là đề xuất.</li></ul></div>
+    </div>
+  </details>
+</article>
+<article class="screen-card" id="to-be-f3-05">
+  <div class="screen-head">
+    <span class="screen-id">TO-BE-F3-05</span>
+    <h3>Không có quyền xem</h3>
+  </div>
+  <div class="device to-be">
+    <div class="device-status"><span>9:41</span><span class="status-icons" aria-hidden="true"><span class="signal"><i></i><i></i><i></i><i></i></span><span class="wifi"></span><span class="battery"></span></span></div>
+    <div class="screen">
+<div class="appbar"><span class="appbar-back"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></span><div style="flex:1;min-width:0"><div class="appbar-title">Chi tiết phản ánh</div></div></div>
+<div class="content" style="display:flex;flex-direction:column;justify-content:center">
+  <div class="empty">
+    <div class="empty-icon"><svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+    <div class="empty-title">Bạn không có quyền xem phản ánh này</div>
+    <div class="empty-desc">Vui lòng quay lại danh sách hoặc liên hệ bộ phận hỗ trợ nếu cần.</div>
+    <a class="btn btn-primary btn-block" href="../F2_Check_Status/to-be.html#to-be-f2-05">Quay lại danh sách</a>
+  </div>
+</div>
+</div>
+  </div>
+  <p class="purpose">Trạng thái lỗi khi phản ánh không còn tồn tại hoặc người dùng không có quyền xem.</p>
+  <details class="screen-details">
+    <summary>Chi tiết thiết kế</summary>
+    <div class="detail-grid">
+      <div><div class="detail-label">Thành phần chính</div><ul class="detail-list"><li>Biểu tượng lỗi</li><li>Thông báo không tiết lộ dữ liệu</li><li>Nút quay lại danh sách</li></ul></div>
+      <div><div class="detail-label">Tương tác chính</div><ul class="detail-list"><li>Đọc thông báo.</li><li>Chọn “Quay lại danh sách” để tiếp tục.</li></ul></div>
+      <div><div class="detail-label">Nguồn</div><div class="detail-text">F3_Report_Details_and_History_User_Flow.mmd — nhánh “không tồn tại” / “không có quyền”; functional specification FR-UI-06/07.</div></div>
+      <div><div class="detail-label">Cải tiến so với As-Is</div><ul class="detail-list"><li>Không hiển thị nội dung phản ánh khi không có quyền.</li><li>Có đường quay lại an toàn.</li></ul></div>
+      <div><div class="detail-label">Giả định / cần xác nhận</div><ul class="detail-list"><li>Sơ đồ F3 xác nhận nhánh “không có quyền”; cơ chế đăng nhập/phân quyền không được đặc tả.</li></ul></div>
+    </div>
+  </details>
+</article>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    Mã trang: <strong>F3_View_Details_History/to-be.html</strong> · Dữ liệu cá nhân, mã hồ sơ và địa chỉ trong wireframe là dữ liệu minh họa.
+    Nguồn: <em>diagrams/topic7</em> và <em>theoretical_basis</em>.
+  </footer>
+</body>
+</html>

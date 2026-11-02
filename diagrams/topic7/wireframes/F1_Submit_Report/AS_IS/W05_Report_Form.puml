@@ -1,0 +1,26 @@
+@startsalt
+title Biểu mẫu phản ánh — As-Is
+{
+<&chevron-left> Tạo phản ánh
+  --
+  Mã hồ sơ: *
+  "Nhập mã hồ sơ..."
+  .
+  Phản ánh kiến nghị về việc: *
+  ^Chọn loại phản ánh^
+  .
+  Nội dung phản ánh: *
+  {+
+    "Nhập nội dung phản ánh..."
+    .
+    .
+  }
+  .
+  Tài liệu đính kèm (không bắt buộc):
+  [<&paperclip> Chọn tệp]
+  .
+  [ ] Tôi xin cam đoan những thông tin kê khai trên là đúng sự thật
+  .
+  [Hủy] | [Gửi phản ánh]
+}
+@endsalt

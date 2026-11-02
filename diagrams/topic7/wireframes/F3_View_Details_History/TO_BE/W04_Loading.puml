@@ -1,0 +1,8 @@
+@startsalt
+title Đang tải chi tiết — To-Be
+{
+<&clock>
+  <b>Đang tải chi tiết...</b>
+  Vui lòng chờ trong giây lát.
+}
+@endsalt

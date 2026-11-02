@@ -1,0 +1,18 @@
+@startsalt
+title Chi tiết yêu cầu — As-Is
+{
+<&chevron-left> Chi tiết yêu cầu
+  --
+  <b>PA-2025-001</b>
+  Đèn đường hỏng
+  .
+  Mã hồ sơ: HS-2025-001
+  Loại phản ánh: Phản ánh kiến nghị về dịch vụ công
+  Nội dung: Đèn đường trước số 12 không sáng từ tối 27/10/2025.
+  .
+  <b>Tài liệu đính kèm</b>
+  <&file> anh_den_duong.jpg | [Xem]
+  .
+  [Quay lại]
+}
+@endsalt

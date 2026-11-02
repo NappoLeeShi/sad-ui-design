@@ -1,0 +1,30 @@
+@startsalt
+title Mô tả và đính kèm — Lỗi xác thực (To-Be)
+{
+<&chevron-left> Gửi phản ánh | Bước 3/4
+  --
+  {^"Vui lòng kiểm tra thông tin"
+    Nội dung phản ánh là bắt buộc.
+  }
+  {^"Thông tin đã chọn"
+    Loại vấn đề: Đèn đường / chiếu sáng
+    Vị trí: Số 12, đường Hoa Sen, phường An Phú
+  }
+  .
+  Mã hồ sơ: *
+  "HS-2026-001234"
+  .
+  Nội dung phản ánh: *
+  {+
+    " "
+    .
+    .
+  }
+  <b>Vui lòng nhập nội dung phản ánh.</b>
+  .
+  Tài liệu đính kèm (không bắt buộc):
+  [<&paperclip> Thêm ảnh hoặc tệp]
+  .
+  [Quay lại] | [Tiếp tục]
+}
+@endsalt

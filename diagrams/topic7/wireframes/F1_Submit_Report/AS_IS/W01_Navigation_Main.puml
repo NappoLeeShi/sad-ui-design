@@ -1,0 +1,16 @@
+@startsalt
+title Trang chính VNeID — As-Is
+{
+<b>VNeID</b> | <&bell>
+  --
+  {^"Tài khoản định danh điện tử"
+    <b>Công dân</b> — Mức 2 | Đã xác thực
+  }
+  .
+  <b>Dịch vụ</b>
+  * Dịch vụ khác  >
+  .
+  --
+  <&home> Trang chủ | <&person> Cá nhân
+}
+@endsalt

@@ -1,0 +1,13 @@
+@startsalt
+title Lịch sử yêu cầu trống — As-Is (suy luận)
+{
+<&chevron-left> Phản ánh kiến nghị về dịch vụ công
+  --
+  <b>Lịch sử yêu cầu</b>
+  .
+  <&info>
+  Chưa có yêu cầu nào.
+  .
+  [<&plus> Tạo mới yêu cầu]
+}
+@endsalt

@@ -1,0 +1,25 @@
+@startsalt
+title Chi tiết phản ánh và lịch sử xử lý — To-Be
+{
+<&chevron-left> Chi tiết phản ánh
+  --
+  <b>PA-2026-000123</b>
+  Trạng thái: Đang xử lý
+  Cập nhật lúc: 09:30, 28/10/2026
+  .
+  {^"Thông tin phản ánh"
+    Loại: Đèn đường / chiếu sáng
+    Vị trí: Số 12, đường Hoa Sen, phường An Phú
+    Nội dung: Đèn đường trước số 12 không sáng từ tối 27/10/2026.
+    Tài liệu: anh_den_duong.jpg | [Xem]
+  }
+  .
+  {^"Lịch sử xử lý"
+    <&check> 27/10/2026 20:15 — Đã gửi phản ánh
+    <&check> 28/10/2026 08:00 — Đã tiếp nhận
+    <&clock> 28/10/2026 09:30 — Đang xử lý
+  }
+  .
+  [Quay lại kết quả]
+}
+@endsalt

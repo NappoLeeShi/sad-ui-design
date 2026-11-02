@@ -1,4 +1,4 @@
-@startuml
+@startuml AS_IS_VNeID
 !pragma layout smetana
 title AS-IS — Chức năng "Phản ánh kiến nghị về dịch vụ công" trên ứng dụng VNeID\n<size:12>Activity Diagram · Tác nhân: Công dân · Mục đích: Tạo yêu cầu phản ánh và xem chi tiết yêu cầu hiện có</size>
 skinparam style strictuml

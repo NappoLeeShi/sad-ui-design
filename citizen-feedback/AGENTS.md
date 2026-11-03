@@ -19,6 +19,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 ### Goals
 - The project only aims to improve the "citizen feedback" feature, and does not aim to recreate the entire app from scratch.
 - The project is UI/UX focused, specifically for SAD course. Backend is an optional system that might or might not be implemented.
+- Reactive UI, simple to use UI for people of across ranges of age and education level.
 
 ### Tech Stack
 - Language: Typescript

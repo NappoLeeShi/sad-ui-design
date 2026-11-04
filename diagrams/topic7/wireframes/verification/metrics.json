@@ -1,0 +1,22 @@
+{
+  "home": {
+    "rmse": 0.05122,
+    "rmse_blur3": 0.01421
+  },
+  "login": {
+    "rmse": 0.06087,
+    "rmse_blur3": 0.02679
+  },
+  "feedback-selection": {
+    "rmse": 0.02744,
+    "rmse_blur3": 0.00295
+  },
+  "report-infra": {
+    "rmse": 0.03064,
+    "rmse_blur3": 0.00354
+  },
+  "report-infra-history": {
+    "rmse": 0.0308,
+    "rmse_blur3": 0.00374
+  }
+}

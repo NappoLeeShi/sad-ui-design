@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report - infrastructure &middot; SAD 2026 (Figma reference)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#eef0f3}
+  body{padding:24px;font-family:'Be Vietnam Pro',Inter,system-ui,sans-serif}
+  .meta{max-width:402px;margin:0 auto 12px;font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;color:#475569}
+  .meta a{color:#2563eb}
+  .frame{position:relative;overflow:hidden;margin:0 auto;background:#fff;box-shadow:0 8px 30px rgba(15,23,42,.18);border-radius:2px}
+  div,p{margin:0}
+  img{max-width:none}
+.n1{position:absolute;display:block;left:0;top:0;right:0;bottom:0;max-width:none;width:100%;height:100%}
+.n2{position:absolute;height:874px;left:-1px;top:0px;width:403px;margin:0;box-sizing:border-box}
+.n3{position:absolute;background:#ffffff;height:874px;left:475px;top:-11px;width:402px;margin:0;box-sizing:border-box}
+.n4{position:absolute;background:#dfdfdf;height:60px;left:0px;top:0px;width:402px;margin:0;box-sizing:border-box}
+.n5{word-break:break-word;font-family:'Be Vietnam Pro';font-weight:400;height:56.692px;line-height:normal;font-style:normal;position:relative;font-size:17px;color:#000000;width:342.147px;margin:0;box-sizing:border-box}
+.n6{flex:none;transform:rotate(0.22deg);margin:0;box-sizing:border-box}
+.n7{position:absolute;display:flex;height:58px;align-items:center;justify-content:center;left:44.2168px;top:15px;width:342.361px;margin:0;box-sizing:border-box}
+.n8{position:absolute;left:9px;top:12px;width:24px;height:24px;margin:0;box-sizing:border-box}
+.n9{position:absolute;display:contents;cursor:pointer;left:0px;top:0px;margin:0;box-sizing:border-box}
+.n10{word-break:break-word;position:absolute;font-family:'Be Vietnam Pro';font-weight:400;line-height:normal;left:21px;font-style:normal;font-size:12px;color:#000000;top:70px;white-space:nowrap;margin:0;box-sizing:border-box}
+.n11{position:absolute;display:block;left:0;top:0;right:0;bottom:0;max-width:none;width:100%;height:100%}
+.n12{position:absolute;height:38px;left:9px;top:92px;width:125px;margin:0;box-sizing:border-box}
+.n13{position:absolute;display:block;left:0;top:0;right:0;bottom:0;max-width:none;width:100%;height:100%}
+.n14{position:absolute;height:25.333px;left:14.4348px;top:98.3333px;width:21.739px;margin:0;box-sizing:border-box}
+.n15{word-break:break-word;position:absolute;font-family:'Be Vietnam Pro';font-weight:400;height:22px;line-height:normal;left:39px;font-style:normal;font-size:10px;color:#000000;top:98px;width:87px;margin:0;box-sizing:border-box}
+.n16{position:absolute;display:contents;left:9px;top:92px;margin:0;box-sizing:border-box}
+.n17{position:absolute;display:block;left:0;top:0;right:0;bottom:0;max-width:none;width:100%;height:100%}
+.n18{position:absolute;height:38px;left:143px;top:92px;width:125px;margin:0;box-sizing:border-box}
+.n19{position:absolute;display:block;left:0;top:0;right:0;bottom:0;max-width:none;width:100%;height:100%}
+.n20{position:absolute;height:25.333px;left:148.435px;top:98.3333px;width:21.739px;margin:0;box-sizing:border-box}
+.n21{word-break:break-word;position:absolute;font-family:'Be Vietnam Pro';font-weight:400;height:22px;line-height:normal;left:173px;font-style:normal;font-size:10px;color:#000000;top:98px;width:87px;margin:0;box-sizing:border-box}
+.n22{position:absolute;display:block;left:0;top:0;right:0;bottom:0;max-width:none;width:100%;height:100%}
+.n23{position:absolute;height:38px;left:272px;top:92px;width:125px;margin:0;box-sizing:border-box}
+.n24{position:absolute;display:block;left:0;top:0;right:0;bottom:0;max-width:none;width:100%;height:100%}
+.n25{position:absolute;height:25.333px;left:277.435px;top:98.3333px;width:21.739px;margin:0;box-sizing:border-box}
+.n26{word-break:break-word;position:absolute;font-family:'Be Vietnam Pro';font-weight:400;height:22px;line-height:normal;left:302px;font-style:normal;font-size:10px;color:#000000;top:102px;width:87px;margin:0;box-sizing:border-box}
+.n27{position:absolute;display:contents;left:272px;top:92px;margin:0;box-sizing:border-box}
+.n28{position:absolute;display:contents;left:143px;top:92px;margin:0;box-sizing:border-box}
+.n29{position:absolute;display:block;left:0;top:0;right:0;bottom:0;max-width:none;width:100%;height:100%}
+.n30{position:absolute;height:38px;left:9px;top:137px;width:125px;margin:0;box-sizing:border-box}
+.n31{position:absolute;display:block;left:0;top:0;right:0;bottom:0;max-width:none;width:100%;height:100%}
+.n32{position:absolute;height:25.333px;left:14.4348px;top:143.333px;width:21.739px;margin:0;box-sizing:border-box}
+.n33{word-break:break-word;position:absolute;font-family:'Be Vietnam Pro';font-weight:400;height:22px;line-height:normal;left:39px;font-style:normal;font-size:10px;color:#000000;top:147px;width:87px;margin:0;box-sizing:border-box}
+.n34{position:absolute;display:block;left:0;top:0;right:0;bottom:0;max-width:none;width:100%;height:100%}
+.n35{position:absolute;height:38px;left:143px;top:137px;width:125px;margin:0;box-sizing:border-box}
+.n36{position:absolute;display:block;left:0;top:0;right:0;bottom:0;max-width:none;width:100%;height:100%}
+.n37{position:absolute;height:25.333px;left:148.435px;top:143.333px;width:21.739px;margin:0;box-sizing:border-box}
+.n38{word-break:break-word;position:absolute;font-family:'Be Vietnam Pro';font-weight:400;height:22px;line-height:normal;left:173px;font-style:normal;font-size:10px;color:#000000;top:143px;width:87px;margin:0;box-sizing:border-box}
+.n39{position:absolute;display:contents;left:143px;top:137px;margin:0;box-sizing:border-box}
+.n40{position:absolute;display:contents;left:9px;top:137px;margin:0;box-sizing:border-box}
+.n41{position:absolute;display:block;left:0;top:0;right:0;bottom:0;max-width:none;width:100%;height:100%}
+.n42{position:absolute;height:38px;left:272px;top:138px;width:125px;margin:0;box-sizing:border-box}
+.n43{position:absolute;display:block;left:0;top:0;right:0;bottom:0;max-width:none;width:100%;height:100%}
+.n44{position:absolute;height:25.333px;left:277.435px;top:144.333px;width:21.739px;margin:0;box-sizing:border-box}
+.n45{word-break:break-word;position:absolute;font-family:'Be Vietnam Pro';font-weight:400;height:22px;line-height:normal;left:302px;font-style:normal;font-size:10px;color:#000000;top:148px;width:87px;margin:0;box-sizing:border-box}
+.n46{position:absolute;display:contents;left:272px;top:138px;margin:0;box-sizing:border-box}
+.n47{word-break:break-word;position:absolute;font-family:'Be Vietnam Pro';font-weight:400;line-height:normal;left:21px;font-style:normal;font-size:12px;color:#000000;top:182px;white-space:nowrap;margin:0;box-sizing:border-box}
+.n48{word-break:break-word;font-family:'Be Vietnam Pro';font-weight:400;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:10px;color:#000000;white-space:nowrap;margin:0;box-sizing:border-box}
+.n49{height:40px;position:relative;flex-shrink:0;width:346px;margin:0;box-sizing:border-box}
+.n50{position:absolute;background:#ffffff;border-width:1px;border-style:solid;border-color:#d1d5db;align-content:stretch;display:flex;height:40px;align-items:center;left:20px;padding-left:12px;padding-right:12px;border-radius:8px;top:203px;width:346px;margin:0;box-sizing:border-box}
+.n51{background:#ffffff;position:relative;width:100%;height:100%;margin:0;box-sizing:border-box}
+.framestroke{position:absolute;inset:0;pointer-events:none;z-index:2147483647;border-width:1px;border-style:solid;border-color:#000000;}
+</style>
+</head>
+<body>
+<div class="meta">
+  <div><strong>Report - infrastructure</strong> &middot; node <code>54:26</code> &middot; 402&times;874</div>
+  <div><a href="index.html">&larr; all screens</a> &middot;
+  <a href="https://www.figma.com/design/Fo4xm6B3ihoWaOC6uHdSwO/SAD-2026?node-id=54-26">open in Figma</a></div>
+</div>
+<div class="frame" style="width:402px;height:874px">
+<div class="n51" data-node-id="54:26" data-name="Report_Infastructure"><div class="n2" data-node-id="54:27" data-name="BG"><img src="assets/report-infra-ba094.svg" alt="" class="n1" /></div><div class="n3" data-node-id="54:28" data-name="BG"></div><a class="n9" data-node-id="54:29"><div class="n4" data-node-id="54:30" data-name="BG"></div><div class="n7" data-node-id="54:31"><div class="n6"><div class="n5">Phản ánh về cơ sở hạ tầng</div></div></div><div class="n8" data-node-id="54:32" data-name="arrow_back"><svg viewBox="0 0 24 24" width="100%" height="100%" fill="#000" xmlns="http://www.w3.org/2000/svg"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg></div></a><div class="n10" data-node-id="64:66">1.Loại vấn đề </div><div class="n16" data-node-id="64:67" data-name="Report_Infastructure"><div class="n12" data-node-id="64:68" data-name="BG"><img src="assets/report-infra-28d2d.svg" alt="" class="n11" /></div><div class="n14" data-node-id="64:69"><img src="assets/report-infra-b2b95.svg" alt="" class="n13" /></div><div class="n15" data-node-id="64:70"> Đường giao thông </div></div><div class="n28" data-node-id="64:73" data-name="Report_Infastructure"><div class="n18" data-node-id="64:74" data-name="BG"><img src="assets/report-infra-340b6.svg" alt="" class="n17" /></div><div class="n20" data-node-id="64:75"><img src="assets/report-infra-b2b95.svg" alt="" class="n19" /></div><div class="n21" data-node-id="64:76"> Chiếu sáng công cộng </div><div class="n27" data-node-id="64:79" data-name="Report_Infastructure"><div class="n23" data-node-id="64:80" data-name="BG"><img src="assets/report-infra-340b6.svg" alt="" class="n22" /></div><div class="n25" data-node-id="64:81"><img src="assets/report-infra-b2b95.svg" alt="" class="n24" /></div><div class="n26" data-node-id="64:82"> thoát nước </div></div></div><div class="n40" data-node-id="64:85" data-name="Report_Infastructure"><div class="n30" data-node-id="64:86" data-name="BG"><img src="assets/report-infra-340b6.svg" alt="" class="n29" /></div><div class="n32" data-node-id="64:87"><img src="assets/report-infra-b2b95.svg" alt="" class="n31" /></div><div class="n33" data-node-id="64:88"> vỉa hè </div><div class="n39" data-node-id="64:91" data-name="Report_Infastructure"><div class="n35" data-node-id="64:92" data-name="BG"><img src="assets/report-infra-340b6.svg" alt="" class="n34" /></div><div class="n37" data-node-id="64:93"><img src="assets/report-infra-b2b95.svg" alt="" class="n36" /></div><div class="n38" data-node-id="64:94">Cây xanh công cộng </div></div></div><div class="n46" data-node-id="64:97" data-name="Report_Infastructure"><div class="n42" data-node-id="64:98" data-name="BG"><img src="assets/report-infra-340b6.svg" alt="" class="n41" /></div><div class="n44" data-node-id="64:99"><img src="assets/report-infra-b2b95.svg" alt="" class="n43" /></div><div class="n45" data-node-id="64:100"> khác.... </div></div><div class="n47" data-node-id="64:103">2.Tiêu đề phản ánh </div><div class="n50" data-node-id="65:932" data-name="Frame"><div class="n48" data-node-id="65:933"> Nhập tiêu đề ngắn gọn..... </div><div class="n49" data-node-id="65:930" data-name="Field — Số định danh cá nhân"></div></div></div><div class="framestroke"></div>
+</div>
+</body>
+</html>

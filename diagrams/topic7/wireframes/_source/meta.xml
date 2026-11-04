@@ -1,0 +1,846 @@
+<canvas id="34:2" name="Wireframe" x="0" y="0" width="0" height="0">
+  <frame id="54:26" name="Report_Infastructure" x="1372" y="-651" width="402" height="874">
+    <vector id="54:27" name="BG" x="-1" y="0" width="403" height="874" />
+    <rounded-rectangle id="54:28" name="BG" x="475" y="-11" width="402" height="874" />
+    <frame id="54:29" name="Group 7" x="0" y="0" width="402" height="73">
+      <rounded-rectangle id="54:30" name="BG" x="0" y="0" width="402" height="60" />
+      <text id="54:31" name="Phản ánh về cơ sở hạ tầng" x="44.216796875" y="15" width="342.36099760338516" height="57.99999873949173" />
+      <instance id="54:32" name="arrow_back" x="9" y="12" width="24" height="24" />
+    </frame>
+    <text id="64:66" name="1.Loại vấn đề" x="21" y="70" width="77" height="15" />
+    <frame id="64:67" name="Report_Infastructure" x="9" y="92" width="125" height="38">
+      <vector id="64:68" name="BG" x="9" y="92" width="125" height="38" />
+      <vector id="64:69" name="Rectangle 4" x="14.434821605682373" y="98.33333349227905" width="21.7391300201416" height="25.33333396911621" />
+      <text id="64:70" name="Đường giao thông" x="39" y="98" width="87" height="22" />
+    </frame>
+    <frame id="64:73" name="Report_Infastructure" x="143" y="92" width="254" height="38">
+      <vector id="64:74" name="BG" x="143" y="92" width="125" height="38" />
+      <vector id="64:75" name="Rectangle 4" x="148.43482160568237" y="98.33333349227905" width="21.7391300201416" height="25.33333396911621" />
+      <text id="64:76" name="Chiếu sáng công cộng" x="173" y="98" width="87" height="22" />
+      <frame id="64:79" name="Report_Infastructure" x="272" y="92" width="125" height="38">
+        <vector id="64:80" name="BG" x="272" y="92" width="125" height="38" />
+        <vector id="64:81" name="Rectangle 4" x="277.4348216056824" y="98.33333349227905" width="21.7391300201416" height="25.33333396911621" />
+        <text id="64:82" name="thoát nước" x="302" y="102" width="87" height="22" />
+      </frame>
+    </frame>
+    <frame id="64:85" name="Report_Infastructure" x="9" y="137" width="259" height="38">
+      <vector id="64:86" name="BG" x="9" y="137" width="125" height="38" />
+      <vector id="64:87" name="Rectangle 4" x="14.434821605682373" y="143.33333349227905" width="21.7391300201416" height="25.33333396911621" />
+      <text id="64:88" name="vỉa hè" x="39" y="147" width="87" height="22" />
+      <frame id="64:91" name="Report_Infastructure" x="143" y="137" width="125" height="38">
+        <vector id="64:92" name="BG" x="143" y="137" width="125" height="38" />
+        <vector id="64:93" name="Rectangle 4" x="148.43482160568237" y="143.33333349227905" width="21.7391300201416" height="25.33333396911621" />
+        <text id="64:94" name="Cây xanh công cộng" x="173" y="143" width="87" height="22" />
+      </frame>
+    </frame>
+    <frame id="64:97" name="Report_Infastructure" x="272" y="138" width="125" height="38">
+      <vector id="64:98" name="BG" x="272" y="138" width="125" height="38" />
+      <vector id="64:99" name="Rectangle 4" x="277.4348216056824" y="144.33333349227905" width="21.7391300201416" height="25.33333396911621" />
+      <text id="64:100" name="khác...." x="302" y="148" width="87" height="22" />
+    </frame>
+    <text id="64:103" name="2.Tiêu đề phản ánh" x="21" y="182" width="111" height="15" />
+    <frame id="65:932" name="Frame" x="20" y="203" width="346" height="40">
+      <text id="65:933" name="Nhập tiêu đề ngắn gọn....." x="12" y="13.5" width="124" height="13" />
+      <frame id="65:930" name="Field — Số định danh cá nhân" x="136" y="0" width="346" height="40" />
+    </frame>
+  </frame>
+  <frame id="54:917" name="Report_IndividualOrOrganization" x="1372" y="263" width="402" height="874">
+    <vector id="54:918" name="BG" x="-1" y="0" width="402" height="874" />
+    <frame id="54:920" name="Top" x="0" y="0" width="402" height="73">
+      <rounded-rectangle id="54:921" name="BG" x="0" y="0" width="402" height="60" />
+      <text id="54:922" name="Báo cáo cá nhân, tổ chức" x="44.220001220703125" y="15" width="342.36101801011705" height="58.000002198256766" />
+      <instance id="54:923" name="arrow_back" x="9" y="12" width="24" height="24" />
+    </frame>
+    <frame id="67:22" name="Form Content" x="0" y="60" width="402" height="814">
+      <text id="67:164" name="Hướng dẫn điều kiện" x="16" y="16" width="370" height="36" />
+      <frame id="67:23" name="Section — Người báo cáo" x="16" y="68" width="370" height="583">
+        <text id="67:24" name="1. Thông tin người báo cáo" x="12" y="12" width="178" height="17" />
+        <frame id="67:25" name="Field — Họ và tên" x="12" y="41" width="346" height="61">
+          <text id="67:26" name="Họ và tên *" x="0" y="0" width="64" height="15" />
+          <frame id="67:27" name="Frame" x="0" y="21" width="346" height="40">
+            <text id="67:28" name="Nhập họ và tên" x="12" y="12" width="94" height="16" />
+          </frame>
+        </frame>
+        <frame id="67:232" name="Field — Số định danh cá nhân" x="12" y="114" width="346" height="61">
+          <text id="67:233" name="Số định danh cá nhân *" x="0" y="0" width="134" height="15" />
+          <frame id="67:234" name="Frame" x="0" y="21" width="346" height="40">
+            <text id="67:235" name="Nhập số định danh cá nhân" x="12" y="12" width="168" height="16" />
+          </frame>
+        </frame>
+        <frame id="67:29" name="Field — Số điện thoại" x="12" y="187" width="346" height="61">
+          <text id="67:30" name="Số điện thoại *" x="0" y="0" width="85" height="15" />
+          <frame id="67:31" name="Frame" x="0" y="21" width="346" height="40">
+            <text id="67:32" name="Nhập số điện thoại" x="12" y="12" width="116" height="16" />
+          </frame>
+        </frame>
+        <frame id="67:37" name="Field — Địa chỉ thường trú" x="12" y="260" width="346" height="61">
+          <text id="67:38" name="Địa chỉ thường trú *" x="0" y="0" width="113" height="15" />
+          <frame id="67:39" name="Frame" x="0" y="21" width="346" height="40">
+            <text id="67:40" name="Nhập địa chỉ thường trú" x="12" y="12" width="146" height="16" />
+          </frame>
+        </frame>
+        <frame id="67:41" name="Checkbox — Tổ chức" x="12" y="333" width="346" height="18">
+          <frame id="67:42" name="Frame" x="0" y="0" width="18" height="18">
+            <frame id="67:221" name="check" x="3" y="3" width="12" height="12" />
+          </frame>
+          <text id="67:43" name="Tôi là người đại diện tổ chức" x="26" y="1.5" width="160" height="15" />
+        </frame>
+        <frame id="67:44" name="Conditional — Tổ chức" x="12" y="363" width="346" height="208">
+          <text id="67:165" name="Hướng dẫn điều kiện" x="0" y="8" width="346" height="36" />
+          <text id="67:194" name="Hướng dẫn điều kiện" x="0" y="52" width="346" height="18" />
+          <frame id="67:45" name="Field — Tên tổ chức" x="0" y="78" width="346" height="61">
+            <text id="67:46" name="Tên tổ chức *" x="0" y="0" width="78" height="15" />
+            <frame id="67:47" name="Frame" x="0" y="21" width="346" height="40">
+              <text id="67:48" name="Nhập tên tổ chức" x="12" y="12" width="107" height="16" />
+            </frame>
+          </frame>
+          <frame id="67:49" name="Field — Vai trò đại diện" x="0" y="147" width="346" height="61">
+            <text id="67:50" name="Vai trò đại diện *" x="0" y="0" width="95" height="15" />
+            <frame id="67:51" name="Frame" x="0" y="21" width="346" height="40">
+              <text id="67:52" name="Nhập vai trò" x="12" y="12" width="75" height="16" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="67:53" name="Section — Đối tượng bị báo cáo" x="16" y="667" width="370" height="951">
+        <text id="67:54" name="2. Thông tin đối tượng bị báo cáo" x="12" y="12" width="223" height="17" />
+        <frame id="67:55" name="Field — Loại đối tượng" x="12" y="41" width="346" height="61">
+          <text id="67:56" name="Loại đối tượng bị báo cáo *" x="0" y="0" width="154" height="15" />
+          <frame id="67:57" name="Frame" x="0" y="21" width="346" height="40">
+            <text id="67:58" name="Cá nhân" x="12" y="12" width="51" height="16" />
+            <frame id="67:147" name="chevron-down" x="318" y="12" width="16" height="16" />
+          </frame>
+        </frame>
+        <text id="67:166" name="Hướng dẫn điều kiện" x="12" y="114" width="346" height="36" />
+        <frame id="67:195" name="State — Cá nhân" x="12" y="162" width="346" height="278">
+          <frame id="67:196" name="Frame" x="12" y="12" width="322" height="16">
+            <text id="67:199" name="Minh họa — Cá nhân" x="0" y="0" width="322" height="16" />
+          </frame>
+          <frame id="67:236" name="Dropdown — Cá nhân" x="12" y="36" width="322" height="40">
+            <text id="67:237" name="Cá nhân" x="12" y="12" width="51" height="16" />
+            <frame id="67:238" name="chevron-down" x="294" y="12" width="16" height="16" />
+          </frame>
+          <text id="67:200" name="Nhập thông tin biết được về đối tượng; không yêu cầu số định danh cá nhân." x="12" y="84" width="322" height="36" />
+          <frame id="67:60" name="Conditional — Cá nhân" x="12" y="128" width="322" height="138">
+            <frame id="67:61" name="Field — Họ và tên đối tượng" x="0" y="8" width="322" height="61">
+              <text id="67:62" name="Họ và tên đối tượng" x="0" y="0" width="113" height="15" />
+              <frame id="67:63" name="Frame" x="0" y="21" width="322" height="40">
+                <text id="67:64" name="Nhập họ và tên" x="12" y="12" width="94" height="16" />
+              </frame>
+            </frame>
+            <frame id="67:65" name="Field — Số điện thoại đối tượng" x="0" y="77" width="322" height="61">
+              <text id="67:66" name="Số điện thoại đối tượng" x="0" y="0" width="134" height="15" />
+              <frame id="67:67" name="Frame" x="0" y="21" width="322" height="40">
+                <text id="67:68" name="Nhập số điện thoại" x="12" y="12" width="116" height="16" />
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+        <frame id="67:201" name="State — Tổ chức" x="12" y="452" width="346" height="252">
+          <frame id="67:202" name="Frame" x="12" y="12" width="322" height="16">
+            <text id="67:204" name="Minh họa — Tổ chức" x="0" y="0" width="322" height="16" />
+          </frame>
+          <frame id="67:240" name="Dropdown — Tổ chức" x="12" y="36" width="322" height="40">
+            <text id="67:241" name="Tổ chức" x="12" y="12" width="50" height="16" />
+            <frame id="67:242" name="chevron-down" x="294" y="12" width="16" height="16" />
+          </frame>
+          <text id="67:205" name="Nhập tên tổ chức và địa chỉ nếu biết." x="12" y="84" width="322" height="18" />
+          <frame id="67:169" name="Điều kiện — Tên tổ chức bị báo cáo" x="12" y="110" width="322" height="61">
+            <text id="67:170" name="Tên tổ chức bị báo cáo" x="0" y="0" width="131" height="15" />
+            <frame id="67:171" name="Frame" x="0" y="21" width="322" height="40">
+              <text id="67:172" name="Nhập tên tổ chức (nếu biết)" x="12" y="12" width="170" height="16" />
+            </frame>
+          </frame>
+          <frame id="67:173" name="Điều kiện — Địa chỉ tổ chức" x="12" y="179" width="322" height="61">
+            <text id="67:174" name="Địa chỉ tổ chức" x="0" y="0" width="86" height="15" />
+            <frame id="67:175" name="Frame" x="0" y="21" width="322" height="40">
+              <text id="67:176" name="Nhập địa chỉ (nếu biết)" x="12" y="12" width="140" height="16" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="67:206" name="State — Không rõ" x="12" y="716" width="346" height="223">
+          <frame id="67:207" name="Frame" x="12" y="12" width="322" height="16">
+            <text id="67:209" name="Minh họa — Không rõ" x="0" y="0" width="322" height="16" />
+          </frame>
+          <frame id="67:244" name="Dropdown — Không rõ" x="12" y="36" width="322" height="40">
+            <text id="67:245" name="Không rõ" x="12" y="12" width="56" height="16" />
+            <frame id="67:246" name="chevron-down" x="294" y="12" width="16" height="16" />
+          </frame>
+          <text id="67:210" name="Ẩn thông tin định danh; nhập dấu hiệu nhận biết nếu có." x="12" y="84" width="322" height="18" />
+          <frame id="67:211" name="Field — Mô tả dấu hiệu nhận biết" x="12" y="110" width="322" height="101">
+            <text id="67:212" name="Mô tả dấu hiệu nhận biết" x="0" y="0" width="142" height="15" />
+            <frame id="67:213" name="Frame" x="0" y="21" width="322" height="80">
+              <text id="67:214" name="Mô tả dấu hiệu nhận biết (ví dụ: biển hiệu, trang phục, phương tiện, đặc điểm nhận dạng)..." x="12" y="12" width="298" height="32" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="67:69" name="Section — Vụ việc" x="16" y="1634" width="370" height="432">
+        <text id="67:70" name="3. Thông tin vụ việc" x="12" y="12" width="133" height="17" />
+        <frame id="67:71" name="Field — Hành vi" x="12" y="41" width="346" height="61">
+          <text id="67:72" name="Hành vi cần báo cáo *" x="0" y="0" width="126" height="15" />
+          <frame id="67:73" name="Frame" x="0" y="21" width="346" height="40">
+            <text id="67:74" name="Khác" x="12" y="12" width="31" height="16" />
+            <frame id="67:150" name="chevron-down" x="318" y="12" width="16" height="16" />
+          </frame>
+        </frame>
+        <text id="67:178" name="Hướng dẫn điều kiện" x="12" y="114" width="346" height="36" />
+        <text id="67:179" name="Hướng dẫn điều kiện" x="12" y="162" width="346" height="18" />
+        <frame id="67:180" name="Điều kiện — Hành vi khác *" x="12" y="192" width="346" height="61">
+          <text id="67:181" name="Hành vi khác *" x="0" y="0" width="84" height="15" />
+          <frame id="67:182" name="Frame" x="0" y="21" width="346" height="40">
+            <text id="67:183" name="Mô tả ngắn hành vi cần báo cáo" x="12" y="12" width="196" height="16" />
+          </frame>
+        </frame>
+        <frame id="67:215" name="State — Không rõ thời gian" x="12" y="265" width="346" height="155">
+          <frame id="67:81" name="Checkbox — Không rõ thời gian" x="12" y="12" width="322" height="18">
+            <frame id="67:82" name="Frame" x="0" y="0" width="18" height="18">
+              <frame id="67:227" name="check" x="3" y="3" width="12" height="12" />
+            </frame>
+            <text id="67:83" name="Không rõ thời gian" x="26" y="1.5" width="104" height="15" />
+          </frame>
+          <text id="67:184" name="Hướng dẫn điều kiện" x="12" y="38" width="322" height="36" />
+          <frame id="67:76" name="Field — Thời gian" x="12" y="82" width="322" height="61">
+            <text id="67:77" name="Thời gian xảy ra" x="0" y="0" width="91" height="15" />
+            <frame id="67:78" name="Frame" x="0" y="21" width="322" height="40">
+              <frame id="67:156" name="calendar" x="12" y="12" width="16" height="16" />
+              <text id="67:80" name="DD/MM/YYYY HH:mm" x="36" y="12" width="135" height="16" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="67:84" name="Section — Địa điểm" x="16" y="2082" width="370" height="326">
+        <text id="67:85" name="4. Địa điểm" x="12" y="12" width="76" height="17" />
+        <text id="67:185" name="Hướng dẫn điều kiện" x="12" y="41" width="346" height="36" />
+        <frame id="67:217" name="State — Không rõ địa điểm" x="12" y="89" width="346" height="225">
+          <frame id="67:95" name="Checkbox — Không rõ địa điểm" x="12" y="12" width="322" height="18">
+            <frame id="67:96" name="Frame" x="0" y="0" width="18" height="18">
+              <frame id="67:230" name="check" x="3" y="3" width="12" height="12" />
+            </frame>
+            <text id="67:97" name="Không rõ địa điểm" x="26" y="1.5" width="104" height="15" />
+          </frame>
+          <text id="67:219" name="Địa chỉ, bản đồ và vị trí hiện tại không khả dụng khi chưa rõ địa điểm." x="12" y="38" width="322" height="36" />
+          <frame id="67:86" name="Field — Địa chỉ chi tiết" x="12" y="82" width="322" height="61">
+            <text id="67:87" name="Địa chỉ chi tiết" x="0" y="0" width="81" height="15" />
+            <frame id="67:88" name="Frame" x="0" y="21" width="322" height="40">
+              <text id="67:89" name="Nhập địa chỉ cụ thể" x="12" y="12" width="120" height="16" />
+            </frame>
+          </frame>
+          <frame id="67:90" name="Map Actions" x="12" y="151" width="322" height="36">
+            <frame id="67:91" name="Frame" x="0" y="0" width="322" height="36">
+              <text id="67:92" name="Chọn trên bản đồ" x="111" y="10.5" width="100" height="15" />
+            </frame>
+          </frame>
+          <frame id="67:186" name="Checkbox — Dùng vị trí hiện tại" x="12" y="195" width="322" height="18">
+            <frame id="67:187" name="Frame" x="0" y="0" width="18" height="18" />
+            <text id="67:188" name="Dùng vị trí hiện tại" x="26" y="1.5" width="103" height="15" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="67:98" name="Section — Bằng chứng" x="16" y="2424" width="370" height="333">
+        <text id="67:99" name="5. Bằng chứng (Tối đa 3 ảnh)" x="12" y="12" width="194" height="17" />
+        <text id="67:189" name="Hướng dẫn điều kiện" x="12" y="41" width="346" height="36" />
+        <frame id="67:100" name="Upload Zone" x="12" y="89" width="346" height="80">
+          <frame id="67:153" name="upload" x="163" y="20.5" width="20" height="20" />
+          <text id="67:102" name="Chọn ảnh từ thiết bị" x="116.5" y="44.5" width="113" height="15" />
+        </frame>
+        <frame id="67:103" name="Preview 1" x="12" y="181" width="346" height="64">
+          <frame id="67:104" name="Frame" x="0" y="0" width="64" height="64">
+            <rounded-rectangle id="67:105" name="Rectangle" x="0" y="0" width="64" height="64" />
+          </frame>
+          <frame id="67:106" name="Frame" x="72" y="10.5" width="274" height="43">
+            <text id="67:107" name="Ảnh xem trước 1 (minh họa)" x="0" y="0" width="158" height="15" />
+            <frame id="67:108" name="Frame" x="0" y="19" width="274" height="24">
+              <frame id="67:109" name="Frame" x="0" y="0" width="242" height="24">
+                <text id="67:110" name="Thay thế" x="98" y="5.5" width="46" height="13" />
+              </frame>
+              <frame id="67:111" name="Frame" x="250" y="0" width="24" height="24">
+                <frame id="67:159" name="trash" x="5" y="5" width="14" height="14" />
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+        <frame id="67:113" name="Preview 2" x="12" y="257" width="346" height="64">
+          <frame id="67:114" name="Frame" x="0" y="0" width="64" height="64">
+            <rounded-rectangle id="67:115" name="Rectangle" x="0" y="0" width="64" height="64" />
+          </frame>
+          <frame id="67:116" name="Frame" x="72" y="10.5" width="274" height="43">
+            <text id="67:117" name="Ảnh xem trước 2 (minh họa)" x="0" y="0" width="160" height="15" />
+            <frame id="67:118" name="Frame" x="0" y="19" width="274" height="24">
+              <frame id="67:119" name="Frame" x="0" y="0" width="242" height="24">
+                <text id="67:120" name="Thay thế" x="98" y="5.5" width="46" height="13" />
+              </frame>
+              <frame id="67:121" name="Frame" x="250" y="0" width="24" height="24">
+                <frame id="67:162" name="trash" x="5" y="5" width="14" height="14" />
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="67:123" name="Section — Nội dung báo cáo" x="16" y="2773" width="370" height="227">
+        <text id="67:124" name="6. Nội dung báo cáo" x="12" y="12" width="134" height="17" />
+        <frame id="67:125" name="Field — Tóm tắt" x="12" y="41" width="346" height="61">
+          <text id="67:126" name="Tóm tắt vụ việc *" x="0" y="0" width="97" height="15" />
+          <frame id="67:127" name="Frame" x="0" y="21" width="346" height="40">
+            <text id="67:128" name="Nhập tóm tắt ngắn gọn" x="12" y="12" width="142" height="16" />
+          </frame>
+        </frame>
+        <frame id="67:129" name="Field — Chi tiết" x="12" y="114" width="346" height="101">
+          <text id="67:130" name="Chi tiết mô tả" x="0" y="0" width="77" height="15" />
+          <frame id="67:131" name="Frame" x="0" y="21" width="346" height="80">
+            <text id="67:132" name="Nhập chi tiết vụ việc..." x="12" y="12" width="137" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="67:133" name="Section — Xác nhận" x="16" y="3016" width="370" height="114">
+        <text id="67:134" name="7. Xác nhận" x="12" y="12" width="77" height="17" />
+        <frame id="67:135" name="Checkbox — Xác nhận" x="12" y="41" width="346" height="36">
+          <frame id="67:136" name="Frame" x="0" y="0" width="18" height="18" />
+          <text id="67:137" name="Tôi xác nhận thông tin đã cung cấp là chính xác và chịu trách nhiệm về nội dung báo cáo. *" x="26" y="0" width="320" height="36" />
+        </frame>
+        <frame id="67:138" name="Legend" x="12" y="89" width="346" height="13">
+          <text id="67:139" name="*" x="0" y="0" width="6" height="13" />
+          <text id="67:140" name="Trường đề xuất bắt buộc" x="12" y="0" width="129" height="13" />
+        </frame>
+      </frame>
+      <frame id="67:141" name="Footer Actions" x="16" y="3146" width="370" height="44">
+        <frame id="67:142" name="Btn — Quay lại" x="0" y="0" width="180" height="44">
+          <text id="67:143" name="Quay lại" x="62.5" y="13.5" width="55" height="17" />
+        </frame>
+        <frame id="67:144" name="Btn — Gửi báo cáo" x="192" y="0" width="178" height="44">
+          <text id="67:145" name="Gửi báo cáo" x="48.5" y="13.5" width="81" height="17" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="65:935" name="Report_IndividualOrOrganization_FullVisual" x="1814" y="263" width="402" height="3263">
+    <vector id="65:936" name="BG" x="-1" y="0" width="402" height="874" />
+    <frame id="65:937" name="Top" x="0" y="0" width="402" height="73">
+      <rounded-rectangle id="65:938" name="BG" x="0" y="0" width="402" height="60" />
+      <text id="65:939" name="Báo cáo cá nhân, tổ chức" x="44.220001220703125" y="15" width="342.36101801011705" height="58.000002198256766" />
+      <instance id="65:940" name="arrow_back" x="9" y="12" width="24" height="24" />
+    </frame>
+    <frame id="65:941" name="Form Content" x="0" y="60" width="402" height="3203">
+      <text id="65:942" name="Hướng dẫn điều kiện" x="16" y="16" width="370" height="36" />
+      <frame id="65:943" name="Section — Người báo cáo" x="16" y="68" width="370" height="583">
+        <text id="65:944" name="1. Thông tin người báo cáo" x="12" y="12" width="178" height="17" />
+        <frame id="65:945" name="Field — Họ và tên" x="12" y="41" width="346" height="61">
+          <text id="65:946" name="Họ và tên *" x="0" y="0" width="64" height="15" />
+          <frame id="65:947" name="Frame" x="0" y="21" width="346" height="40">
+            <text id="65:948" name="Nhập họ và tên" x="12" y="12" width="94" height="16" />
+          </frame>
+        </frame>
+        <frame id="65:949" name="Field — Số định danh cá nhân" x="12" y="114" width="346" height="61">
+          <text id="65:950" name="Số định danh cá nhân *" x="0" y="0" width="134" height="15" />
+          <frame id="65:951" name="Frame" x="0" y="21" width="346" height="40">
+            <text id="65:952" name="Nhập số định danh cá nhân" x="12" y="12" width="168" height="16" />
+          </frame>
+        </frame>
+        <frame id="65:953" name="Field — Số điện thoại" x="12" y="187" width="346" height="61">
+          <text id="65:954" name="Số điện thoại *" x="0" y="0" width="85" height="15" />
+          <frame id="65:955" name="Frame" x="0" y="21" width="346" height="40">
+            <text id="65:956" name="Nhập số điện thoại" x="12" y="12" width="116" height="16" />
+          </frame>
+        </frame>
+        <frame id="65:957" name="Field — Địa chỉ thường trú" x="12" y="260" width="346" height="61">
+          <text id="65:958" name="Địa chỉ thường trú *" x="0" y="0" width="113" height="15" />
+          <frame id="65:959" name="Frame" x="0" y="21" width="346" height="40">
+            <text id="65:960" name="Nhập địa chỉ thường trú" x="12" y="12" width="146" height="16" />
+          </frame>
+        </frame>
+        <frame id="65:961" name="Checkbox — Tổ chức" x="12" y="333" width="346" height="18">
+          <frame id="65:962" name="Frame" x="0" y="0" width="18" height="18">
+            <frame id="65:963" name="check" x="3" y="3" width="12" height="12" />
+          </frame>
+          <text id="65:965" name="Tôi là người đại diện tổ chức" x="26" y="1.5" width="160" height="15" />
+        </frame>
+        <frame id="65:966" name="Conditional — Tổ chức" x="12" y="363" width="346" height="208">
+          <text id="65:967" name="Hướng dẫn điều kiện" x="0" y="8" width="346" height="36" />
+          <text id="65:968" name="Hướng dẫn điều kiện" x="0" y="52" width="346" height="18" />
+          <frame id="65:969" name="Field — Tên tổ chức" x="0" y="78" width="346" height="61">
+            <text id="65:970" name="Tên tổ chức *" x="0" y="0" width="78" height="15" />
+            <frame id="65:971" name="Frame" x="0" y="21" width="346" height="40">
+              <text id="65:972" name="Nhập tên tổ chức" x="12" y="12" width="107" height="16" />
+            </frame>
+          </frame>
+          <frame id="65:973" name="Field — Vai trò đại diện" x="0" y="147" width="346" height="61">
+            <text id="65:974" name="Vai trò đại diện *" x="0" y="0" width="95" height="15" />
+            <frame id="65:975" name="Frame" x="0" y="21" width="346" height="40">
+              <text id="65:976" name="Nhập vai trò" x="12" y="12" width="75" height="16" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="65:977" name="Section — Đối tượng bị báo cáo" x="16" y="667" width="370" height="951">
+        <text id="65:978" name="2. Thông tin đối tượng bị báo cáo" x="12" y="12" width="223" height="17" />
+        <frame id="65:979" name="Field — Loại đối tượng" x="12" y="41" width="346" height="61">
+          <text id="65:980" name="Loại đối tượng bị báo cáo *" x="0" y="0" width="154" height="15" />
+          <frame id="65:981" name="Frame" x="0" y="21" width="346" height="40">
+            <text id="65:982" name="Cá nhân" x="12" y="12" width="51" height="16" />
+            <frame id="65:983" name="chevron-down" x="318" y="12" width="16" height="16" />
+          </frame>
+        </frame>
+        <text id="65:985" name="Hướng dẫn điều kiện" x="12" y="114" width="346" height="36" />
+        <frame id="65:986" name="State — Cá nhân" x="12" y="162" width="346" height="278">
+          <frame id="65:987" name="Frame" x="12" y="12" width="322" height="16">
+            <text id="65:988" name="Minh họa — Cá nhân" x="0" y="0" width="322" height="16" />
+          </frame>
+          <frame id="65:989" name="Dropdown — Cá nhân" x="12" y="36" width="322" height="40">
+            <text id="65:990" name="Cá nhân" x="12" y="12" width="51" height="16" />
+            <frame id="65:991" name="chevron-down" x="294" y="12" width="16" height="16" />
+          </frame>
+          <text id="65:993" name="Nhập thông tin biết được về đối tượng; không yêu cầu số định danh cá nhân." x="12" y="84" width="322" height="36" />
+          <frame id="65:994" name="Conditional — Cá nhân" x="12" y="128" width="322" height="138">
+            <frame id="65:995" name="Field — Họ và tên đối tượng" x="0" y="8" width="322" height="61">
+              <text id="65:996" name="Họ và tên đối tượng" x="0" y="0" width="113" height="15" />
+              <frame id="65:997" name="Frame" x="0" y="21" width="322" height="40">
+                <text id="65:998" name="Nhập họ và tên" x="12" y="12" width="94" height="16" />
+              </frame>
+            </frame>
+            <frame id="65:999" name="Field — Số điện thoại đối tượng" x="0" y="77" width="322" height="61">
+              <text id="65:1000" name="Số điện thoại đối tượng" x="0" y="0" width="134" height="15" />
+              <frame id="65:1001" name="Frame" x="0" y="21" width="322" height="40">
+                <text id="65:1002" name="Nhập số điện thoại" x="12" y="12" width="116" height="16" />
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+        <frame id="65:1003" name="State — Tổ chức" x="12" y="452" width="346" height="252">
+          <frame id="65:1004" name="Frame" x="12" y="12" width="322" height="16">
+            <text id="65:1005" name="Minh họa — Tổ chức" x="0" y="0" width="322" height="16" />
+          </frame>
+          <frame id="65:1006" name="Dropdown — Tổ chức" x="12" y="36" width="322" height="40">
+            <text id="65:1007" name="Tổ chức" x="12" y="12" width="50" height="16" />
+            <frame id="65:1008" name="chevron-down" x="294" y="12" width="16" height="16" />
+          </frame>
+          <text id="65:1010" name="Nhập tên tổ chức và địa chỉ nếu biết." x="12" y="84" width="322" height="18" />
+          <frame id="65:1011" name="Điều kiện — Tên tổ chức bị báo cáo" x="12" y="110" width="322" height="61">
+            <text id="65:1012" name="Tên tổ chức bị báo cáo" x="0" y="0" width="131" height="15" />
+            <frame id="65:1013" name="Frame" x="0" y="21" width="322" height="40">
+              <text id="65:1014" name="Nhập tên tổ chức (nếu biết)" x="12" y="12" width="170" height="16" />
+            </frame>
+          </frame>
+          <frame id="65:1015" name="Điều kiện — Địa chỉ tổ chức" x="12" y="179" width="322" height="61">
+            <text id="65:1016" name="Địa chỉ tổ chức" x="0" y="0" width="86" height="15" />
+            <frame id="65:1017" name="Frame" x="0" y="21" width="322" height="40">
+              <text id="65:1018" name="Nhập địa chỉ (nếu biết)" x="12" y="12" width="140" height="16" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="65:1019" name="State — Không rõ" x="12" y="716" width="346" height="223">
+          <frame id="65:1020" name="Frame" x="12" y="12" width="322" height="16">
+            <text id="65:1021" name="Minh họa — Không rõ" x="0" y="0" width="322" height="16" />
+          </frame>
+          <frame id="65:1022" name="Dropdown — Không rõ" x="12" y="36" width="322" height="40">
+            <text id="65:1023" name="Không rõ" x="12" y="12" width="56" height="16" />
+            <frame id="65:1024" name="chevron-down" x="294" y="12" width="16" height="16" />
+          </frame>
+          <text id="65:1026" name="Ẩn thông tin định danh; nhập dấu hiệu nhận biết nếu có." x="12" y="84" width="322" height="18" />
+          <frame id="65:1027" name="Field — Mô tả dấu hiệu nhận biết" x="12" y="110" width="322" height="101">
+            <text id="65:1028" name="Mô tả dấu hiệu nhận biết" x="0" y="0" width="142" height="15" />
+            <frame id="65:1029" name="Frame" x="0" y="21" width="322" height="80">
+              <text id="65:1030" name="Mô tả dấu hiệu nhận biết (ví dụ: biển hiệu, trang phục, phương tiện, đặc điểm nhận dạng)..." x="12" y="12" width="298" height="32" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="65:1031" name="Section — Vụ việc" x="16" y="1634" width="370" height="432">
+        <text id="65:1032" name="3. Thông tin vụ việc" x="12" y="12" width="133" height="17" />
+        <frame id="65:1033" name="Field — Hành vi" x="12" y="41" width="346" height="61">
+          <text id="65:1034" name="Hành vi cần báo cáo *" x="0" y="0" width="126" height="15" />
+          <frame id="65:1035" name="Frame" x="0" y="21" width="346" height="40">
+            <text id="65:1036" name="Khác" x="12" y="12" width="31" height="16" />
+            <frame id="65:1037" name="chevron-down" x="318" y="12" width="16" height="16" />
+          </frame>
+        </frame>
+        <text id="65:1039" name="Hướng dẫn điều kiện" x="12" y="114" width="346" height="36" />
+        <text id="65:1040" name="Hướng dẫn điều kiện" x="12" y="162" width="346" height="18" />
+        <frame id="65:1041" name="Điều kiện — Hành vi khác *" x="12" y="192" width="346" height="61">
+          <text id="65:1042" name="Hành vi khác *" x="0" y="0" width="84" height="15" />
+          <frame id="65:1043" name="Frame" x="0" y="21" width="346" height="40">
+            <text id="65:1044" name="Mô tả ngắn hành vi cần báo cáo" x="12" y="12" width="196" height="16" />
+          </frame>
+        </frame>
+        <frame id="65:1045" name="State — Không rõ thời gian" x="12" y="265" width="346" height="155">
+          <frame id="65:1046" name="Checkbox — Không rõ thời gian" x="12" y="12" width="322" height="18">
+            <frame id="65:1047" name="Frame" x="0" y="0" width="18" height="18">
+              <frame id="65:1048" name="check" x="3" y="3" width="12" height="12" />
+            </frame>
+            <text id="65:1050" name="Không rõ thời gian" x="26" y="1.5" width="104" height="15" />
+          </frame>
+          <text id="65:1051" name="Hướng dẫn điều kiện" x="12" y="38" width="322" height="36" />
+          <frame id="65:1052" name="Field — Thời gian" x="12" y="82" width="322" height="61">
+            <text id="65:1053" name="Thời gian xảy ra" x="0" y="0" width="91" height="15" />
+            <frame id="65:1054" name="Frame" x="0" y="21" width="322" height="40">
+              <frame id="65:1055" name="calendar" x="12" y="12" width="16" height="16" />
+              <text id="65:1057" name="DD/MM/YYYY HH:mm" x="36" y="12" width="135" height="16" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="65:1058" name="Section — Địa điểm" x="16" y="2082" width="370" height="326">
+        <text id="65:1059" name="4. Địa điểm" x="12" y="12" width="76" height="17" />
+        <text id="65:1060" name="Hướng dẫn điều kiện" x="12" y="41" width="346" height="36" />
+        <frame id="65:1061" name="State — Không rõ địa điểm" x="12" y="89" width="346" height="225">
+          <frame id="65:1062" name="Checkbox — Không rõ địa điểm" x="12" y="12" width="322" height="18">
+            <frame id="65:1063" name="Frame" x="0" y="0" width="18" height="18">
+              <frame id="65:1064" name="check" x="3" y="3" width="12" height="12" />
+            </frame>
+            <text id="65:1066" name="Không rõ địa điểm" x="26" y="1.5" width="104" height="15" />
+          </frame>
+          <text id="65:1067" name="Địa chỉ, bản đồ và vị trí hiện tại không khả dụng khi chưa rõ địa điểm." x="12" y="38" width="322" height="36" />
+          <frame id="65:1068" name="Field — Địa chỉ chi tiết" x="12" y="82" width="322" height="61">
+            <text id="65:1069" name="Địa chỉ chi tiết" x="0" y="0" width="81" height="15" />
+            <frame id="65:1070" name="Frame" x="0" y="21" width="322" height="40">
+              <text id="65:1071" name="Nhập địa chỉ cụ thể" x="12" y="12" width="120" height="16" />
+            </frame>
+          </frame>
+          <frame id="65:1072" name="Map Actions" x="12" y="151" width="322" height="36">
+            <frame id="65:1073" name="Frame" x="0" y="0" width="322" height="36">
+              <text id="65:1074" name="Chọn trên bản đồ" x="111" y="10.5" width="100" height="15" />
+            </frame>
+          </frame>
+          <frame id="65:1075" name="Checkbox — Dùng vị trí hiện tại" x="12" y="195" width="322" height="18">
+            <frame id="65:1076" name="Frame" x="0" y="0" width="18" height="18" />
+            <text id="65:1077" name="Dùng vị trí hiện tại" x="26" y="1.5" width="103" height="15" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="65:1078" name="Section — Bằng chứng" x="16" y="2424" width="370" height="333">
+        <text id="65:1079" name="5. Bằng chứng (Tối đa 3 ảnh)" x="12" y="12" width="194" height="17" />
+        <text id="65:1080" name="Hướng dẫn điều kiện" x="12" y="41" width="346" height="36" />
+        <frame id="65:1081" name="Upload Zone" x="12" y="89" width="346" height="80">
+          <frame id="65:1082" name="upload" x="163" y="20.5" width="20" height="20" />
+          <text id="65:1084" name="Chọn ảnh từ thiết bị" x="116.5" y="44.5" width="113" height="15" />
+        </frame>
+        <frame id="65:1085" name="Preview 1" x="12" y="181" width="346" height="64">
+          <frame id="65:1086" name="Frame" x="0" y="0" width="64" height="64">
+            <rounded-rectangle id="65:1087" name="Rectangle" x="0" y="0" width="64" height="64" />
+          </frame>
+          <frame id="65:1088" name="Frame" x="72" y="10.5" width="274" height="43">
+            <text id="65:1089" name="Ảnh xem trước 1 (minh họa)" x="0" y="0" width="158" height="15" />
+            <frame id="65:1090" name="Frame" x="0" y="19" width="274" height="24">
+              <frame id="65:1091" name="Frame" x="0" y="0" width="242" height="24">
+                <text id="65:1092" name="Thay thế" x="98" y="5.5" width="46" height="13" />
+              </frame>
+              <frame id="65:1093" name="Frame" x="250" y="0" width="24" height="24">
+                <frame id="65:1094" name="trash" x="5" y="5" width="14" height="14" />
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+        <frame id="65:1096" name="Preview 2" x="12" y="257" width="346" height="64">
+          <frame id="65:1097" name="Frame" x="0" y="0" width="64" height="64">
+            <rounded-rectangle id="65:1098" name="Rectangle" x="0" y="0" width="64" height="64" />
+          </frame>
+          <frame id="65:1099" name="Frame" x="72" y="10.5" width="274" height="43">
+            <text id="65:1100" name="Ảnh xem trước 2 (minh họa)" x="0" y="0" width="160" height="15" />
+            <frame id="65:1101" name="Frame" x="0" y="19" width="274" height="24">
+              <frame id="65:1102" name="Frame" x="0" y="0" width="242" height="24">
+                <text id="65:1103" name="Thay thế" x="98" y="5.5" width="46" height="13" />
+              </frame>
+              <frame id="65:1104" name="Frame" x="250" y="0" width="24" height="24">
+                <frame id="65:1105" name="trash" x="5" y="5" width="14" height="14" />
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="65:1107" name="Section — Nội dung báo cáo" x="16" y="2773" width="370" height="227">
+        <text id="65:1108" name="6. Nội dung báo cáo" x="12" y="12" width="134" height="17" />
+        <frame id="65:1109" name="Field — Tóm tắt" x="12" y="41" width="346" height="61">
+          <text id="65:1110" name="Tóm tắt vụ việc *" x="0" y="0" width="97" height="15" />
+          <frame id="65:1111" name="Frame" x="0" y="21" width="346" height="40">
+            <text id="65:1112" name="Nhập tóm tắt ngắn gọn" x="12" y="12" width="142" height="16" />
+          </frame>
+        </frame>
+        <frame id="65:1113" name="Field — Chi tiết" x="12" y="114" width="346" height="101">
+          <text id="65:1114" name="Chi tiết mô tả" x="0" y="0" width="77" height="15" />
+          <frame id="65:1115" name="Frame" x="0" y="21" width="346" height="80">
+            <text id="65:1116" name="Nhập chi tiết vụ việc..." x="12" y="12" width="137" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="65:1117" name="Section — Xác nhận" x="16" y="3016" width="370" height="114">
+        <text id="65:1118" name="7. Xác nhận" x="12" y="12" width="77" height="17" />
+        <frame id="65:1119" name="Checkbox — Xác nhận" x="12" y="41" width="346" height="36">
+          <frame id="65:1120" name="Frame" x="0" y="0" width="18" height="18" />
+          <text id="65:1121" name="Tôi xác nhận thông tin đã cung cấp là chính xác và chịu trách nhiệm về nội dung báo cáo. *" x="26" y="0" width="320" height="36" />
+        </frame>
+        <frame id="65:1122" name="Legend" x="12" y="89" width="346" height="13">
+          <text id="65:1123" name="*" x="0" y="0" width="6" height="13" />
+          <text id="65:1124" name="Trường đề xuất bắt buộc" x="12" y="0" width="129" height="13" />
+        </frame>
+      </frame>
+      <frame id="65:1125" name="Footer Actions" x="16" y="3146" width="370" height="44">
+        <frame id="65:1126" name="Btn — Quay lại" x="0" y="0" width="180" height="44">
+          <text id="65:1127" name="Quay lại" x="62.5" y="13.5" width="55" height="17" />
+        </frame>
+        <frame id="65:1128" name="Btn — Gửi báo cáo" x="192" y="0" width="178" height="44">
+          <text id="65:1129" name="Gửi báo cáo" x="48.5" y="13.5" width="81" height="17" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="56:17" name="Report_Infastructure_History" x="930" y="-651" width="402" height="874">
+    <vector id="56:18" name="BG" x="-1" y="0" width="402" height="874" />
+    <frame id="54:892" name="ReportHistoryButton" x="33" y="155" width="336" height="64">
+      <rounded-rectangle id="54:893" name="Rectangle 5" x="33" y="155" width="336" height="64" />
+      <text id="54:894" name="Lịch sử yêu cầu" x="91" y="170" width="209" height="35" />
+    </frame>
+    <frame id="54:895" name="NewReportButton" x="33" y="73" width="336" height="64">
+      <rounded-rectangle id="54:896" name="Rectangle 5" x="33" y="73" width="336" height="64" />
+      <text id="54:897" name="Tạo yêu cầu mới" x="91" y="88" width="222" height="35" />
+    </frame>
+    <frame id="56:36" name="Group 7" x="0" y="0" width="402" height="73">
+      <rounded-rectangle id="56:37" name="BG" x="0" y="0" width="402" height="60" />
+      <text id="56:38" name="Phản ánh về cơ sở hạ tầng" x="44.216796875" y="15" width="342.36099760338504" height="57.99999873949173" />
+      <instance id="56:39" name="arrow_back" x="9" y="12" width="24" height="24" />
+    </frame>
+    <frame id="54:859" name="HotlineButton" x="28" y="771" width="336" height="64">
+      <rounded-rectangle id="54:860" name="Rectangle 5" x="28" y="771" width="336" height="64" />
+      <text id="54:861" name="Đường dây nóng" x="85" y="786" width="225" height="35" />
+    </frame>
+  </frame>
+  <frame id="54:845" name="Report_IndividualOrOrganization_History" x="930" y="263" width="402" height="874">
+    <vector id="54:846" name="BG" x="1.1368683772161603e-13" y="0" width="402" height="874" />
+    <frame id="54:847" name="Group 7" x="0" y="0" width="402" height="73">
+      <rounded-rectangle id="54:848" name="BG" x="0" y="0" width="402" height="60" />
+      <text id="54:849" name="Báo cáo cá nhân, tổ chức" x="44.216796875" y="15" width="342.36099760338504" height="57.99999873949179" />
+      <instance id="54:850" name="arrow_back" x="9" y="12" width="24" height="24" />
+    </frame>
+    <frame id="54:864" name="HotlineButton" x="28" y="771" width="336" height="64">
+      <rounded-rectangle id="54:865" name="Rectangle 5" x="28" y="771" width="336" height="64" />
+      <text id="54:866" name="Đường dây nóng" x="85" y="786" width="225" height="35" />
+    </frame>
+    <frame id="54:885" name="ReportHistoryButton" x="33" y="155" width="336" height="64">
+      <rounded-rectangle id="54:886" name="Rectangle 5" x="33" y="155" width="336" height="64" />
+      <text id="54:887" name="Lịch sử yêu cầu" x="91" y="170" width="209" height="35" />
+    </frame>
+    <frame id="54:888" name="NewReportButton" x="33" y="73" width="336" height="64">
+      <rounded-rectangle id="54:889" name="Rectangle 5" x="33" y="73" width="336" height="64" />
+      <text id="54:890" name="Tạo yêu cầu mới" x="91" y="88" width="222" height="35" />
+    </frame>
+  </frame>
+  <frame id="54:868" name="Report_Party_History" x="930" y="1177" width="402" height="874">
+    <vector id="54:869" name="BG" x="1.1368683772161603e-13" y="0" width="402" height="874" />
+    <frame id="54:870" name="Top" x="0" y="0" width="402" height="73">
+      <rounded-rectangle id="54:871" name="BG" x="0" y="0" width="402" height="60" />
+      <text id="54:872" name="Kiến nghị, phản ánh về kiểm tra, giám sát của Đảng" x="44.216796875" y="15" width="342.36099760338504" height="57.99999873949173" />
+      <instance id="54:873" name="arrow_back" x="9" y="12" width="24" height="24" />
+    </frame>
+    <frame id="54:874" name="ReportHistoryButton" x="33" y="155" width="336" height="64">
+      <rounded-rectangle id="54:875" name="Rectangle 5" x="33" y="155" width="336" height="64" />
+      <text id="54:876" name="Lịch sử yêu cầu" x="91" y="170" width="209" height="35" />
+    </frame>
+    <frame id="54:877" name="NewReportButton" x="33" y="73" width="336" height="64">
+      <rounded-rectangle id="54:878" name="Rectangle 5" x="33" y="73" width="336" height="64" />
+      <text id="54:879" name="Tạo yêu cầu mới" x="91" y="88" width="222" height="35" />
+    </frame>
+    <frame id="54:880" name="HotlineButton" x="28" y="771" width="336" height="64">
+      <rounded-rectangle id="54:881" name="Rectangle 5" x="28" y="771" width="336" height="64" />
+      <text id="54:882" name="Đường dây nóng" x="85" y="786" width="225" height="35" />
+    </frame>
+  </frame>
+  <frame id="54:899" name="Report_PublicServices_History" x="930" y="2091" width="402" height="874">
+    <vector id="54:900" name="BG" x="1.1368683772161603e-13" y="0" width="402" height="874" />
+    <frame id="54:901" name="Top" x="0" y="0" width="402" height="73">
+      <rounded-rectangle id="54:902" name="BG" x="0" y="0" width="402" height="60" />
+      <text id="54:903" name="Phản ánh kiến nghị về dịch vụ công" x="44.216796875" y="15" width="342.36099760338504" height="57.99999873949173" />
+      <instance id="54:904" name="arrow_back" x="9" y="12" width="24" height="24" />
+    </frame>
+    <frame id="54:905" name="ReportHistoryButton" x="33" y="155" width="336" height="64">
+      <rounded-rectangle id="54:906" name="Rectangle 5" x="33" y="155" width="336" height="64" />
+      <text id="54:907" name="Lịch sử yêu cầu" x="91" y="170" width="209" height="35" />
+    </frame>
+    <frame id="54:908" name="NewReportButton" x="33" y="73" width="336" height="64">
+      <rounded-rectangle id="54:909" name="Rectangle 5" x="33" y="73" width="336" height="64" />
+      <text id="54:910" name="Tạo yêu cầu mới" x="91" y="88" width="222" height="35" />
+    </frame>
+    <frame id="54:911" name="HotlineButton" x="28" y="771" width="336" height="64">
+      <rounded-rectangle id="54:912" name="Rectangle 5" x="28" y="771" width="336" height="64" />
+      <text id="54:913" name="Đường dây nóng" x="85" y="786" width="225" height="35" />
+    </frame>
+  </frame>
+  <frame id="43:6" name="FeedbackSelection" x="488" y="-651" width="402" height="874">
+    <rounded-rectangle id="43:7" name="BG" x="0" y="0" width="402" height="874" />
+    <frame id="45:283" name="Report_Infastructure" x="17" y="73" width="368" height="96">
+      <vector id="45:284" name="BG" x="17" y="73" width="368" height="96" />
+      <vector id="45:285" name="Rectangle 4" x="33" y="89" width="64" height="64" />
+      <text id="45:286" name="Phản ánh về cơ sở hạ tầng" x="109" y="94" width="237" height="54" />
+    </frame>
+    <frame id="45:299" name="Report_IndividualOrOrganization" x="16" y="189" width="368" height="96">
+      <vector id="45:300" name="BG" x="16" y="189" width="368" height="96" />
+      <vector id="45:301" name="Rectangle 4" x="32" y="205" width="64" height="64" />
+      <text id="45:302" name="Báo cáo cá nhân, tổ chức" x="108" y="210" width="237" height="54" />
+    </frame>
+    <frame id="45:303" name="Report_PartyInspectionAndOversight" x="17" y="305" width="368" height="96">
+      <vector id="45:304" name="BG" x="17" y="305" width="368" height="96" />
+      <vector id="45:305" name="Rectangle 4" x="33" y="321" width="64" height="64" />
+      <text id="45:306" name="Kiến nghị, phản ánh về kiểm tra, giám sát của Đảng" x="109" y="326" width="237" height="54" />
+    </frame>
+    <frame id="45:307" name="Report_PublicServices" x="17" y="426" width="368" height="96">
+      <vector id="45:308" name="BG" x="17" y="426" width="368" height="96" />
+      <vector id="45:309" name="Rectangle 4" x="33" y="442" width="64" height="64" />
+      <text id="45:310" name="Phản ánh kiến nghị về dịch vụ công" x="109" y="447" width="237" height="54" />
+    </frame>
+    <frame id="44:86" name="Group 7" x="0" y="0" width="402" height="73">
+      <rounded-rectangle id="44:58" name="BG" x="0" y="0" width="402" height="60" />
+      <text id="44:18" name="Tiếp nhận góp ý, phản ánh &amp; vướng mắc" x="44.216796875" y="15" width="342.36099760338504" height="57.99999873949173" />
+      <instance id="44:31" name="arrow_back" x="9" y="12" width="24" height="24" />
+    </frame>
+  </frame>
+  <frame id="34:126" name="HomePage" x="46" y="-651" width="402" height="874">
+    <rounded-rectangle id="34:5" name="BG" x="0" y="0" width="402" height="874" />
+    <frame id="34:60" name="Top" x="0" y="0" width="402" height="180">
+      <rounded-rectangle id="34:6" name="BG" x="0" y="0" width="402" height="180" />
+      <ellipse id="34:7" name="PFP" x="16" y="35" width="69" height="69" />
+      <text id="34:36" name="NGUYỄN VĂN A" x="128" y="51" width="184" height="29" />
+      <frame id="34:61" name="IDLevel" x="128" y="7" width="146" height="28">
+        <rounded-rectangle id="34:9" name="Rectangle 3" x="128" y="7" width="146" height="28" />
+        <text id="34:8" name="Định danh mức 2" x="142" y="14" width="99" height="15" />
+        <instance id="34:32" name="IllutrativeIcon" x="247" y="14" width="16" height="16" />
+      </frame>
+      <frame id="34:41" name="QR_CCCD" x="10" y="114" width="186" height="56">
+        <rounded-rectangle id="34:37" name="Background" x="10" y="114" width="186" height="56" />
+        <rounded-rectangle id="34:40" name="Icon" x="16" y="120" width="45" height="45" />
+        <text id="34:42" name="Mã QR" x="68" y="120" width="47" height="18" />
+        <text id="34:43" name="Thẻ CCCD" x="67" y="142" width="72" height="18" />
+      </frame>
+      <frame id="34:45" name="QR_DinhDanhDienTu" x="205" y="114" width="186" height="56">
+        <rounded-rectangle id="34:46" name="Background" x="205" y="114" width="186" height="56" />
+        <rounded-rectangle id="34:47" name="Icon" x="211" y="120" width="45" height="45" />
+        <text id="34:48" name="Mã QR" x="263" y="120" width="47" height="18" />
+        <text id="34:49" name="Định danh điện tử" x="262" y="142" width="120" height="18" />
+      </frame>
+      <frame id="34:58" name="SearchButton" x="361" y="7" width="30" height="30">
+        <ellipse id="34:57" name="Ellipse 2" x="361" y="7" width="30" height="30" />
+        <instance id="34:54" name="search" x="364" y="10" width="24" height="24" />
+      </frame>
+    </frame>
+    <frame id="34:85" name="FavouriteUtilities" x="10" y="196" width="382" height="187">
+      <text id="34:59" name="Tiện ích yêu thích" x="10" y="196" width="149" height="16" />
+      <text id="34:67" name="Chỉnh sửa" x="298" y="197" width="71" height="16" />
+      <instance id="34:64" name="edit" x="375" y="196" width="16" height="16" />
+      <frame id="34:72" name="Utility" x="89" y="228" width="69" height="155">
+        <ellipse id="34:69" name="Icon" x="91" y="228" width="64" height="64" />
+        <text id="34:71" name="Thẻ căn cước, CCCD" x="89" y="295" width="69" height="88" />
+      </frame>
+      <frame id="34:79" name="Utility" x="245" y="228" width="69" height="155">
+        <ellipse id="34:80" name="Icon" x="247" y="228" width="64" height="64" />
+        <text id="34:81" name="Thẻ BHYT" x="245" y="295" width="69" height="88" />
+      </frame>
+      <frame id="34:82" name="Utility" x="323" y="228" width="69" height="155">
+        <ellipse id="34:83" name="Icon" x="325" y="228" width="64" height="64" />
+        <text id="34:84" name="etc." x="323" y="295" width="69" height="88" />
+      </frame>
+      <frame id="34:76" name="Utility" x="167" y="228" width="69" height="155">
+        <ellipse id="34:77" name="Icon" x="169" y="228" width="64" height="64" />
+        <text id="34:78" name="Giấy phép lái xe" x="167" y="295" width="69" height="88" />
+      </frame>
+      <frame id="34:73" name="Utility" x="10" y="228" width="69" height="155">
+        <ellipse id="34:74" name="Icon" x="12" y="228" width="64" height="64" />
+        <text id="34:75" name="Tiếp nhận góp ý, phản ánh &amp; vướng mắc" x="10" y="295" width="69" height="88" />
+      </frame>
+    </frame>
+    <frame id="34:86" name="FavouriteUtilities" x="10" y="196" width="382" height="187">
+      <text id="34:87" name="Tiện ích yêu thích" x="10" y="196" width="149" height="16" />
+      <text id="34:88" name="Chỉnh sửa" x="298" y="197" width="71" height="16" />
+      <instance id="34:89" name="edit" x="375" y="196" width="16" height="16" />
+      <frame id="34:90" name="Utility" x="89" y="228" width="69" height="155">
+        <ellipse id="34:91" name="Icon" x="91" y="228" width="64" height="64" />
+        <text id="34:92" name="Thẻ căn cước, CCCD" x="89" y="295" width="69" height="88" />
+      </frame>
+      <frame id="34:93" name="Utility" x="245" y="228" width="69" height="155">
+        <ellipse id="34:94" name="Icon" x="247" y="228" width="64" height="64" />
+        <text id="34:95" name="Thẻ BHYT" x="245" y="295" width="69" height="88" />
+      </frame>
+      <frame id="34:96" name="Utility" x="323" y="228" width="69" height="155">
+        <ellipse id="34:97" name="Icon" x="325" y="228" width="64" height="64" />
+        <text id="34:98" name="etc." x="323" y="295" width="69" height="88" />
+      </frame>
+      <frame id="34:99" name="Utility" x="167" y="228" width="69" height="155">
+        <ellipse id="34:100" name="Icon" x="169" y="228" width="64" height="64" />
+        <text id="34:101" name="Giấy phép lái xe" x="167" y="295" width="69" height="88" />
+      </frame>
+      <frame id="34:102" name="Utility" x="10" y="228" width="69" height="155">
+        <ellipse id="34:103" name="Icon" x="12" y="228" width="64" height="64" />
+        <text id="34:104" name="Tiếp nhận góp ý, phản ánh &amp; vướng mắc" x="10" y="295" width="69" height="88" />
+      </frame>
+    </frame>
+    <frame id="34:107" name="Utilities" x="10" y="408" width="379" height="127">
+      <frame id="34:109" name="Utility" x="10" y="10" width="69" height="107">
+        <ellipse id="34:110" name="Icon" x="12" y="10" width="64" height="64" />
+        <text id="34:111" name="Thủ tục hành chính" x="10" y="77" width="69" height="40" />
+      </frame>
+      <frame id="34:113" name="Utility" x="89" y="10" width="69" height="107">
+        <ellipse id="34:114" name="Icon" x="91" y="10" width="64" height="64" />
+        <text id="34:115" name="An sinh xã hội" x="89" y="77" width="69" height="40" />
+      </frame>
+      <frame id="34:116" name="Utility" x="168" y="10" width="69" height="107">
+        <ellipse id="34:117" name="Icon" x="170" y="10" width="64" height="64" />
+        <text id="34:118" name="Hồ sơ sức khỏe" x="168" y="77" width="69" height="40" />
+      </frame>
+      <frame id="34:119" name="Utility" x="247" y="10" width="69" height="107">
+        <ellipse id="34:120" name="Icon" x="249" y="10" width="64" height="64" />
+        <text id="34:121" name="An ninh trật tự/dịch vụ công" x="247" y="77" width="69" height="40" />
+      </frame>
+      <frame id="34:122" name="Utility" x="326" y="10" width="69" height="107">
+        <ellipse id="34:123" name="Icon" x="328" y="10" width="64" height="64" />
+        <text id="34:124" name="Dịch vụ khác" x="326" y="77" width="69" height="40" />
+      </frame>
+    </frame>
+    <frame id="54:18" name="Frame 1" x="254" y="690" width="100" height="100" />
+  </frame>
+  <frame id="43:87" name="Login" x="-396" y="-651" width="402" height="874">
+    <rounded-rectangle id="43:88" name="BG" x="0" y="0" width="402" height="874" />
+    <frame id="43:262" name="Extras" x="21" y="344" width="363" height="524">
+      <text id="43:248" name="PrivacyPolicy" x="75" y="826" width="246" height="18" />
+      <text id="43:249" name="Phiên bản x.x.xx" x="76" y="850" width="246" height="18" />
+      <text id="43:218" name="Quên mật khẩu" x="21" y="344" width="121" height="20" />
+      <frame id="43:263" name="ChangeAccount" x="255" y="344" width="129" height="20">
+        <text id="43:219" name="Đổi tài khoản" x="255" y="344" width="104" height="20" />
+        <instance id="43:226" name="Refresh cw" x="364" y="344" width="20" height="20" />
+      </frame>
+    </frame>
+    <frame id="43:253" name="Title" x="48" y="46" width="307" height="53">
+      <text id="43:168" name="Subtitle" x="48" y="81" width="307" height="18" />
+      <text id="43:177" name="Title" x="126" y="46" width="150" height="30" />
+    </frame>
+    <frame id="43:191" name="SelectedAccount" x="19" y="118" width="365" height="76">
+      <rounded-rectangle id="43:185" name="BG" x="19" y="118" width="365" height="76" />
+      <text id="43:186" name="Username" x="29" y="134" width="162" height="16" />
+      <text id="43:188" name="IDNumber_Censored" x="29" y="163" width="92" height="18" />
+      <ellipse id="43:190" name="AppIcon" x="316" y="126" width="60" height="60" />
+    </frame>
+    <frame id="43:261" name="Password" x="19" y="213" width="365" height="105">
+      <text id="43:192" name="Mật khẩu" x="19" y="213" width="73" height="20" />
+      <frame id="43:193" name="SelectedAccount" x="19" y="242" width="365" height="76">
+        <rounded-rectangle id="43:194" name="BG" x="19" y="242" width="365" height="76" />
+        <text id="43:196" name="IDNumber_Censored" x="55" y="268" width="148" height="25" />
+      </frame>
+      <instance id="43:216" name="HidePassword" x="345" y="271" width="20" height="20" />
+      <instance id="43:209" name="LockIcon" x="23" y="264" width="29" height="29" />
+    </frame>
+    <frame id="43:250" name="Redirect_Tutorial" x="23" y="721" width="106" height="84">
+      <text id="43:245" name="Hướng dẫn sử dụng" x="23" y="769" width="106" height="36" />
+      <instance id="43:235" name="Book open" x="52" y="721" width="48" height="48" />
+    </frame>
+    <frame id="43:251" name="Redirect_FAQ" x="145" y="721" width="106" height="84">
+      <text id="43:246" name="Câu hỏi thường gặp" x="145" y="769" width="106" height="36" />
+      <instance id="43:239" name="comment" x="177" y="721" width="48" height="48" />
+    </frame>
+    <frame id="43:252" name="Redirect_SupportHotline" x="269" y="721" width="106" height="66">
+      <text id="43:247" name="Hotline hỗ trợ" x="269" y="769" width="106" height="18" />
+      <instance id="43:243" name="call_end" x="298" y="721" width="48" height="48" />
+    </frame>
+    <frame id="43:260" name="Group 8" x="24" y="17" width="365" height="34">
+      <frame id="43:183" name="LanguageSelection" x="331" y="17" width="58" height="34">
+        <ellipse id="43:178" name="Language" x="331" y="17" width="34" height="34" />
+        <instance id="43:181" name="arrow_drop_down" x="365" y="22" width="24" height="24" />
+      </frame>
+      <instance id="43:175" name="BackButton" x="24" y="24" width="24" height="24" />
+    </frame>
+  </frame>
+</canvas>
+IMPORTANT: After you call this tool, you MUST call get_design_context if trying to implement the design, since this tool only returns metadata. If you do not call get_design_context, the agent will not be able to implement the design.

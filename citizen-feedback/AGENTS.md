@@ -31,15 +31,48 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## 2. Project Documentation
 
-## 3. Design System Rules
+### DOCS 
+Project documentation is stored in `docs/`:
 
-- The application design system is mandatory.
-- Never introduce colors outside the defined palette
+| Directory | Contents |
+| --- | --- |
+| `docs/flow/` | Mermaid user flow diagrams: `F1_Submit_Report_User_Flow.mmd` (submitting a report), `F2_Check_Report_Status_User_Flow.mmd` (checking report status), and `F3_Report_Details_and_History_User_Flow.mmd` (report details and processing history). |
+| `docs/functional_requirements/` | Functional requirements documents. Currently empty. |
+| `docs/prompts/` | Development prompts, numbered in order (`00_...`, `01_...`, etc.). This file is prompt 00. |
+| `docs/prompts/references/` | Reference HTML files. See [REFERENCES](./docs/prompts/references). |
+
+### REFERENCES
+
+`docs/prompts/references/` contains reference HTML files for Agent to use during development:
+
+| File | Contents |
+| --- | --- |
+| `feedback-selection.html` | Feedback selection screen. |
+| `home.html` | Home screen. |
+| `login.html` | Login screen. |
+| `report-individual-fullvisual.html` | Report for individual/organisation, full visual. |
+| `report-individual-history.html` | Report for individual/organisation, processing history. |
+| `report-individual.html` | Report for individual/organisation. |
+
+## 3. Guidelines
+
+1. **Stay inside the project**
+   Agents are not allowed to go outside of `~/Projects/uni/sad-ui-design/citizen-feedback`.
+
+2. **References are reference only**
+   Agents can only use `docs/prompts/references/` as reference. These files are not the final design and must not be used as ground truth. It is up to Agent to reformat any formatting mistakes made in the references.
+
+3. **Use the project Skills**
+   Agents must use the relevant skills in `citizen-feedback/.opencode/skills/` and must not exclude them. Read the relevant `SKILLS.md` before implementing.
+
+4. **The application design system is mandatory**
+  - This is a skill for agent in `.opencode/skills/`
+  - Never introduce colors outside the defined palette
   without explicit approval.
-- Generic design recommendations must be adapted
+  - Generic design recommendations must be adapted
   to the application's identity.
-- Existing design tokens take precedence over
-  generic styling suggestions.
+  - Existing design tokens take precedence over
+  generic styling suggestions. Use required skills (see section 4) as design tokens, while `docs/prompts/references/` are for reference only (as listed in subsection 2 above).
 
 ## 4. Required Skills
 

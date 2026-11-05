@@ -74,6 +74,7 @@ Project documentation is stored in `docs/`:
   - Existing design tokens take precedence over
   generic styling suggestions. Use required skills (see section 4) as design tokens, while `docs/prompts/references/` are for reference only (as listed in subsection 2 above).
 
+5. After each prompt execution, write a report, including date, prompt, response, changes. Write in md format and put in `agent_log` folder. Keep report concise, do not drag out to lengthen the report.
 ## 4. Required Skills
 
 - frontend-design:

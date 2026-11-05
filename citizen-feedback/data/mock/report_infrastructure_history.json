@@ -1,0 +1,128 @@
+[
+  {
+    "id": "ht-2026-0021",
+    "code": "HT-2026-0021",
+    "category": "infrastructure",
+    "title": "Vỉa hè bị lún, đọng nước sau mưa",
+    "description": "Đoạn vỉa hè trước số nhà 21 bị lún khoảng 20 cm và thường xuyên đọng nước sau mưa. Người đi bộ phải đi xuống lòng đường để tránh.",
+    "submittedAt": "2026-11-03T01:40:00.000Z",
+    "status": "received",
+    "statusUpdatedAt": "2026-11-04T02:25:00.000Z",
+    "reporter": {
+      "fullName": "Nguyễn Văn A",
+      "citizenId": "123456789",
+      "permanentAddress": "123/67 ABC"
+    },
+    "location": {
+      "address": "Vỉa hè trước số 21 đường Trần Hưng Đạo, phường Cầu Ông Lãnh, quận 1, TP. Hồ Chí Minh",
+      "lat": 10.7689,
+      "lng": 106.6958,
+      "source": "map"
+    },
+    "evidence": [],
+    "timeline": [
+      {
+        "status": "submitted",
+        "at": "2026-11-03T01:40:00.000Z"
+      },
+      {
+        "status": "received",
+        "at": "2026-11-04T02:25:00.000Z",
+        "note": "Báo cáo đã được tiếp nhận để kiểm tra hiện trường."
+      }
+    ],
+    "details": {
+      "infrastructureType": "sidewalk",
+      "issueType": "damaged",
+      "severity": "medium"
+    }
+  },
+  {
+    "id": "ht-2026-0015",
+    "code": "HT-2026-0015",
+    "category": "infrastructure",
+    "title": "Nắp hố ga bị bung tại giao lộ Nguyễn Huệ",
+    "description": "Nắp hố ga tại góc giao lộ bị bung khỏi khung, tạo thành hố sâu khoảng 40 cm giữa làn xe máy. Khu vực này rất đông người qua lại vào giờ cao điểm.",
+    "submittedAt": "2026-10-19T10:05:00.000Z",
+    "status": "processing",
+    "statusUpdatedAt": "2026-10-23T04:00:00.000Z",
+    "reporter": {
+      "fullName": "Nguyễn Văn A",
+      "citizenId": "123456789",
+      "permanentAddress": "123/67 ABC"
+    },
+    "location": {
+      "address": "Giao lộ Nguyễn Huệ và Lê Lợi, phường Bến Nghé, quận 1, TP. Hồ Chí Minh",
+      "lat": 10.7731,
+      "lng": 106.7009,
+      "source": "geolocation"
+    },
+    "evidence": [],
+    "timeline": [
+      {
+        "status": "submitted",
+        "at": "2026-10-19T10:05:00.000Z"
+      },
+      {
+        "status": "received",
+        "at": "2026-10-20T01:35:00.000Z"
+      },
+      {
+        "status": "processing",
+        "at": "2026-10-23T04:00:00.000Z",
+        "note": "Đơn vị quản lý hạ tầng đang kiểm tra và lên phương án khắc phục."
+      }
+    ],
+    "details": {
+      "infrastructureType": "road",
+      "issueType": "damaged",
+      "severity": "high"
+    }
+  },
+  {
+    "id": "ht-2025-0087",
+    "code": "HT-2025-0087",
+    "category": "infrastructure",
+    "title": "Đèn đường không sáng trên tuyến Lê Lợi",
+    "description": "Sáu trụ đèn liên tiếp trên đoạn đường khoảng 200 m không sáng trong nhiều ngày, gây khó khăn cho người đi đường vào buổi tối.",
+    "submittedAt": "2025-12-02T12:15:00.000Z",
+    "status": "completed",
+    "statusUpdatedAt": "2025-12-20T09:30:00.000Z",
+    "reporter": {
+      "fullName": "Nguyễn Văn A",
+      "citizenId": "123456789",
+      "permanentAddress": "123/67 ABC"
+    },
+    "location": {
+      "address": "Đường Lê Lợi, phường Bến Thành, quận 1, TP. Hồ Chí Minh",
+      "lat": 10.7725,
+      "lng": 106.6982,
+      "source": "map"
+    },
+    "evidence": [],
+    "timeline": [
+      {
+        "status": "submitted",
+        "at": "2025-12-02T12:15:00.000Z"
+      },
+      {
+        "status": "received",
+        "at": "2025-12-03T03:05:00.000Z"
+      },
+      {
+        "status": "processing",
+        "at": "2025-12-09T06:20:00.000Z"
+      },
+      {
+        "status": "completed",
+        "at": "2025-12-20T09:30:00.000Z",
+        "note": "Hệ thống chiếu sáng đã được sửa chữa và hoạt động trở lại."
+      }
+    ],
+    "details": {
+      "infrastructureType": "lighting",
+      "issueType": "not-working",
+      "severity": "medium"
+    }
+  }
+]

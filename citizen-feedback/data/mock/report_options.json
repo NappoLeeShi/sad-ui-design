@@ -1,0 +1,52 @@
+{
+  "evidence": {
+    "maxImages": 3,
+    "maxSizeMb": 5,
+    "acceptedTypes": ["image/jpeg", "image/png", "image/webp"]
+  },
+  "individual": {
+    "subjectTypes": [
+      { "value": "individual", "label": "Cá nhân" },
+      {
+        "value": "organization",
+        "label": "Tổ chức",
+        "description": "Doanh nghiệp, cơ sở kinh doanh hoặc đơn vị khác"
+      },
+      {
+        "value": "unknown",
+        "label": "Chưa xác định",
+        "description": "Chưa biết tên hoặc thông tin định danh của đối tượng"
+      }
+    ],
+    "behaviors": [
+      { "value": "fraud", "label": "Lừa đảo, chiếm đoạt tài sản" },
+      { "value": "harassment", "label": "Đe dọa, quấy rối" },
+      { "value": "property", "label": "Xâm phạm tài sản" },
+      { "value": "other", "label": "Khác" }
+    ]
+  },
+  "infrastructure": {
+    "types": [
+      { "value": "road", "label": "Đường giao thông" },
+      { "value": "sidewalk", "label": "Vỉa hè" },
+      { "value": "lighting", "label": "Hệ thống chiếu sáng công cộng" },
+      { "value": "drainage", "label": "Hệ thống thoát nước" },
+      { "value": "water", "label": "Cấp nước" },
+      { "value": "trees", "label": "Cây xanh công cộng" },
+      { "value": "public-works", "label": "Công trình công cộng" },
+      { "value": "other", "label": "Khác" }
+    ],
+    "issues": [
+      { "value": "damaged", "label": "Hư hỏng" },
+      { "value": "blocked", "label": "Bị chặn, chiếm dụng" },
+      { "value": "not-working", "label": "Không hoạt động" },
+      { "value": "flooding", "label": "Ngập, thoát nước kém" },
+      { "value": "other", "label": "Khác" }
+    ],
+    "severities": [
+      { "value": "low", "label": "Ảnh hưởng ít" },
+      { "value": "medium", "label": "Ảnh hưởng đến sinh hoạt" },
+      { "value": "high", "label": "Có nguy cơ mất an toàn" }
+    ]
+  }
+}

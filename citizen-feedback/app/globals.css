@@ -1,26 +1,128 @@
 @import "tailwindcss";
 
+/*
+ * VNeID feedback prototype — design tokens.
+ *
+ * The palette below is the complete set of colours allowed by the
+ * application design system (`.opencode/skills/app-design-system`).
+ * Do not add new hex values here. Secondary/tertiary text is produced
+ * from `on-surface` with an opacity, never from a new neutral.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+
+  /* MD3 roles — light theme only */
+  --md-primary: #a51b1d;
+  --md-on-primary: #ffffff;
+  --md-primary-container: #ffebec;
+  --md-on-primary-container: #a51b1d;
+
+  --md-secondary: #d13437;
+  --md-on-secondary: #ffffff;
+  --md-secondary-container: #fff0f1;
+  --md-on-secondary-container: #a51b1d;
+
+  --md-tertiary: #e84d51;
+  --md-on-tertiary: #ffffff;
+  --md-tertiary-container: #fff6f7;
+  --md-on-tertiary-container: #a51b1d;
+
+  --md-surface: #ffffff;
+  --md-on-surface: #000000;
+  --md-surface-variant: #f2f2f2;
+  --md-outline: #858585;
+
+  --md-error: #b3261e;
+  --md-on-error: #ffffff;
+  --md-error-container: #f9dedc;
+  --md-on-error-container: #b3261e;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--md-primary);
+  --color-on-primary: var(--md-on-primary);
+  --color-primary-container: var(--md-primary-container);
+  --color-on-primary-container: var(--md-on-primary-container);
+
+  --color-secondary: var(--md-secondary);
+  --color-on-secondary: var(--md-on-secondary);
+  --color-secondary-container: var(--md-secondary-container);
+  --color-on-secondary-container: var(--md-on-secondary-container);
+
+  --color-tertiary: var(--md-tertiary);
+  --color-on-tertiary: var(--md-on-tertiary);
+  --color-tertiary-container: var(--md-tertiary-container);
+  --color-on-tertiary-container: var(--md-on-tertiary-container);
+
+  --color-surface: var(--md-surface);
+  --color-on-surface: var(--md-on-surface);
+  --color-surface-variant: var(--md-surface-variant);
+  --color-outline: var(--md-outline);
+
+  --color-error: var(--md-error);
+  --color-on-error: var(--md-on-error);
+  --color-error-container: var(--md-error-container);
+  --color-on-error-container: var(--md-on-error-container);
+
+  --font-sans: var(--font-be-vietnam-pro), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Type scale — one family, 400/500/600 only */
+  --text-caption: 0.75rem;
+  --text-caption--line-height: 1rem;
+  --text-label: 0.8125rem;
+  --text-label--line-height: 1.125rem;
+  --text-body: 0.9375rem;
+  --text-body--line-height: 1.5rem;
+  --text-section: 1rem;
+  --text-section--line-height: 1.5rem;
+  --text-title: 1.25rem;
+  --text-title--line-height: 1.75rem;
+  --text-display: 1.625rem;
+  --text-display--line-height: 2rem;
+
+  /* Shapes — nested radii add up */
+  --radius-control: 0.75rem;
+  --radius-card: 1rem;
+  --radius-sheet: 1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    background-color: var(--md-surface-variant);
+    color: var(--md-on-surface);
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--md-primary-container);
+    color: var(--md-on-primary-container);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--md-primary);
+    outline-offset: 2px;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: color-mix(in srgb, var(--md-on-surface) 45%, transparent);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }

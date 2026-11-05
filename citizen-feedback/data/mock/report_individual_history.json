@@ -1,0 +1,144 @@
+[
+  {
+    "id": "bc-2026-0003",
+    "code": "BC-2026-0003",
+    "category": "individual",
+    "title": "Đe dọa, quấy rối tại khu chung cư",
+    "description": "Một người thường xuyên đứng trước sảnh chung cư vào buổi tối, lớn tiếng đe dọa cư dân và gây mất trật tự. Sự việc đã lặp lại nhiều lần trong hai tuần gần đây.",
+    "submittedAt": "2026-10-28T11:05:00.000Z",
+    "status": "processing",
+    "statusUpdatedAt": "2026-11-02T03:30:00.000Z",
+    "reporter": {
+      "fullName": "Nguyễn Văn A",
+      "citizenId": "123456789",
+      "permanentAddress": "123/67 ABC"
+    },
+    "location": {
+      "address": "Chung cư Hòa Bình, phường 14, quận 10, TP. Hồ Chí Minh",
+      "source": "manual"
+    },
+    "evidence": [],
+    "timeline": [
+      {
+        "status": "submitted",
+        "at": "2026-10-28T11:05:00.000Z",
+        "note": "Báo cáo được gửi từ ứng dụng."
+      },
+      {
+        "status": "received",
+        "at": "2026-10-29T02:15:00.000Z",
+        "note": "Báo cáo đã được tiếp nhận để kiểm tra thông tin."
+      },
+      {
+        "status": "processing",
+        "at": "2026-11-02T03:30:00.000Z",
+        "note": "Đang phối hợp với đơn vị chức năng tại địa phương."
+      }
+    ],
+    "details": {
+      "subjectType": "individual",
+      "subjectName": "Chưa rõ họ tên",
+      "subjectDescription": "Nam, khoảng 35 tuổi, thường mặc áo khoác tối màu.",
+      "behaviorType": "harassment",
+      "occurredAt": "2026-10-27T12:30:00.000Z",
+      "timeUnknown": false,
+      "locationUnknown": false
+    }
+  },
+  {
+    "id": "bc-2026-0002",
+    "code": "BC-2026-0002",
+    "category": "individual",
+    "title": "Cơ sở kinh doanh thu tiền nhưng không giao hàng",
+    "description": "Đặt mua thiết bị gia dụng qua trang bán hàng của cửa hàng và chuyển khoản đủ số tiền. Sau nhiều lần liên hệ, cửa hàng không giao hàng và không hoàn tiền.",
+    "submittedAt": "2026-09-14T04:20:00.000Z",
+    "status": "completed",
+    "statusUpdatedAt": "2026-10-01T08:45:00.000Z",
+    "reporter": {
+      "fullName": "Nguyễn Văn A",
+      "citizenId": "123456789",
+      "permanentAddress": "123/67 ABC"
+    },
+    "location": {
+      "address": "Số 45 đường Nguyễn Trãi, phường Bến Thành, quận 1, TP. Hồ Chí Minh",
+      "source": "manual"
+    },
+    "evidence": [],
+    "timeline": [
+      {
+        "status": "submitted",
+        "at": "2026-09-14T04:20:00.000Z"
+      },
+      {
+        "status": "received",
+        "at": "2026-09-15T01:10:00.000Z"
+      },
+      {
+        "status": "processing",
+        "at": "2026-09-22T06:00:00.000Z"
+      },
+      {
+        "status": "completed",
+        "at": "2026-10-01T08:45:00.000Z",
+        "note": "Đơn vị chức năng đã làm việc với cơ sở kinh doanh và hoàn tất xử lý."
+      }
+    ],
+    "details": {
+      "subjectType": "organization",
+      "subjectName": "Cửa hàng Gia dụng Minh Phát",
+      "subjectAddress": "Số 45 đường Nguyễn Trãi, phường Bến Thành, quận 1",
+      "subjectIdentifier": "MST 0312XXXXXX",
+      "behaviorType": "fraud",
+      "occurredAt": "2026-09-05T03:00:00.000Z",
+      "timeUnknown": false,
+      "locationUnknown": false
+    }
+  },
+  {
+    "id": "bc-2025-0142",
+    "code": "BC-2025-0142",
+    "category": "individual",
+    "title": "Lừa đảo qua điện thoại giả danh cán bộ thuế",
+    "description": "Đối tượng gọi điện tự xưng là cán bộ thuế, yêu cầu cung cấp mã OTP để hoàn thuế thu nhập cá nhân. Số điện thoại hiển thị không trùng với số của cơ quan thuế.",
+    "submittedAt": "2025-12-18T02:24:00.000Z",
+    "status": "completed",
+    "statusUpdatedAt": "2026-01-06T03:10:00.000Z",
+    "reporter": {
+      "fullName": "Nguyễn Văn A",
+      "citizenId": "123456789",
+      "permanentAddress": "123/67 ABC"
+    },
+    "location": {
+      "address": "Phường Bến Nghé, quận 1, TP. Hồ Chí Minh",
+      "source": "manual"
+    },
+    "evidence": [],
+    "timeline": [
+      {
+        "status": "submitted",
+        "at": "2025-12-18T02:24:00.000Z"
+      },
+      {
+        "status": "received",
+        "at": "2025-12-19T07:05:00.000Z"
+      },
+      {
+        "status": "processing",
+        "at": "2025-12-24T02:40:00.000Z"
+      },
+      {
+        "status": "completed",
+        "at": "2026-01-06T03:10:00.000Z",
+        "note": "Số điện thoại đã được đưa vào danh sách cảnh báo."
+      }
+    ],
+    "details": {
+      "subjectType": "unknown",
+      "behaviorType": "fraud",
+      "subjectDescription": "Giọng nam, tự xưng là cán bộ thuế, gọi từ số 028 xxxx xxxx.",
+      "timeUnknown": false,
+      "occurredAt": "2025-12-17T09:15:00.000Z",
+      "locationUnknown": true
+    }
+  }
+]

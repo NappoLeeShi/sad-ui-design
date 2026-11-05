@@ -1,0 +1,11 @@
+{
+  "id": "usr-0001",
+  "fullName": "Nguyễn Văn A",
+  "citizenId": "123456789",
+  "permanentAddress": "123/67 ABC",
+  "phone": "0912 345 678",
+  "dateOfBirth": "1985-03-12",
+  "gender": "Nam",
+  "accountLevel": "Định danh mức 2",
+  "initials": "NA"
+}

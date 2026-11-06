@@ -1,6 +1,6 @@
 # Prompt 5 — Implement the Individual / Organization Report Form
 
-Implement the complete Individual / Organization Report form.
+Implement the complete Individual / Organization Report form at `/reports/individual/`.
 
 This page is the primary baseline for the two report form designs. Use the existing `report-individual.html` as the main visual reference.
 

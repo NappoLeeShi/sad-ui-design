@@ -1,10 +1,10 @@
-import { ClipboardList } from "lucide-react";
+import { FilePlus } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { ReportHistoryList } from "@/components/reports/ReportHistoryList";
 import { buttonClasses } from "@/components/ui/Button";
-import { EmptyState } from "@/components/ui/EmptyState";
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
   getReportCategory,
@@ -48,19 +48,25 @@ export default async function ReportHistoryPage({
       <PageHeader title="Lịch sử yêu cầu" backHref={meta.basePath} />
 
       <main className="flex-1 px-5 py-6">
-        <EmptyState
-          icon={ClipboardList}
-          title="Danh sách đang được hoàn thiện"
-          description={`Các báo cáo ${meta.shortLabel.toLowerCase()} đã gửi và trạng thái xử lý sẽ được hiển thị tại đây.`}
-          action={
-            <Link
-              href={meta.newPath}
-              className={buttonClasses({ variant: "secondary" })}
-            >
-              Tạo yêu cầu mới
-            </Link>
-          }
-        />
+        <div className="mb-5 flex items-start justify-between gap-3">
+          <div className="min-w-0">
+            <h2 className="text-section font-semibold text-on-surface">
+              {meta.label}
+            </h2>
+            <p className="mt-1 text-label leading-5 text-on-surface/60">
+              Theo dõi các báo cáo đã gửi và trạng thái xử lý.
+            </p>
+          </div>
+          <Link
+            href={meta.newPath}
+            className={buttonClasses({ size: "sm", className: "shrink-0" })}
+          >
+            <FilePlus aria-hidden strokeWidth={1.5} className="size-4" />
+            Tạo mới
+          </Link>
+        </div>
+
+        <ReportHistoryList category={categoryKey} newHref={meta.newPath} />
       </main>
     </>
   );

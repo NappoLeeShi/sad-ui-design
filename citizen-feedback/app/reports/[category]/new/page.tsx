@@ -3,14 +3,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { IndividualReportForm } from "@/components/reports/IndividualReportForm";
 import { buttonClasses } from "@/components/ui/Button";
 import { EmptyState } from "@/components/ui/EmptyState";
 import { PageHeader } from "@/components/ui/PageHeader";
+import reportOptionsJson from "@/data/mock/report_options.json";
+import { getReporterSnapshot } from "@/lib/mock/mockAuthService";
 import {
   getReportCategory,
   REPORT_CATEGORIES,
   REPORT_CATEGORY_META,
 } from "@/lib/report-catalog";
+import type { ReportOptions } from "@/lib/types/report";
+
+const reportOptions = reportOptionsJson as ReportOptions;
 
 // The form shell is category-specific from the first pixel; render it fully
 // rather than streaming an empty App Shell.
@@ -42,6 +48,20 @@ export default async function NewReportPage({
   if (!categoryKey) notFound();
 
   const meta = REPORT_CATEGORY_META[categoryKey];
+
+  if (categoryKey === "individual") {
+    return (
+      <>
+        <PageHeader title={meta.label} backHref={meta.basePath} />
+        <IndividualReportForm
+          reporter={getReporterSnapshot()}
+          options={reportOptions.individual}
+          evidenceOptions={reportOptions.evidence}
+          historyHref={meta.historyPath}
+        />
+      </>
+    );
+  }
 
   return (
     <>

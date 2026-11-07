@@ -2,9 +2,12 @@ import { FilePlus } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 
+import { HotlineAction } from "@/components/reports/HotlineAction";
 import { ReportHistoryList } from "@/components/reports/ReportHistoryList";
 import { buttonClasses } from "@/components/ui/Button";
+import { LoadingState } from "@/components/ui/LoadingState";
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
   getReportCategory,
@@ -62,11 +65,15 @@ export default async function ReportHistoryPage({
             className={buttonClasses({ size: "sm", className: "shrink-0" })}
           >
             <FilePlus aria-hidden strokeWidth={1.5} className="size-4" />
-            Tạo mới
+            Tạo yêu cầu mới
           </Link>
         </div>
 
-        <ReportHistoryList category={categoryKey} newHref={meta.newPath} />
+        <HotlineAction className="mb-5" />
+
+        <Suspense fallback={<LoadingState label="Đang tải lịch sử" />}>
+          <ReportHistoryList category={categoryKey} newHref={meta.newPath} />
+        </Suspense>
       </main>
     </>
   );

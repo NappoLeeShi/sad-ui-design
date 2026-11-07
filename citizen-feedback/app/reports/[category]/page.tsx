@@ -1,8 +1,9 @@
-import { ClipboardList, FilePlus, Phone } from "lucide-react";
+import { ClipboardList, FilePlus } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { HotlineAction } from "@/components/reports/HotlineAction";
 import { buttonClasses } from "@/components/ui/Button";
 import { PageHeader } from "@/components/ui/PageHeader";
 import {
@@ -73,21 +74,7 @@ export default async function ReportLandingPage({
           </Link>
         </div>
 
-        <div className="mt-8 flex items-start gap-3 rounded-card border border-outline/20 p-4">
-          <Phone
-            aria-hidden
-            strokeWidth={1.5}
-            className="mt-0.5 size-5 shrink-0 text-on-surface/50"
-          />
-          <div>
-            <p className="text-body font-medium text-on-surface">
-              Đường dây nóng hỗ trợ
-            </p>
-            <p className="mt-0.5 text-caption leading-5 text-on-surface/55">
-              Số liên hệ chưa được xác thực trong bản mô phỏng này.
-            </p>
-          </div>
-        </div>
+        <HotlineAction className="mt-8" />
       </main>
     </>
   );

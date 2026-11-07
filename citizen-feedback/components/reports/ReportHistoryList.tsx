@@ -2,6 +2,7 @@
 
 import { ChevronRight, ClipboardList } from "lucide-react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 
 import { buttonClasses } from "@/components/ui/Button";
 import { EmptyState } from "@/components/ui/EmptyState";
@@ -23,12 +24,17 @@ export function ReportHistoryList({
 }: ReportHistoryListProps) {
   const { reports, loading } = useMockReports(category);
   const meta = REPORT_CATEGORY_META[category];
+  const searchParams = useSearchParams();
+
+  // Non-destructive developer preview: `?empty=1` shows this category's empty
+  // state without touching seeds, stored reports, or the other category.
+  const previewEmpty = searchParams.get("empty") === "1";
 
   if (loading) {
     return <LoadingState label="Đang tải lịch sử" />;
   }
 
-  if (!reports || reports.length === 0) {
+  if (previewEmpty || !reports || reports.length === 0) {
     return (
       <EmptyState
         icon={ClipboardList}
@@ -58,7 +64,10 @@ export function ReportHistoryList({
             <StatusBadge status={report.status} />
           </div>
 
-          <h3 className="mt-2 text-body font-semibold leading-5 text-on-surface">
+          <p className="mt-1.5 text-caption font-medium text-primary">
+            {REPORT_CATEGORY_META[report.category].label}
+          </p>
+          <h3 className="mt-1 text-body font-semibold leading-5 text-on-surface">
             {report.title}
           </h3>
           <p className="mt-1 line-clamp-2 text-label leading-5 text-on-surface/60">

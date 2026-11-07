@@ -1,12 +1,13 @@
 import { FileText } from "lucide-react";
 import { Suspense } from "react";
 
+import { ReportDetailView } from "@/components/reports/ReportDetailView";
 import { EmptyState } from "@/components/ui/EmptyState";
 import { LoadingState } from "@/components/ui/LoadingState";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { getReportCategory, REPORT_CATEGORY_META } from "@/lib/report-catalog";
 
-function ReportDetailPlaceholder({
+function ReportDetailContent({
   category,
   reportId,
 }: {
@@ -34,13 +35,13 @@ function ReportDetailPlaceholder({
 
   return (
     <>
-      <PageHeader title="Chi tiết báo cáo" backHref={meta.historyPath} />
+      <PageHeader
+        title="Chi tiết báo cáo"
+        backHref={meta.historyPath}
+        historyBack={false}
+      />
       <main className="flex-1 px-5 py-6">
-        <EmptyState
-          icon={FileText}
-          title="Chi tiết đang được hoàn thiện"
-          description={`Thông tin của báo cáo ${reportId} sẽ được hiển thị ở bước tiếp theo của bản mẫu.`}
-        />
+        <ReportDetailView category={categoryKey} reportId={reportId} />
       </main>
     </>
   );
@@ -52,7 +53,7 @@ export default function ReportDetailPage({
   return (
     <Suspense fallback={<LoadingState label="Đang mở báo cáo" />}>
       {params.then(({ category, id }) => (
-        <ReportDetailPlaceholder category={category} reportId={id} />
+        <ReportDetailContent category={category} reportId={id} />
       ))}
     </Suspense>
   );

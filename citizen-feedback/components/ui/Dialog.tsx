@@ -2,6 +2,8 @@
 
 import { useEffect, useId, useRef, type ReactNode } from "react";
 
+import { cn } from "@/lib/utils/cn";
+
 export interface DialogProps {
   open: boolean;
   onClose: () => void;
@@ -9,6 +11,8 @@ export interface DialogProps {
   description?: string;
   children?: ReactNode;
   footer?: ReactNode;
+  /** Lets a specific dialog widen or change the panel shape. */
+  panelClassName?: string;
 }
 
 export function Dialog({
@@ -18,6 +22,7 @@ export function Dialog({
   description,
   children,
   footer,
+  panelClassName,
 }: DialogProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const titleId = useId();
@@ -57,7 +62,10 @@ export function Dialog({
       onClick={(event) => {
         if (event.target === dialogRef.current) onClose();
       }}
-      className="m-auto max-h-[calc(100dvh-2rem)] w-[calc(100%-2rem)] max-w-sm overflow-y-auto rounded-sheet border border-outline/20 bg-surface p-0 text-on-surface shadow-[0_16px_48px_-24px_rgba(0,0,0,0.35)] backdrop:bg-on-surface/50"
+      className={cn(
+        "m-auto max-h-[calc(100dvh-2rem)] w-[calc(100%-2rem)] max-w-sm overflow-y-auto rounded-sheet border border-outline/20 bg-surface p-0 text-on-surface shadow-[0_16px_48px_-24px_rgba(0,0,0,0.35)] backdrop:bg-on-surface/50",
+        panelClassName,
+      )}
     >
       <div className="p-5">
         <h2 id={titleId} className="text-title font-semibold text-on-surface">

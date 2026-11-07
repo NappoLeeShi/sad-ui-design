@@ -69,7 +69,9 @@ export interface InfrastructureReportDetails {
   infrastructureType: string;
   infrastructureTypeOther?: string;
   issueType: string;
+  issueTypeOther?: string;
   severity?: string;
+  summary?: string;
 }
 
 export interface ReportRecordBase {

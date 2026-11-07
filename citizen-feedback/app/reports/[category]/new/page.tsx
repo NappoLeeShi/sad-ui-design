@@ -1,11 +1,8 @@
-import { FilePlus } from "lucide-react";
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { IndividualReportForm } from "@/components/reports/IndividualReportForm";
-import { buttonClasses } from "@/components/ui/Button";
-import { EmptyState } from "@/components/ui/EmptyState";
+import { InfrastructureReportForm } from "@/components/reports/InfrastructureReportForm";
 import { PageHeader } from "@/components/ui/PageHeader";
 import reportOptionsJson from "@/data/mock/report_options.json";
 import { getReporterSnapshot } from "@/lib/mock/mockAuthService";
@@ -49,39 +46,24 @@ export default async function NewReportPage({
 
   const meta = REPORT_CATEGORY_META[categoryKey];
 
-  if (categoryKey === "individual") {
-    return (
-      <>
-        <PageHeader title={meta.label} backHref={meta.basePath} />
+  return (
+    <>
+      <PageHeader title={meta.label} backHref={meta.basePath} />
+      {categoryKey === "individual" ? (
         <IndividualReportForm
           reporter={getReporterSnapshot()}
           options={reportOptions.individual}
           evidenceOptions={reportOptions.evidence}
           historyHref={meta.historyPath}
         />
-      </>
-    );
-  }
-
-  return (
-    <>
-      <PageHeader title={meta.shortLabel} backHref={meta.basePath} />
-
-      <main className="flex-1 px-5 py-6">
-        <EmptyState
-          icon={FilePlus}
-          title="Biểu mẫu đang được hoàn thiện"
-          description={`Biểu mẫu ${meta.label.toLowerCase()} sẽ được bổ sung ở bước tiếp theo của bản mẫu.`}
-          action={
-            <Link
-              href={meta.basePath}
-              className={buttonClasses({ variant: "secondary" })}
-            >
-              Quay lại
-            </Link>
-          }
+      ) : (
+        <InfrastructureReportForm
+          reporter={getReporterSnapshot()}
+          options={reportOptions.infrastructure}
+          evidenceOptions={reportOptions.evidence}
+          historyHref={meta.historyPath}
         />
-      </main>
+      )}
     </>
   );
 }

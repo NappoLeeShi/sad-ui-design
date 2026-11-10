@@ -13,6 +13,8 @@
 - Prioritize content accuracy and completeness over visual simplification.
 
 **Requirements:**
+- Slide content must be in Vietnamese.
+- Documentation/Progress logging must be in English. (See `incomplete_tasks.md`, `incomplete_slides.md`, `slide_coverage.md` in [Project References](#2-project-references))
 - Use the provided Canva skills and design guidelines.
 - Treat the skills as the primary design and implementation references. They provide baselines for slide structure, colors, typography, and layout.
 - Skills are important guidelines but do not override factual accuracy, project requirements, or explicit instructions in this file.
@@ -24,10 +26,10 @@ The following files are the primary project references:
 
 | File | Purpose |
 |---|---|
-| `dan_y_topic_7.md` | Main presentation outline, slide count, structure, and required content |
-| `theoretical_compiled.md` | Theoretical foundations and detailed explanations; use this as the basis for slide content |
-| `incomplete_tasks.md` | Tracks unfinished tasks that cannot currently be completed |
-| `incomplete_slides.md` | Tracks slides that are unfinished or require further work |
+| [`dan_y_topic_7.md`](../plan/dan_y_topic_7.md) | Main presentation outline, slide count, structure, and required content |
+| [`theoretical_compiled.md`](../theoretical_basis/theoretical_compiled.md) | Theoretical foundations and detailed explanations; use this as the basis for slide content |
+| [`incomplete_tasks.md`](./incomplete_tasks.md) | Tracks unfinished tasks that cannot currently be completed |
+| [`incomplete_slides.md`](./incomplete_slides.md) | Tracks slides that are unfinished or require further work |
 | `evaluation_metrics.md` | Contains verified empirical evaluation data, if available |
 | `slide_coverage.md` | Tracks the mapping between outline requirements and presentation slides |
 
